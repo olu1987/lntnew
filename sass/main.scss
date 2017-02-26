@@ -100,10 +100,30 @@ html, body{
   font-family: 'Cinzel', serif;
 }
 
-.container-fluid.home-bg{
+.container-fluid{
+  height: 100%;
+}
+
+.home-bg{
+  width:100%;
+  height:100%;
+  position: absolute;
+}
+
+.pic-one{
   background: url('../img/white-top-stairs-doorway-1.jpeg') center no-repeat;
   background-size: cover;
-  height:100%;
+}
+
+.pic-two{
+  background: url('../img/stairs-smoulder-opt.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.pic-three{
+  background: url('../img/doorway-blackskirt.jpg') center no-repeat;
+  background-size: cover;
+  background-position: 0 -100px;
 }
 
 .navigation{
