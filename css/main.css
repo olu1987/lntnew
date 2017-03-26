@@ -288,6 +288,14 @@ html, body {
   top: 0;
   left: 0; }
 
+#myCarousel {
+  width: 100%;
+  z-index: 20; }
+  #myCarousel .item img {
+    margin: 0 auto;
+    display: block;
+    height: 500px; }
+
 @media (min-width: 991px) {
   .toggle-button {
     display: none; }
@@ -314,6 +322,9 @@ html, body {
   #slideshow .home-bg {
     background-position: center;
     width: 105%;
+    height: 800px; }
+
+  .prints .bg {
     height: 800px; } }
 @media (max-width: 1200px) {
   .overlay {

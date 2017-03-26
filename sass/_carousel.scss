@@ -1,0 +1,12 @@
+#myCarousel{
+  width:100%;
+  z-index: 20;
+  .item{
+    img{
+      margin: 0 auto;
+      display: block;
+      height: 500px;
+    }
+  }
+}
+
