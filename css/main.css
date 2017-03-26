@@ -82,11 +82,12 @@ html, body {
   height: 100%;
   font-family: 'Cinzel', serif; }
 
-.container-fluid {
-  height: 100%; }
+#slideshow {
+  width: 100%;
+  overflow: hidden; }
 
 .home-bg {
-  width: 100%;
+  width: calc(100% - 15px);
   height: 100%;
   position: absolute; }
 
@@ -105,8 +106,9 @@ html, body {
 
 .navigation {
   background: #000000;
-  position: relative;
+  position: absolute;
   bottom: 100px;
+  width: 100%;
   z-index: 11; }
   .navigation .social i {
     margin: 0 5px; }
@@ -117,7 +119,8 @@ html, body {
       padding: 10px 0px 10px 52px; }
       .navigation ul li a {
         color: #ffffff;
-        text-decoration: none; }
+        text-decoration: none;
+        font-size: 17px; }
         .navigation ul li a:hover {
           text-decoration: none;
           color: #cccccc; }
@@ -130,13 +133,10 @@ html, body {
   width: 90%;
   margin: 0 auto;
   display: block;
-  left: 50%;
-  top: 30px; }
-  .overlay div {
-    left: -50%;
-    position: relative;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 50px 19% 130px; }
+  top: 30px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 50px 19% 130px;
+  left: 5%; }
 
 /* ==========================================================================
    Helper classes
@@ -283,7 +283,9 @@ html, body {
     display: block !important;
     height: unset !important; } }
 @media (max-width: 991px) {
-  .navigation ul li {
-    display: block; } }
+  .navigation {
+    bottom: unset; }
+    .navigation ul li {
+      display: block; } }
 
 /*# sourceMappingURL=main.css.map */
