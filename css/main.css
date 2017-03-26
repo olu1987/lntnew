@@ -105,19 +105,38 @@ html, body {
 
 .navigation {
   background: #000000;
-  position: absolute;
+  position: relative;
   bottom: 100px;
-  width: 100%; }
+  z-index: 11; }
+  .navigation .social i {
+    margin: 0 5px; }
   .navigation ul {
     margin-bottom: 0; }
     .navigation ul li {
       display: inline-block;
-      padding: 5px 20px; }
+      padding: 10px 0px 10px 52px; }
       .navigation ul li a {
-        color: #ffffff; }
+        color: #ffffff;
+        text-decoration: none; }
         .navigation ul li a:hover {
           text-decoration: none;
           color: #cccccc; }
+
+.overlay {
+  position: absolute;
+  height: auto;
+  z-index: 10;
+  font-size: 18px;
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  left: 50%;
+  top: 30px; }
+  .overlay div {
+    left: -50%;
+    position: relative;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 50px 19% 130px; }
 
 /* ==========================================================================
    Helper classes
@@ -256,5 +275,15 @@ html, body {
   h2,
   h3 {
     page-break-after: avoid; } }
+@media (min-width: 991px) {
+  .toggle-button {
+    display: none; }
+
+  .navigation .collapse {
+    display: block !important;
+    height: unset !important; } }
+@media (max-width: 991px) {
+  .navigation ul li {
+    display: block; } }
 
 /*# sourceMappingURL=main.css.map */

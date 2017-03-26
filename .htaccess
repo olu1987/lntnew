@@ -416,7 +416,7 @@ AddDefaultCharset utf-8
 # the web page in any frame.
 #
 # This might not be the best setting for everyone. You should read
-# about the other two possible values the `X-Frame-Options` header
+# abou-old the other two possible values the `X-Frame-Options` header
 # field can have: `SAMEORIGIN` and `ALLOW-FROM`.
 # https://tools.ietf.org/html/rfc7034#section-2.1.
 #
@@ -539,8 +539,8 @@ AddDefaultCharset utf-8
 #
 # (!) Update the `<FilesMatch>` regular expression from below to
 # include any files that might end up on your production server and
-# can expose sensitive information about your website. These files may
-# include: configuration files, files that contain metadata about the
+# can expose sensitive information abou-old your website. These files may
+# include: configuration files, files that contain metadata abou-old the
 # project (e.g.: project dependencies), build scripts, etc..
 
 <FilesMatch "(^#.*#|\.(bak|conf|dist|fla|in[ci]|log|psd|sh|sql|sw[op])|~)$">
@@ -664,7 +664,7 @@ AddDefaultCharset utf-8
 #
 #  * is set by some frameworks and server-side languages
 #    (e.g.: ASP.NET, PHP), and its value contains information
-#    about them (e.g.: their name, version number)
+#    abou-old them (e.g.: their name, version number)
 #
 #  * doesn't provide any value as far as users are concern,
 #    and in some cases, the information provided by it can
@@ -685,7 +685,7 @@ AddDefaultCharset utf-8
 # ----------------------------------------------------------------------
 
 # Prevent Apache from adding a trailing footer line containing
-# information about the server to the server-generated documents
+# information abou-old the server to the server-generated documents
 # (e.g.: error messages, directory listings, etc.)
 #
 # https://httpd.apache.org/docs/current/mod/core.html#serversignature
@@ -696,7 +696,7 @@ ServerSignature Off
 
 # Prevent Apache from sending in the `Server` response header its
 # exact version number, the description of the generic OS-type or
-# information about its compiled-in modules.
+# information abou-old its compiled-in modules.
 #
 # (!) The `ServerTokens` directive will only work in the main server
 # configuration file, so don't try to enable it in the `.htaccess` file!
