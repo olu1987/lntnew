@@ -80,6 +80,8 @@ textarea {
    ========================================================================== */
 html, body {
   height: 100%;
+  width: 100%;
+  overflow-x: hidden;
   font-family: 'Cinzel', serif; }
 
 #slideshow {
@@ -87,7 +89,7 @@ html, body {
   overflow: hidden; }
 
 .home-bg {
-  width: calc(100% - 15px);
+  width: 102%;
   height: 100%;
   position: absolute; }
 
@@ -107,7 +109,7 @@ html, body {
 .navigation {
   background: #000000;
   position: absolute;
-  bottom: 100px;
+  bottom: 64px;
   width: 100%;
   z-index: 11; }
   .navigation .social i {
@@ -284,8 +286,22 @@ html, body {
     height: unset !important; } }
 @media (max-width: 991px) {
   .navigation {
-    bottom: unset; }
+    bottom: unset;
+    width: 102%; }
     .navigation ul li {
-      display: block; } }
+      display: block; }
+
+  .overlay {
+    padding: 30px 10px;
+    font-size: 15px;
+    top: 75px; }
+
+  #slideshow .home-bg {
+    background-position: center;
+    width: 105%;
+    height: 800px; } }
+@media (max-width: 1200px) {
+  .overlay {
+    padding-top: 38px; } }
 
 /*# sourceMappingURL=main.css.map */
