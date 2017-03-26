@@ -76,71 +76,6 @@ textarea {
   padding: 0.2em 0; }
 
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-html, body {
-  height: 100%;
-  width: 100%;
-  overflow-x: hidden;
-  font-family: 'Cinzel', serif; }
-
-#slideshow {
-  width: 100%;
-  overflow: hidden; }
-
-.home-bg {
-  width: 102%;
-  height: 100%;
-  position: absolute; }
-
-.pic-one {
-  background: url("../img/white-top-stairs-doorway-1.jpeg") center no-repeat;
-  background-size: cover; }
-
-.pic-two {
-  background: url("../img/stairs-smoulder-opt.jpg") center no-repeat;
-  background-size: cover; }
-
-.pic-three {
-  background: url("../img/doorway-blackskirt.jpg") center no-repeat;
-  background-size: cover;
-  background-position: 0 -100px; }
-
-.navigation {
-  background: #000000;
-  position: absolute;
-  bottom: 64px;
-  width: 100%;
-  z-index: 11; }
-  .navigation .social i {
-    margin: 0 5px; }
-  .navigation ul {
-    margin-bottom: 0; }
-    .navigation ul li {
-      display: inline-block;
-      padding: 10px 0px 10px 52px; }
-      .navigation ul li a {
-        color: #ffffff;
-        text-decoration: none;
-        font-size: 17px; }
-        .navigation ul li a:hover {
-          text-decoration: none;
-          color: #cccccc; }
-
-.overlay {
-  position: absolute;
-  height: auto;
-  z-index: 10;
-  font-size: 18px;
-  width: 90%;
-  margin: 0 auto;
-  display: block;
-  top: 30px;
-  background: rgba(255, 255, 255, 0.8);
-  padding: 50px 19% 130px;
-  left: 5%; }
-
-/* ==========================================================================
    Helper classes
    ========================================================================== */
 /*
@@ -277,6 +212,82 @@ html, body {
   h2,
   h3 {
     page-break-after: avoid; } }
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Cinzel', serif; }
+
+#slideshow {
+  width: 100%;
+  overflow: hidden; }
+
+.home-bg {
+  width: 102%;
+  height: 100%;
+  position: absolute; }
+
+.pic-one {
+  background: url("../img/white-top-stairs-doorway-1.jpeg") center no-repeat;
+  background-size: cover; }
+
+.pic-two {
+  background: url("../img/stairs-smoulder-opt.jpg") center no-repeat;
+  background-size: cover; }
+
+.pic-three {
+  background: url("../img/doorway-blackskirt.jpg") center no-repeat;
+  background-size: cover;
+  background-position: 0 -100px; }
+
+.navigation {
+  background: #000000;
+  position: absolute;
+  bottom: 64px;
+  width: 100%;
+  z-index: 11; }
+  .navigation .social i {
+    margin: 0 5px; }
+  .navigation ul {
+    margin-bottom: 0; }
+    .navigation ul li {
+      display: inline-block;
+      padding: 10px 0px 10px 52px; }
+      .navigation ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 17px; }
+        .navigation ul li a:hover {
+          text-decoration: none;
+          color: #cccccc; }
+
+.overlay {
+  position: absolute;
+  height: auto;
+  z-index: 10;
+  font-size: 18px;
+  width: 90%;
+  display: block;
+  top: 30px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 50px 19% 130px;
+  left: 5%; }
+
+.prints .bg.container-fluid {
+  background: url("../img/background print-opt.jpg") center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%; }
+.prints .overlay {
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; }
+
 @media (min-width: 991px) {
   .toggle-button {
     display: none; }
@@ -287,9 +298,13 @@ html, body {
 @media (max-width: 991px) {
   .navigation {
     bottom: unset;
-    width: 102%; }
+    width: 102%;
+    top: 0; }
     .navigation ul li {
       display: block; }
+
+  .toggle-button {
+    padding-right: 20px; }
 
   .overlay {
     padding: 30px 10px;

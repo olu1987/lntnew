@@ -1,0 +1,45 @@
+@media (min-width:991px) {
+  .toggle-button{
+    display: none;
+  }
+  .navigation .collapse{
+    display: block !important;
+    height: unset !important;
+  }
+}
+
+@media (max-width:991px) {
+  .navigation {
+    bottom: unset;
+    width: 102%;
+    top:0;
+
+    ul li{
+      display: block;
+    }
+  }
+
+  .toggle-button{
+    padding-right: 20px;
+  }
+
+  .overlay{
+    padding: 30px 10px;
+    font-size: 15px;
+    top: 75px;
+  }
+
+  #slideshow .home-bg{
+    background-position: center;
+    width: 105%;
+    height: 800px;
+  }
+}
+
+@media (max-width:1200px) {
+  .overlay{
+    padding-top: 38px;
+
+  }
+
+}
