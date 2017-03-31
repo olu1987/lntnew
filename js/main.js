@@ -11,5 +11,15 @@ $(document).ready(function(){
             .appendTo('#slideshow');
     },  5000);
 
+    $('.prints #myModal').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget) // Button that triggered the modal
+        var image = button.attr('src'),
+            title = button.data('item');
+        console.log(title);
+        var modal = $(this)
+        modal.find('.print-image').attr( "src", image);
+        modal.find('.modal-title').html(title);
+    })
+
 
 });

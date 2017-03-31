@@ -7,8 +7,31 @@
     img{
       margin: 0 auto;
       display: block;
-      height: 430px;
+      max-height: 430px;
     }
   }
+}
+
+.prints{
+  #myModal{
+    .modal-dialog{
+      width:90%;
+    }
+
+    .modal-content{
+      border-radius: 0;
+      background: rgba(255, 255, 255, 0.9);
+    }
+  }
+  .print-image{
+    max-height: 450px;
+    margin: 0 auto;
+  }
+
+  .carousel-control{
+    background-image: none;
+  }
+
+
 }
 

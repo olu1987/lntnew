@@ -295,7 +295,18 @@ html, body {
   #myCarousel .item img {
     margin: 0 auto;
     display: block;
-    height: 430px; }
+    max-height: 430px; }
+
+.prints #myModal .modal-dialog {
+  width: 90%; }
+.prints #myModal .modal-content {
+  border-radius: 0;
+  background: rgba(255, 255, 255, 0.9); }
+.prints .print-image {
+  max-height: 450px;
+  margin: 0 auto; }
+.prints .carousel-control {
+  background-image: none; }
 
 @media (min-width: 991px) {
   .toggle-button {
