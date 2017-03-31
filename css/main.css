@@ -290,11 +290,12 @@ html, body {
 
 #myCarousel {
   width: 100%;
-  z-index: 20; }
+  z-index: 11;
+  margin-top: 64px; }
   #myCarousel .item img {
     margin: 0 auto;
     display: block;
-    height: 500px; }
+    height: 430px; }
 
 @media (min-width: 991px) {
   .toggle-button {
