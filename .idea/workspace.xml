@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e81e76d-29a7-44ca-98b8-42ba4e083cb8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/clothing.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/send_form_email.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/cd659590f47a46b15422e62638633020bd6208ae/_styles.scssc" afterPath="$PROJECT_DIR$/.sass-cache/cd659590f47a46b15422e62638633020bd6208ae/_styles.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about.html" afterPath="$PROJECT_DIR$/about.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accessories.html" afterPath="$PROJECT_DIR$/accessories.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css.map" afterPath="$PROJECT_DIR$/css/main.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prints.html" afterPath="$PROJECT_DIR$/prints.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_styles.scss" afterPath="$PROJECT_DIR$/sass/_styles.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/send_form_email.php" afterPath="$PROJECT_DIR$/send_form_email.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,7 +37,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contact.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -60,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="send_form_email.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="send_form_email.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/send_form_email.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="47" lean-forward="true" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
+            <state relative-caret-position="68">
+              <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -350,12 +339,12 @@
       <workItem from="1488035223910" duration="13073000" />
       <workItem from="1490488733797" duration="10053000" />
       <workItem from="1490544959871" duration="15878000" />
-      <workItem from="1490975001412" duration="33111000" />
+      <workItem from="1490975001412" duration="33457000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72115000" />
+    <option name="totallyTimeSpent" value="72461000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -667,14 +656,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/send_form_email.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="47" lean-forward="true" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/contact.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -682,6 +663,14 @@
           <folding>
             <element signature="n#style#0;n#td#0;n#tr#5;n#table#0;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/send_form_email.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
