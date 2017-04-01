@@ -246,6 +246,12 @@ html, body {
 .accessories .pic-one {
   background: url("../img/green-door-scarf-opt.jpg") center no-repeat;
   background-size: cover; }
+.accessories .pic-two {
+  background: url("../img/scarf-green-stairs-opt.jpg") center no-repeat;
+  background-size: cover; }
+.accessories .pic-three {
+  background: url("../img/white-balcony-scarf-opt.jpg") center no-repeat;
+  background-size: cover; }
 
 .navigation {
   background: #000000;
@@ -297,6 +303,33 @@ html, body {
 .accessories .navigation {
   bottom: unset;
   top: 550px; }
+.accessories .row.promo {
+  padding: 50px; }
+  .accessories .row.promo .panel {
+    background: #eeeeee;
+    border: 1px solid #cccccc; }
+
+.slideshow-wrapper {
+  height: 100vh;
+  position: relative; }
+
+.accessories .slideshow-wrapper {
+  height: 95vh; }
+
+footer.row {
+  min-height: 100px;
+  background: #fff; }
+  footer.row ul {
+    text-align: center; }
+    footer.row ul li {
+      padding: 10px;
+      display: inline-block; }
+      footer.row ul li a {
+        color: #444444; }
+
+.home footer.row, .about footer.row, .prints footer.row {
+  min-height: 120px;
+  padding-top: 40px; }
 
 #myCarousel {
   width: 100%;
@@ -326,11 +359,11 @@ html, body {
     display: block !important;
     height: unset !important; } }
 @media (max-width: 991px) {
-  .navigation {
+  .navigation, .accessories .navigation {
     bottom: unset;
     width: 102%;
     top: 0; }
-    .navigation ul li {
+    .navigation ul li, .accessories .navigation ul li {
       display: block; }
 
   .toggle-button {
@@ -347,6 +380,9 @@ html, body {
     height: 800px; }
 
   .prints .bg {
+    height: 800px; }
+
+  .accessories .slideshow-wrapper {
     height: 800px; } }
 @media (max-width: 1200px) {
   .overlay {

@@ -35,9 +35,19 @@ html, body{
   background-position: 0 -100px;
 }
 
-.accessories .pic-one{
-  background: url('../img/green-door-scarf-opt.jpg') center no-repeat;
-  background-size: cover;
+.accessories{
+  .pic-one{
+    background: url('../img/green-door-scarf-opt.jpg') center no-repeat;
+    background-size: cover;
+  }
+  .pic-two{
+    background: url('../img/scarf-green-stairs-opt.jpg') center no-repeat;
+    background-size: cover;
+  }
+  .pic-three{
+    background: url('../img/white-balcony-scarf-opt.jpg') center no-repeat;
+    background-size: cover;
+  }
 }
 
 .navigation{
@@ -109,5 +119,45 @@ html, body{
   .navigation{
     bottom: unset;
     top:550px;
+  }
+
+  .row.promo{
+    padding: 50px;
+    .panel{
+      background: #eeeeee;
+      border: 1px solid #cccccc;
+    }
+  }
+}
+
+.slideshow-wrapper{
+  height:100vh;
+  position: relative
+}
+
+.accessories .slideshow-wrapper{
+  height:95vh;
+}
+
+footer.row{
+  min-height: 100px;
+  background: #fff;
+  ul{
+    text-align: center;
+    li{
+      padding: 10px;
+      display: inline-block;
+      a{
+        color: #444444;
+      }
+    }
+  }
+
+}
+
+.home, .about, .prints{
+  footer.row{
+    min-height: 120px;
+    padding-top: 40px;
   }
 }

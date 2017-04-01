@@ -9,7 +9,7 @@
 }
 
 @media (max-width:991px) {
-  .navigation {
+  .navigation, .accessories .navigation {
     bottom: unset;
     width: 102%;
     top:0;
@@ -38,6 +38,10 @@
     .bg{
       height: 800px;
     }
+  }
+
+  .accessories .slideshow-wrapper{
+    height:800px;
   }
 }
 
