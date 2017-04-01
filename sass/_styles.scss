@@ -56,6 +56,11 @@ html, body{
   bottom: 64px;
   width:100%;
   z-index: 11;
+  &.navbar-default{
+    border: none;
+    border-radius: 0;
+  }
+
   .social{
     i{
       margin: 0 5px;
@@ -64,9 +69,12 @@ html, body{
 
   ul{
     margin-bottom: 0;
+    background: #000;
     li{
       display: inline-block;
       padding: 10px 0px 10px 52px;
+
+
       a{
         color:#ffffff;
         text-decoration: none;
@@ -119,6 +127,12 @@ html, body{
   .navigation{
     bottom: unset;
     top:550px;
+    &.fixed{
+      position: fixed;
+      top:0;
+      bottom: 100vh;
+      z-index: 100;
+    }
   }
 
   .row.promo{
