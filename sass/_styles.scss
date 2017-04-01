@@ -35,6 +35,11 @@ html, body{
   background-position: 0 -100px;
 }
 
+.accessories .pic-one{
+  background: url('../img/green-door-scarf-opt.jpg') center no-repeat;
+  background-size: cover;
+}
+
 .navigation{
   background: #000000;
   position: absolute;
@@ -94,5 +99,15 @@ html, body{
     top:0;
     left: 0;
 
+  }
+}
+
+.accessories{
+  .home-bg{
+    height:550px;
+  }
+  .navigation{
+    bottom: unset;
+    top:550px;
   }
 }

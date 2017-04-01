@@ -243,6 +243,10 @@ html, body {
   background-size: cover;
   background-position: 0 -100px; }
 
+.accessories .pic-one {
+  background: url("../img/green-door-scarf-opt.jpg") center no-repeat;
+  background-size: cover; }
+
 .navigation {
   background: #000000;
   position: absolute;
@@ -287,6 +291,12 @@ html, body {
   height: 100%;
   top: 0;
   left: 0; }
+
+.accessories .home-bg {
+  height: 550px; }
+.accessories .navigation {
+  bottom: unset;
+  top: 550px; }
 
 #myCarousel {
   width: 100%;
