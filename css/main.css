@@ -243,22 +243,22 @@ html, body {
   background-size: cover;
   background-position: 0 -100px; }
 
-.accessories .pic-one {
+.accessories .pic-one, .clothing .pic-one {
   background: url("../img/green-door-scarf-opt.jpg") center no-repeat;
   background-size: cover; }
-.accessories .pic-two {
+.accessories .pic-two, .clothing .pic-two {
   background: url("../img/scarf-green-stairs-opt.jpg") center no-repeat;
   background-size: cover; }
-.accessories .pic-three {
+.accessories .pic-three, .clothing .pic-three {
   background: url("../img/white-balcony-scarf-opt.jpg") center no-repeat;
   background-size: cover; }
 
 .navigation {
-  background: #000000;
   position: absolute;
   bottom: 64px;
   width: 100%;
-  z-index: 11; }
+  z-index: 11;
+  background: transparent; }
   .navigation.navbar-default {
     border: none;
     border-radius: 0; }
@@ -339,6 +339,13 @@ footer.row {
 .home footer.row, .about footer.row, .prints footer.row {
   min-height: 120px;
   padding-top: 40px; }
+
+.place-holder {
+  height: 300px;
+  width: 300px;
+  background: #cccccc;
+  margin: 0 auto;
+  display: block; }
 
 #myCarousel {
   width: 100%;
