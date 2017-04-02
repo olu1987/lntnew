@@ -191,7 +191,10 @@ footer.row{
 }
 
 .contact{
-  input, textarea{
+  input, textarea,select{
     border-radius: 0;
+  }
+  .form-col{
+    padding: 60px;
   }
 }

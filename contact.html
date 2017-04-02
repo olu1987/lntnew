@@ -19,36 +19,37 @@
 <body class="contact">
 <div class="container-fluid contact-bg slideshow-wrapper">
   <div class="row">
-      <div class="col-md-6 col-md-offset-6">
+      <div class="col-md-6 col-md-offset-6 form-col">
           <form name="contactform" method="post" action="send_form_email.php">
               <div class="form-group row">
-                  <label class="col-xs-3" for="first_name">First Name *</label>
-                  <div class="col-xs-9">
+                  <label class="col-sm-3" for="first_name">First Name *</label>
+                  <div class="col-sm-9">
                       <input class="form-control" type="text" name="first_name" maxlength="50" size="30">
                   </div>
               </div>
               <div class="form-group row">
-                      <label class="col-xs-3" for="last_name">Last Name *</label>
-                      <div class="col-xs-9 fo" valign="top">
+                      <label class="col-sm-3" for="last_name">Last Name *</label>
+                      <div class="col-sm-9 fo" valign="top">
                           <input class="form-control"  type="text" name="last_name" maxlength="50" size="30">
                       </div>
               </div>
               <div class="form-group row">
-                  <label class="col-xs-3" for="email">Email Address *</label>
-                  <div class="col-xs-9">
+                  <label class="col-sm-3" for="email">Email Address *</label>
+                  <div class="col-sm-9">
                           <input class="form-control" type="text" name="email" maxlength="80" size="30">
                   </div>
               </div>
               <div class="form-group row">
-                  <label class="col-xs-3" for="telephone">Telephone Number</label>
-                  <div class="col-xs-9" valign="top">
+                  <label class="col-sm-3" for="telephone">Telephone Number</label>
+                  <div class="col-sm-9" valign="top">
                           <input class="form-control" type="text" name="telephone" maxlength="30" size="30">
                   </div>
               </div>
               <div class="form-group row">
-                  <label class="col-xs-3" for="countrySelect">Comments *</label>
-                  <div class="col-xs-9">
+                  <label class="col-sm-3" for="countrySelect">Country *</label>
+                  <div class="col-sm-9">
                       <select class="form-control" id="countrySelect" name="country">
+                          <option value=""></option>
                           <option value="AF">Afghanistan</option>
                           <option value="AX">Åland Islands</option>
                           <option value="AL">Albania</option>
@@ -300,22 +301,35 @@
                           <option value="ZW">Zimbabwe</option>
                       </select>
                   </div>
+              </div><div class="form-group row">
+                  <label class="col-sm-3" for="subjectSelect">Subject *</label>
+                  <div class="col-sm-9">
+                      <select class="form-control" id="subjectSelect" name="subject">
+                          <option value=""></option>
+                          <option value="purchase">Purchase/Order</option>
+                          <option value="careers">Careers</option>
+                          <option value="collaboration">Collaboration</option>
+                          <option value="custom">Custom Orders</option>
+                          <option value="press">Press</option>
+                          <option value="other">Other</option>
+                      </select>
+                  </div>
               </div>
               <div class="form-group row">
-                  <label class="col-xs-3" for="comments">Comments *</label>
-                  <div class="col-xs-9">
+                  <label class="col-sm-3" for="comments">Comments *</label>
+                  <div class="col-sm-9">
                       <textarea class="form-control" name="comments" maxlength="1000" cols="25" rows="6"></textarea>
                   </div>
               </div>
               <div class="form-group row">
-                      <div class="col-xs-12 text-right">
-                          <input type="submit" value="Submit">
+                      <div class="col-sm-12 text-right">
+                          <input type="submit" value="Send message">
                       </div>
               </div>
           </form>
       </div>
   </div>
-    <div class="navigation text-center">
+    <div class="navigation text-center row">
         <ul class="list-inline text-right toggle-button">
             <li><a data-toggle="collapse" data-target="#nav" class="btn fa fa-bars"></a></li>
         </ul>

@@ -352,8 +352,10 @@ footer.row {
   background-size: cover;
   height: 100vh; }
 
-.contact input, .contact textarea {
+.contact input, .contact textarea, .contact select {
   border-radius: 0; }
+.contact .form-col {
+  padding: 60px; }
 
 #myCarousel {
   width: 100%;

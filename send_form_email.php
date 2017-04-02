@@ -21,7 +21,9 @@ if(isset($_POST['email'])) {
         !isset($_POST['email']) ||
         !isset($_POST['telephone']) ||
         !isset($_POST['comments'])  ||
-        !isset($_POST['country'])) {
+        !isset($_POST['country']) ||
+        !isset($_POST['subject'])
+    ) {
         died('We are sorry, but there appears to be a problem with the form you submitted.');
     }
 
@@ -33,6 +35,7 @@ if(isset($_POST['email'])) {
     $telephone = $_POST['telephone']; // not required
     $comments = $_POST['comments']; // required
     $country = $_POST['country']; // required
+    $subject = $_POST['subject']; // required
 
     $error_message = "";
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
@@ -57,6 +60,9 @@ if(isset($_POST['email'])) {
 
     if(strlen($country) < 2) {
         $error_message .= 'Please select the country you are enquiring from.<br />';
+    }
+    if(strlen($subject) < 2) {
+        $error_message .= 'Please select the subject of your enquiry.<br />';
     }
 
     if(strlen($error_message) > 0) {

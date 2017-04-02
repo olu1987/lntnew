@@ -40,7 +40,6 @@ $(document).ready(function(){
         var scrollArea = document.querySelector('body'),
             nav = document.querySelector(".accessories .navigation"),
             promo = document.querySelector(".accessories .promo");
-        console.log(scrollArea);
         if(nav){
             scrollArea.addEventListener('scroll', function () {
                 var distance = promo.getBoundingClientRect().top;
