@@ -2,7 +2,7 @@
 if(isset($_POST['email'])) {
 
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "info@lntlondon.com";
+    $email_to = "olu@claymoreminds.com";
     $email_subject = "LNT CONTACT REQUEST";
 
     function died($error) {
@@ -20,7 +20,8 @@ if(isset($_POST['email'])) {
         !isset($_POST['last_name']) ||
         !isset($_POST['email']) ||
         !isset($_POST['telephone']) ||
-        !isset($_POST['comments'])) {
+        !isset($_POST['comments'])  ||
+        !isset($_POST['country'])) {
         died('We are sorry, but there appears to be a problem with the form you submitted.');
     }
 
@@ -31,6 +32,7 @@ if(isset($_POST['email'])) {
     $email_from = $_POST['email']; // required
     $telephone = $_POST['telephone']; // not required
     $comments = $_POST['comments']; // required
+    $country = $_POST['country']; // required
 
     $error_message = "";
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
@@ -53,6 +55,10 @@ if(isset($_POST['email'])) {
         $error_message .= 'The Comments you entered do not appear to be valid.<br />';
     }
 
+    if(strlen($country) < 2) {
+        $error_message .= 'Please select the country you are enquiring from.<br />';
+    }
+
     if(strlen($error_message) > 0) {
         died($error_message);
     }
@@ -72,6 +78,7 @@ if(isset($_POST['email'])) {
     $email_message .= "Email: ".clean_string($email_from)."\n";
     $email_message .= "Telephone: ".clean_string($telephone)."\n";
     $email_message .= "Comments: ".clean_string($comments)."\n";
+    $email_message .= "Country: ".clean_string($country)."\n";
 
 // create email headers
     $headers = 'From: '.$email_from."\r\n".

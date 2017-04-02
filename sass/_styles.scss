@@ -169,7 +169,7 @@ footer.row{
 
 }
 
-.home, .about, .prints{
+.home, .about, .prints,.contact{
   footer.row{
     min-height: 120px;
     padding-top: 40px;
@@ -182,4 +182,16 @@ footer.row{
   background: #cccccc;
   margin: 0 auto;
   display: block;
+}
+
+.contact-bg{
+  background: url('../img/contact-background.jpg') center no-repeat;
+  background-size: cover;
+  height:100vh;
+}
+
+.contact{
+  input, textarea{
+    border-radius: 0;
+  }
 }
