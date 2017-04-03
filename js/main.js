@@ -38,16 +38,15 @@ $(document).ready(function(){
 
     var navScroll = function(){
         var scrollArea = document.querySelector('body'),
-            nav = document.querySelector(".accessories .navigation"),
-            promo = document.querySelector(".accessories .promo");
+            nav = document.querySelector(".sticky-nav-page .navigation"),
+            promo = document.querySelector(".sticky-nav-page .promo");
         if(nav){
             scrollArea.addEventListener('scroll', function () {
                 var distance = promo.getBoundingClientRect().top;
-                console.log(promo.scrollTop);
-                if(distance < 0){
+                if(distance < 120){
                     addClass(nav, 'fixed')
                 }
-                if(distance > 0) {
+                if(distance > 120) {
                     removeClass(nav, 'fixed')
                 }
             })

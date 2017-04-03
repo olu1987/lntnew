@@ -120,7 +120,7 @@ html, body{
   }
 }
 
-.accessories{
+.sticky-nav-page{
   .home-bg{
     height:550px;
   }
@@ -197,4 +197,10 @@ footer.row{
   .form-col{
     padding: 60px;
   }
+}
+
+.btn-md,.btn-md:hover,.btn-md:focus{
+  background: #000000;
+  color: #ffffff;
+  padding: 6px 20px;
 }

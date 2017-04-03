@@ -302,19 +302,19 @@ html, body {
   top: 0;
   left: 0; }
 
-.accessories .home-bg {
+.sticky-nav-page .home-bg {
   height: 550px; }
-.accessories .navigation {
+.sticky-nav-page .navigation {
   bottom: unset;
   top: 550px; }
-  .accessories .navigation.fixed {
+  .sticky-nav-page .navigation.fixed {
     position: fixed;
     top: 0;
     bottom: 100vh;
     z-index: 100; }
-.accessories .row.promo {
+.sticky-nav-page .row.promo {
   padding: 50px; }
-  .accessories .row.promo .panel {
+  .sticky-nav-page .row.promo .panel {
     background: #eeeeee;
     border: 1px solid #cccccc; }
 
@@ -356,6 +356,11 @@ footer.row {
   border-radius: 0; }
 .contact .form-col {
   padding: 60px; }
+
+.btn-md, .btn-md:hover, .btn-md:focus {
+  background: #000000;
+  color: #ffffff;
+  padding: 6px 20px; }
 
 #myCarousel {
   width: 100%;
