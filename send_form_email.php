@@ -25,7 +25,8 @@ if(isset($_POST['email'])) {
         !isset($_POST['telephone']) ||
         !isset($_POST['comments'])  ||
         !isset($_POST['country']) ||
-        !isset($_POST['subject'])
+        !isset($_POST['subject'])||
+        isset($_POST['misc'])
     ) {
         died('We are sorry, but there appears to be a problem with the form you submitted.');
     }
