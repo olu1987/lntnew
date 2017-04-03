@@ -103,3 +103,4 @@ if(isset($_POST['email'])) {
 
 }
 ?>
+<?php include 'footer.php'; ?>
