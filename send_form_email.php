@@ -26,7 +26,7 @@ if(isset($_POST['email'])) {
         !isset($_POST['comments'])  ||
         !isset($_POST['country']) ||
         !isset($_POST['subject'])||
-        empty($_POST['misc'])
+        !isset($_POST['misc'])
     ) {
         died('We are sorry, but there appears to be a problem with the form you submitted.');
     }
@@ -40,6 +40,7 @@ if(isset($_POST['email'])) {
     $comments = $_POST['comments']; // required
     $country = $_POST['country']; // required
     $subject = $_POST['subject']; // required
+    $spamFlag = $_POST['misc']; // required
 
     $error_message = "";
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
@@ -64,6 +65,9 @@ if(isset($_POST['email'])) {
 
     if(strlen($country) < 2) {
         $error_message .= 'Please select the country you are enquiring from.<br />';
+    }
+    if(strlen($spamFlag) > 1) {
+        $error_message .= 'SPAM BOT.<br />';
     }
     if(strlen($subject) < 2) {
         $error_message .= 'Please select the subject of your enquiry.<br />';
