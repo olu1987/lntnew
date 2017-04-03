@@ -122,11 +122,11 @@ html, body{
 
 .sticky-nav-page{
   .home-bg{
-    height:550px;
+    height:85vh;
   }
   .navigation{
     bottom: unset;
-    top:550px;
+    top:85vh;
     &.fixed{
       position: fixed;
       top:0;

@@ -303,10 +303,10 @@ html, body {
   left: 0; }
 
 .sticky-nav-page .home-bg {
-  height: 550px; }
+  height: 85vh; }
 .sticky-nav-page .navigation {
   bottom: unset;
-  top: 550px; }
+  top: 85vh; }
   .sticky-nav-page .navigation.fixed {
     position: fixed;
     top: 0;
