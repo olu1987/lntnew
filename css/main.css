@@ -329,7 +329,8 @@ footer.row {
   min-height: 100px;
   background: #fff; }
   footer.row ul {
-    text-align: center; }
+    text-align: center;
+    padding-left: 0; }
     footer.row ul li {
       padding: 10px;
       display: inline-block; }
@@ -397,6 +398,9 @@ footer.row {
     .navigation ul li, .accessories .navigation ul li {
       display: block; }
 
+  .sticky-nav-page .navigation {
+    top: 0; }
+
   .toggle-button {
     padding-right: 20px; }
 
@@ -418,5 +422,12 @@ footer.row {
 @media (max-width: 1200px) {
   .overlay {
     padding-top: 38px; } }
+@media (max-width: 767px) {
+  .contact .form-col {
+    padding: 10px;
+    padding-top: 60px; }
+
+  .contact-bg {
+    height: auto; } }
 
 /*# sourceMappingURL=main.css.map */

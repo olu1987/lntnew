@@ -19,6 +19,10 @@
     }
   }
 
+  .sticky-nav-page .navigation{
+    top:0;
+  }
+
   .toggle-button{
     padding-right: 20px;
   }
@@ -49,6 +53,18 @@
   .overlay{
     padding-top: 38px;
 
+  }
+
+}
+
+@media (max-width:767px) {
+  .contact .form-col{
+    padding: 10px;
+    padding-top: 60px;
+  }
+
+  .contact-bg{
+    height: auto;
   }
 
 }
