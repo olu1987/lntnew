@@ -1,0 +1,34 @@
+{
+  "name": "lntnew",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {
+    "angular": "^1.6.4",
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^2.1.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olu1987/lntnew.git"
+  },
+  "author": "Olu Meduoye",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olu1987/lntnew/issues"
+  },
+  "homepage": "https://github.com/olu1987/lntnew#readme"
+}

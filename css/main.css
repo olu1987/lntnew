@@ -146,8 +146,10 @@ textarea {
    ========================================================================== */
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */ }
+
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */ }
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
@@ -162,20 +164,16 @@ textarea {
     background: transparent !important;
     color: #000 !important;
     /* Black prints faster:
-           http://www.sanbeiji.com/archives/953 */
+                                   http://www.sanbeiji.com/archives/953 */
     box-shadow: none !important;
     text-shadow: none !important; }
-
   a,
   a:visited {
     text-decoration: underline; }
-
   a[href]:after {
     content: " (" attr(href) ")"; }
-
   abbr[title]:after {
     content: " (" attr(title) ")"; }
-
   /*
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
@@ -183,35 +181,30 @@ textarea {
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: ""; }
-
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid; }
-
   /*
    * Printing Tables:
    * http://css-discuss.incutio.com/wiki/Printing_Tables
    */
   thead {
     display: table-header-group; }
-
   tr,
   img {
     page-break-inside: avoid; }
-
   img {
     max-width: 100% !important; }
-
   p,
   h2,
   h3 {
     orphans: 3;
     widows: 3; }
-
   h2,
   h3 {
     page-break-after: avoid; } }
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -246,9 +239,11 @@ html, body {
 .accessories .pic-one, .clothing .pic-one {
   background: url("../img/green-door-scarf-opt.jpg") center no-repeat;
   background-size: cover; }
+
 .accessories .pic-two, .clothing .pic-two {
   background: url("../img/scarf-green-stairs-opt.jpg") center no-repeat;
   background-size: cover; }
+
 .accessories .pic-three, .clothing .pic-three {
   background: url("../img/white-balcony-scarf-opt.jpg") center no-repeat;
   background-size: cover; }
@@ -295,6 +290,7 @@ html, body {
   background-size: cover;
   width: 100%;
   height: 100%; }
+
 .prints .overlay {
   background: rgba(0, 0, 0, 0.8);
   width: 100%;
@@ -304,6 +300,7 @@ html, body {
 
 .sticky-nav-page .home-bg {
   height: 85vh; }
+
 .sticky-nav-page .navigation {
   bottom: unset;
   top: 85vh; }
@@ -312,6 +309,7 @@ html, body {
     top: 0;
     bottom: 100vh;
     z-index: 100; }
+
 .sticky-nav-page .row.promo {
   padding: 50px; }
   .sticky-nav-page .row.promo .panel {
@@ -355,6 +353,7 @@ footer.row {
 
 .contact input, .contact textarea, .contact select {
   border-radius: 0; }
+
 .contact .form-col {
   padding: 60px; }
 
@@ -374,22 +373,25 @@ footer.row {
 
 .prints #myModal .modal-dialog {
   width: 90%; }
+
 .prints #myModal .modal-content {
   border-radius: 0;
   background: rgba(255, 255, 255, 0.9); }
+
 .prints .print-image {
   max-height: 450px;
   margin: 0 auto; }
+
 .prints .carousel-control {
   background-image: none; }
 
 @media (min-width: 991px) {
   .toggle-button {
     display: none; }
-
   .navigation .collapse {
     display: block !important;
     height: unset !important; } }
+
 @media (max-width: 991px) {
   .navigation, .accessories .navigation {
     bottom: 100%;
@@ -397,37 +399,30 @@ footer.row {
     top: 0; }
     .navigation ul li, .accessories .navigation ul li {
       display: block; }
-
   .sticky-nav-page .navigation {
     top: 0; }
-
   .toggle-button {
     padding-right: 20px; }
-
   .overlay {
     padding: 30px 10px;
     font-size: 15px;
     top: 75px; }
-
   #slideshow .home-bg {
     background-position: center;
     width: 105%;
     height: 800px; }
-
   .prints .bg {
     height: 800px; }
-
   .accessories .slideshow-wrapper {
     height: 800px; } }
+
 @media (max-width: 1200px) {
   .overlay {
     padding-top: 38px; } }
+
 @media (max-width: 767px) {
   .contact .form-col {
     padding: 10px;
     padding-top: 60px; }
-
   .contact-bg {
     height: auto; } }
-
-/*# sourceMappingURL=main.css.map */

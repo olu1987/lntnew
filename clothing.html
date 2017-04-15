@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="" ng-app="store">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -54,12 +54,13 @@
 
 <!-- Add your site or application content here -->
 
-<div class="container">
+<div ng-controller="AccessoriesController" class="container">
 
     <div class="row promo">
             <div class="col-md-4">
                 <div class="place-holder">
-
+                    <p>{{items[0].name}}</p>
+                    <img class="img-responsive" src="{{items[0].url}}" />
                 </div>
             </div>
             <div class="col-md-4">
@@ -114,9 +115,10 @@
 
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+<script src="node_modules/angular/angular.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
+<script src="build/js/main.min.js"></script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
