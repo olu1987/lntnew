@@ -1,17 +1,25 @@
 var AccesoriesService = angular.module('AccesoriesService', [])
     .service('Accessories', function () {
         this.items = [
-            {
+            {   id:1,
                 name:'Bert Square',
-                url:'img/bert-pocket-square.jpg'
+                character:'Bert',
+                url:'img/bert-pocket-square.jpg',
+                price:'50.00'
             },
             {
+                id:2,
                 name:'Tiger Square',
-                url:'img/tiger-pocket-square.jpg'
+                character:'Timothy',
+                url:'img/tiger-pocket-square.jpg',
+                price:'50.00'
             },
             {
+                id:3,
                 name:'Bert Soft Square',
-                url:'img/bert-soft-square.jpg'
+                character:'Bert',
+                url:'img/bert-soft-square.jpg',
+                price:'50.00'
             }
         ]
     });

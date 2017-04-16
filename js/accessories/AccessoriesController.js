@@ -1,4 +1,5 @@
-app.controller('AccessoriesController',['$scope','Accessories','Filter',function($scope,Accessories,Filter){
+app.controller('AccessoriesController',['$scope','Accessories',function($scope,Accessories){
+    $scope.searchTerm = '';
     $scope.items = Accessories.items;
-    $scope.filterFn = Filter.filterFn;
+
 }]);

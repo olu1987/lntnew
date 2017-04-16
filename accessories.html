@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="build/css/main.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body class="accessories sticky-nav-page">
@@ -57,20 +57,23 @@
 
 <div class="container"  ng-controller="AccessoriesController">
     <div class="row promo">
-        <h1>ACCESSORIES</h1>
         <div class="col-md-3 col-sm-6 col-xs-12">
-         <h2>CHARACTER</h2>
-        <ul class="list-group">
-            <li class="list-group-item"><a ng-click = "searchText = ''">ALL</a></li>
+        <h1 class="text-center"><strong>FILTER<br>. CATEGORIES .</strong></h1>
+
+        <ul class="list-group sidebar">
+            <h3><strong>CHARACTER</strong></h3>
+            <li ng-class="{active: character == undefined}" class="list-group-item"><a  ng-click = "character = undefined">ALL</a></li>
             <li class="list-group-item"><a >KEY</a></li>
-            <li class="list-group-item"><a ng-click = "searchText = 'bert'">BERT</a></li>
-            <li class="list-group-item"><a ng-click = "searchText = 'tiger'">TIMOTHY</a></li>
+            <li ng-class="{active: character == 'Bert'}" class="list-group-item"><a ng-click="character = 'Bert'">BERT</a></li>
+            <li ng-class="{active: character == 'Timothy'}" class="list-group-item"><a ng-click = "character = 'Timothy'">TIMOTHY</a></li>
             <li class="list-group-item"><input class="form-control" ng-model="searchText"></li>
         </ul>
        </div>
-       <div ng-repeat="item in items | filter : filterFn(searchText)" class="col-md-3 col-sm-6 col-xs-12">
-           <p>{{item.name}}</p>
+       <div ng-repeat="item in items   | chooseCharacter: character.toLowerCase() | filter: searchText track by item.id" class="col-md-3 col-sm-6 col-xs-12">
+
            <img class="img-responsive" src="{{item.url}}" />
+           <h4 class="text-center"><strong>. {{item.name}} .</strong></h4>
+           <p class="text-center">&pound;{{item.price}}</p>
        </div>
 
         <div class="col-md-3 col-sm-6 col-xs-12">
@@ -81,7 +84,15 @@
        </div>
     </div>
     <div class="row promo">
-
+        <div class="col-md-3 col-sm-6 col-xs-12">
+            <h2>ITEM</h2>
+            <ul class="list-group sidebar">
+                <li ng-class="{active: character == undefined}" class="list-group-item"><a>ALL</a></li>
+                <li class="list-group-item"><a >POCKET SQUARES</a></li>
+                <li class="list-group-item"><a>SCARVES</a></li>
+                <li class="list-group-item"><a>BAGS</a></li>
+            </ul>
+        </div>
     </div>
 </div>
 <div class="container-fluid">

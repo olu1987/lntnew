@@ -20,32 +20,32 @@ html, body{
 }
 
 .pic-one{
-  background: url('../img/white-top-stairs-doorway-1.jpeg') center no-repeat;
+  background: url('../../img/white-top-stairs-doorway-1.jpeg') center no-repeat;
   background-size: cover;
 }
 
 .pic-two{
-  background: url('../img/stairs-smoulder-opt.jpg') center no-repeat;
+  background: url('../../img/stairs-smoulder-opt.jpg') center no-repeat;
   background-size: cover;
 }
 
 .pic-three{
-  background: url('../img/doorway-blackskirt.jpg') center no-repeat;
+  background: url('../../img/doorway-blackskirt.jpg') center no-repeat;
   background-size: cover;
   background-position: 0 -100px;
 }
 
 .accessories, .clothing{
   .pic-one{
-    background: url('../img/green-door-scarf-opt.jpg') center no-repeat;
+    background: url('../../img/green-door-scarf-opt.jpg') center no-repeat;
     background-size: cover;
   }
   .pic-two{
-    background: url('../img/scarf-green-stairs-opt.jpg') center no-repeat;
+    background: url('../../img/scarf-green-stairs-opt.jpg') center no-repeat;
     background-size: cover;
   }
   .pic-three{
-    background: url('../img/white-balcony-scarf-opt.jpg') center no-repeat;
+    background: url('../../img/white-balcony-scarf-opt.jpg') center no-repeat;
     background-size: cover;
   }
 }
@@ -204,4 +204,29 @@ footer.row{
   background: #000000;
   color: #ffffff;
   padding: 6px 20px;
+}
+
+.sidebar{
+  padding-left: 30px;
+  li{
+    cursor: pointer;
+    padding: 0;
+    border:none;
+    a{
+      text-decoration: none;
+      padding: 10px 5px;
+      color: #cccccc;
+      height: 100%;
+      width: 100%;
+      display: block;
+    }
+    &.active,&.active:hover,&.active:focus{
+      border-color: #cccccc;
+      background: transparent;
+
+      a{
+        color: gold;
+      }
+    }
+  }
 }
