@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="" ng-app="store">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -55,47 +55,33 @@
 
 <!-- Add your site or application content here -->
 
-<div class="container">
+<div class="container"  ng-controller="AccessoriesController">
     <div class="row promo">
         <h1>ACCESSORIES</h1>
-        <div class="clearfix panel">
-            <div class="col-md-6">
-                <div class="row">
-                    <img class="img-responsive" src="img/scarf-floor-flowers-opt.jpg">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <h2>Red Scarf</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                    mollit anim id est laborum.
-                </p>
-            </div>
-        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+         <h2>CHARACTER</h2>
+        <ul class="list-group">
+            <li class="list-group-item"><a ng-click = "searchText = ''">ALL</a></li>
+            <li class="list-group-item"><a >KEY</a></li>
+            <li class="list-group-item"><a ng-click = "searchText = 'bert'">BERT</a></li>
+            <li class="list-group-item"><a ng-click = "searchText = 'tiger'">TIMOTHY</a></li>
+            <li class="list-group-item"><input class="form-control" ng-model="searchText"></li>
+        </ul>
+       </div>
+       <div ng-repeat="item in items | filter : filterFn(searchText)" class="col-md-3 col-sm-6 col-xs-12">
+           <p>{{item.name}}</p>
+           <img class="img-responsive" src="{{item.url}}" />
+       </div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+
+       </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+
+       </div>
     </div>
     <div class="row promo">
-        <div class="clearfix panel">
-            <div class="col-md-6">
-                <div class="row">
-                    <img class="img-responsive" src="img/scarf-floor-flowers-opt.jpg">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <h2>Pink Scarf</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                    mollit anim id est laborum.
-                </p>
-            </div>
-        </div>
+
     </div>
 </div>
 <div class="container-fluid">
@@ -121,9 +107,10 @@
 
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+<script src="node_modules/angular/angular.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
+<script src="build/js/main.min.js"></script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
