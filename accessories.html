@@ -31,7 +31,7 @@
         <ul class="list-inline text-right toggle-button">
             <li><a data-toggle="collapse" data-target="#nav" class="btn fa fa-bars"></a></li>
         </ul>
-        <ul id="nav" class="list-inline collapse text-left">
+        <ul id="nav" class="list-inline collapse">
             <li><a href="index.html">. LNT . LONDON .</a></li>
             <li><a href="about.html">. ABOUT .</a></li>
             <li><a href="prints.html">. PRINTS .</a></li>
@@ -58,24 +58,42 @@
 <div class="container"  ng-controller="AccessoriesController">
     <div class="row promo">
         <div class="col-md-3 col-sm-6 col-xs-12">
-        <h1 class="text-center"><strong>FILTER<br>. CATEGORIES .</strong></h1>
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center"><strong>FILTER<br>. CATEGORIES .</strong></h1>
 
-        <ul class="list-group sidebar">
-            <h3><strong>CHARACTER</strong></h3>
-            <li ng-class="{active: character == undefined}" class="list-group-item"><a  ng-click = "character = undefined">ALL</a></li>
-            <li class="list-group-item"><a >KEY</a></li>
-            <li ng-class="{active: character == 'Bert'}" class="list-group-item"><a ng-click="character = 'Bert'">BERT</a></li>
-            <li ng-class="{active: character == 'Timothy'}" class="list-group-item"><a ng-click = "character = 'Timothy'">TIMOTHY</a></li>
-            <li class="list-group-item"><input class="form-control" ng-model="searchText"></li>
-        </ul>
+                    <ul class="list-group sidebar">
+                        <h3><strong>CHARACTER</strong></h3>
+                        <li ng-class="{active: character == undefined}" class="list-group-item"><a  ng-click = "character = undefined">ALL</a></li>
+                        <li class="list-group-item"><a >KEY</a></li>
+                        <li ng-class="{active: character == 'Bert'}" class="list-group-item"><a ng-click="character = 'Bert'">BERT</a></li>
+                        <li ng-class="{active: character == 'Timothy'}" class="list-group-item"><a ng-click = "character = 'Timothy'">TIMOTHY</a></li>
+                        <li class="list-group-item"><input class="form-control" ng-model="searchText"></li>
+                    </ul>
+                </div>
+                <div class="col-md-12">
+                    <ul class="list-group sidebar">
+                        <h3><strong>ITEM</strong></h3>
+                        <li ng-class="{active: character == undefined}" class="list-group-item"><a>ALL</a></li>
+                        <li class="list-group-item"><a >POCKET SQUARES</a></li>
+                        <li class="list-group-item"><a>SCARVES</a></li>
+                        <li class="list-group-item"><a>BAGS</a></li>
+                    </ul>
+                </div>
+            </div>
        </div>
-       <div ng-repeat="item in items   | chooseCharacter: character.toLowerCase() | filter: searchText track by item.id" class="col-md-3 col-sm-6 col-xs-12">
+        <div class="col-md-9 col-sm-6 col-xs-12">
+            <div ng-repeat="item in items   | chooseCharacter: character.toLowerCase() | filter: searchText track by item.id" class="col-md-4 col-sm-6 col-xs-12">
 
-           <img class="img-responsive" src="{{item.url}}" />
-           <h4 class="text-center"><strong>. {{item.name}} .</strong></h4>
-           <p class="text-center">&pound;{{item.price}}</p>
-       </div>
 
+                <img class="img-responsive" src="{{item.url}}" />
+            <div class="title-wrap">
+                <h4 class="text-center"><strong>. {{item.name}} .</strong></h4>
+                <p class="text-center">&pound;{{item.price}}</p>
+            </div>
+
+            </div>
+        </div>
         <div class="col-md-3 col-sm-6 col-xs-12">
 
        </div>
@@ -85,13 +103,7 @@
     </div>
     <div class="row promo">
         <div class="col-md-3 col-sm-6 col-xs-12">
-            <ul class="list-group sidebar">
-                <h3><strong>ITEM</strong></h3>
-                <li ng-class="{active: character == undefined}" class="list-group-item"><a>ALL</a></li>
-                <li class="list-group-item"><a >POCKET SQUARES</a></li>
-                <li class="list-group-item"><a>SCARVES</a></li>
-                <li class="list-group-item"><a>BAGS</a></li>
-            </ul>
+
         </div>
     </div>
 </div>
