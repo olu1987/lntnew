@@ -1,9 +1,9 @@
 <!doctype html>
-<html class="no-js" lang="" ng-app="store">
+<html class="no-js" lang="">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>PRINTS | LNT LONDON</title>
+    <title>HOME | LNT LONDON</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,17 +16,13 @@
     <link rel="stylesheet" href="build/css/main.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
-<body class="accessories sticky-nav-page">
-<div class="slideshow-wrapper">
-    <div id="slideshow" class="container-fluid">
-        <div class="row home-bg pic-three">
-        </div>
-        <div class="row home-bg pic-two">
-    </div>
-        <div class="row home-bg pic-one">
-    </div>
-    </div>
-    <div class="navbar navbar-default navigation text-center">
+<body class="blog">
+    <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div class="navigation text-center">
         <ul class="list-inline text-right toggle-button">
             <li><a data-toggle="collapse" data-target="#nav" class="btn fa fa-bars"></a></li>
         </ul>
@@ -45,61 +41,30 @@
             </li>
         </ul>
     </div>
-</div>
-
-<!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
-
-<!-- Add your site or application content here -->
-
-<div class="container"  ng-controller="PrintsController">
-    <div class="row promo">
-        <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="text-center"><strong>FILTER<br>. CATEGORIES .</strong></h1>
-
-                    <ul class="list-group sidebar">
-                        <h3><strong>CHARACTER</strong></h3>
-                        <li ng-class="{active: character == undefined}" class="list-group-item"><a  ng-click = "character = undefined">ALL</a></li>
-                        <li class="list-group-item"><a >KEY</a></li>
-                        <li ng-class="{active: character == 'Bert'}" class="list-group-item"><a ng-click="character = 'Bert'">BERT</a></li>
-                        <li ng-class="{active: character == 'Timothy'}" class="list-group-item"><a ng-click = "character = 'Timothy'">TIMOTHY</a></li>
-                        <li ng-class="{active: character == 'Violet'}" class="list-group-item"><a ng-click="character = 'Violet'">VIOLET RAIN</a></li>
-                        <li class="list-group-item"><input class="form-control" ng-model="searchText"></li>
-                    </ul>
-                </div>
-                <div class="col-md-12">
-                    <ul class="list-group sidebar">
-                        <h3><strong>ITEM</strong></h3>
-                        <li ng-class="{active: character == undefined}" class="list-group-item"><a>ALL</a></li>
-                        <li class="list-group-item"><a >POCKET SQUARES</a></li>
-                        <li class="list-group-item"><a>SCARVES</a></li>
-                        <li class="list-group-item"><a>BAGS</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-9 col-sm-6 col-xs-12">
-            <div ng-repeat="item in items   | chooseCharacter: character.toLowerCase() | filter: searchText track by item.id" class="{{item.column}}">
-
-
-                <img class="img-responsive" src="{{item.url}}" />
-                <div class="title-wrap">
-                    <h4 class="text-center"><strong>. {{item.name}} .</strong></h4>
-                    <p class="text-center">&pound;{{item.price}}</p>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <div class="row promo">
-        <div class="col-md-3 col-sm-6 col-xs-12">
-
+<div class="container">
+<div class="row">
+    <div class="col-md-12">
+        <div class="blog-promo-bg bg-2">
+            <h1>DRAWINGS</h1>
         </div>
     </div>
 </div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="blog-promo-bg bg-3">
+                <h1>JOURNAL</h1>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+       <div class="blog-promo-bg bg-1">
+          <h1>PHOTOSHOOTS</h1>
+       </div>
+    </div>
+</div>
+</div>
+
 <div class="container-fluid">
     <footer class="row">
         <div class="col-md-12">
@@ -122,10 +87,9 @@
 
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-<script src="node_modules/angular/angular.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/plugins.js"></script>
-<script src="build/js/main.min.js"></script>
+<script src="js/main.js"></script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>

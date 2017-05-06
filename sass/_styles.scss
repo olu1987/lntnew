@@ -236,3 +236,43 @@ footer.row{
 .title-wrap{
   height:100px;
 }
+
+.blog{
+  .container{
+    padding-top: 100px;
+  }
+  .navigation{
+    top:0;
+  }
+}
+
+.blog-promo-bg{
+  padding:10px 20px;
+  margin: 20px;
+  min-height: 400px;
+  box-shadow: 0 0 0 1px #cccccc;
+
+  h1{
+    font-size: 76px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.61);
+    padding-top: 150px;
+    padding-bottom: 150px;
+    margin: 20px;
+    transition: all 200ms ease;
+    cursor: pointer;
+    &:hover{
+      background: rgba(255, 255, 255, 0.85);
+      color:gray;
+    }
+  }
+  &.bg-1{
+    background: url('../../img/lnt-photoshoots.jpg') center no-repeat;
+  }
+  &.bg-2{
+    background: url('../../img/lnt-drawings.jpg') center no-repeat;
+  }
+  &.bg-3{
+    background: url('../../img/best-beauty.jpg') center no-repeat;
+  }
+}
