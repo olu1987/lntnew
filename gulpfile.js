@@ -18,7 +18,7 @@ gulp.task('scripts', function() {
 
 gulp.task('sass', function () {
     return gulp.src('./sass/**/*.scss')
-        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(sass({ sourceMap: 'sass',outputStyle: 'nested'}).on('error', sass.logError))
         .pipe(gulp.dest('build/css'));
 });
 
