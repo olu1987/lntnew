@@ -31,7 +31,7 @@ function db_query($query) {
 }
 
 // A select query. $result will be a `mysqli_result` object if successful
-$result = db_query("SELECT * FROM `prints` WHERE id = ".$_GET['id']);
+$result = db_query("SELECT * FROM ".$_GET['table']." WHERE id = ".$_GET['id']);
 
 if($result === false) {
     // Handle failure - log the error, notify administrator, etc.
