@@ -63,26 +63,24 @@
                     <ul class="list-group sidebar">
                         <h3><strong>CHARACTER</strong></h3>
                         <li ng-class="{active: character == undefined}" class="list-group-item"><a  ng-click = "character = undefined">ALL</a></li>
-                        <li class="list-group-item"><a >KEY</a></li>
+                        <li ng-class="{active: character == 'Key'}" class="list-group-item"><a ng-click="character = 'Key'" >KEY</a></li>
                         <li ng-class="{active: character == 'Bert'}" class="list-group-item"><a ng-click="character = 'Bert'">BERT</a></li>
                         <li ng-class="{active: character == 'Timothy'}" class="list-group-item"><a ng-click = "character = 'Timothy'">TIMOTHY</a></li>
-                        <li ng-class="{active: character == 'Violet'}" class="list-group-item"><a ng-click="character = 'Violet'">VIOLET RAIN</a></li>
                         <li class="list-group-item"><input class="form-control" ng-model="searchText"></li>
                     </ul>
                 </div>
                 <div class="col-md-12">
                     <ul class="list-group sidebar">
                         <h3><strong>ITEM</strong></h3>
-                        <li ng-class="{active: character == undefined}" class="list-group-item"><a>ALL</a></li>
-                        <li class="list-group-item"><a >POCKET SQUARES</a></li>
-                        <li class="list-group-item"><a>SCARVES</a></li>
-                        <li class="list-group-item"><a>BAGS</a></li>
+                        <li ng-class="{active: searchText == undefined}" class="list-group-item"><a ng-click="searchText = undefined">ALL</a></li>
+                        <li ng-class="{active: searchText == 'Skirt'}" class="list-group-item"><a ng-click="searchText = 'Skirt'">SKIRTS</a></li>
+                        <li ng-class="{active: searchText == 'Top'}" class="list-group-item"><a ng-click="searchText = 'Top'">TOPS</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="col-md-9 col-sm-6 col-xs-12 ">
-            <a ng-repeat="item in items   | chooseCharacter: character_name.toLowerCase() | filter: searchText track by item.id" class="col-md-6 col-sm-12 col-xs-12" href="item.php?table=clothing&id={{item.id}}"><div>
+            <a ng-repeat="item in items   | chooseCharacter: character.toLowerCase() | filter: searchText track by item.id" class="col-md-6 col-sm-12 col-xs-12" href="item.php?table=clothing&id={{item.id}}"><div>
 
 
                 <img class="img-responsive clothing-image" src="{{item.item_image_url}}" />

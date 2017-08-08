@@ -1,40 +1,17 @@
-var AccesoriesService = angular.module('AccesoriesService', [])
-    .service('Accessories', function () {
-        this.items = [
-            {
-                id:8,
-                name:'',
-                character:'Timothy',
-                url:'img/timothy-green-square.jpg',
-                price:'50.00'
-            },
-            {
-                id:9,
-                name:'Timothy Cosmic Pink Square',
-                character:'Timothy',
-                url:'img/timothy-pink-square.jpg',
-                price:'50.00'
-            },
-            {
-                id:10,
-                name:'Timothy Cosmic Purple Square',
-                character:'Timothy',
-                url:'img/timothy-purple-square.jpg',
-                price:'50.00'
-            },
-            {
-                id:11,
-                name:'Timothy Square',
-                character:'Timothy',
-                url:'img/timothy-original-square.jpg',
-                price:'50.00'
-            },
-            {
-                id:12,
-                name:'Timothy Cosmic Yellow Square',
-                character:'Timothy',
-                url:'img/timothy-yellow-square.jpg',
-                price:'50.00'
+var AccessoriesService = angular.module('AccessoriesService', [])
+    .service('Accessories',['$http' ,function ($http) {
+        var accessoriesService = {
+            async: function() {
+                // $http returns a promise, which has a then function, which also returns a promise
+                var promise = $http.get('getdata.php?group=accessories').then(function (response) {
+                    // The then function here is an opportunity to modify the response
+                    //console.log(response);
+                    // The return value gets picked up by the then in the controller.
+                    return response.data;
+                });
+                // Return the promise to the controller
+                return promise;
             }
-        ]
-    });
+        };
+        return accessoriesService;
+    }]);

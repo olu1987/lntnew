@@ -421,7 +421,7 @@ footer.row {
     background: url("../../img/best-beauty.jpg") center no-repeat; }
 
 .item-image {
-  max-height: 80vh;
+  max-height: 90vh;
   margin: 0 auto; }
 
 .item-details .left-dot {
@@ -453,7 +453,8 @@ footer.row {
   margin-top: 50px; }
 
 .clothing-image {
-  max-height: 500px; }
+  max-height: 450px;
+  margin: 0 auto; }
 
 #myCarousel {
   width: 100%;

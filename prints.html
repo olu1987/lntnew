@@ -63,7 +63,7 @@
                     <ul class="list-group sidebar">
                         <h3><strong>CHARACTER</strong></h3>
                         <li ng-class="{active: character == undefined}" class="list-group-item"><a  ng-click = "character = undefined">ALL</a></li>
-                        <li class="list-group-item"><a >KEY</a></li>
+                        <li ng-class="{active: character == 'Key'}" class="list-group-item" ng-click="character = 'Key'"><a >KEY</a></li>
                         <li ng-class="{active: character == 'Bert'}" class="list-group-item"><a ng-click="character = 'Bert'">BERT</a></li>
                         <li ng-class="{active: character == 'Timothy'}" class="list-group-item"><a ng-click = "character = 'Timothy'">TIMOTHY</a></li>
                         <li ng-class="{active: character == 'Violet'}" class="list-group-item"><a ng-click="character = 'Violet'">VIOLET RAIN</a></li>
@@ -74,15 +74,12 @@
                     <ul class="list-group sidebar">
                         <h3><strong>ITEM</strong></h3>
                         <li ng-class="{active: character == undefined}" class="list-group-item"><a>ALL</a></li>
-                        <li class="list-group-item"><a >POCKET SQUARES</a></li>
-                        <li class="list-group-item"><a>SCARVES</a></li>
-                        <li class="list-group-item"><a>BAGS</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="col-md-9 col-sm-6 col-xs-12">
-            <a ng-repeat="item in items   | chooseCharacter: character_name.toLowerCase() | filter: searchText track by item.id" class="{{item.layout_column}}" href="item.php?table=prints&id={{item.id}}"><div>
+            <a ng-repeat="item in items   | chooseCharacter: character.toLowerCase() | filter: searchText track by item.id" class="{{item.layout_column}}" href="item.php?table=prints&id={{item.id}}"><div>
 
 
                 <img class="img-responsive" src="{{item.item_image_url}}" />

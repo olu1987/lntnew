@@ -1,4 +1,7 @@
 app.controller('AccessoriesController',['$scope','Accessories',function($scope,Accessories){
-    $scope.items = Accessories.items;
+    Accessories.async().then(function(d) {
+        $scope.items = d;
+        console.log($scope.items)
+    });
 
 }]);
