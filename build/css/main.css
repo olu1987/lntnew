@@ -386,10 +386,10 @@ footer.row {
 .title-wrap {
   height: 100px; }
 
-.blog .container {
+.blog .container, .item .container {
   padding-top: 100px; }
 
-.blog .navigation {
+.blog .navigation, .item .navigation {
   top: 0; }
 
 .blog-promo-bg {
