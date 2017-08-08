@@ -1,4 +1,3 @@
-<?php include 'header.php'; ?>
 <?php
 function db_connect() {
 
@@ -31,7 +30,7 @@ function db_query($query) {
 }
 
 // A select query. $result will be a `mysqli_result` object if successful
-$result = db_query("SELECT * FROM `prints` WHERE id = ".$_GET['id']);
+$result = db_query("SELECT * FROM ".$_GET['group']);
 
 if($result === false) {
     // Handle failure - log the error, notify administrator, etc.
@@ -43,19 +42,6 @@ if($result === false) {
     }
 }
 
+echo json_encode($rows);
+
 ?>
-<div class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <img class="img-responsive" src="<?= $rows[0]['item_image_url']; ?>"/>
-        </div>
-        <div class="col-md-6">
-            <h1><?= $rows[0]['item_name']; ?></h1>
-            <p><?= $rows[0]['item_description']; ?></p>
-            <p>£<?= $rows[0]['item_price']; ?></p>
-        </div>
-      </div>
-    </div>
-
-
-<?php include 'footer.php'; ?>

@@ -11,7 +11,7 @@ gulp.task('scripts', function() {
     return gulp.src(['js/*.js','js/accessories/*.js','js/prints/*.js'])
         .pipe(concat('main.js'))
         .pipe(rename({suffix: '.min'}))
-        .pipe(uglify())
+        //.pipe(uglify())
         .pipe(gulp.dest('build/js'));
 });
 
