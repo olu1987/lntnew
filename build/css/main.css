@@ -453,7 +453,7 @@ footer.row {
   margin-top: 50px; }
 
 .clothing-image {
-  max-height: 450px;
+  max-height: 250px;
   margin: 0 auto; }
 
 #myCarousel {
@@ -521,6 +521,8 @@ footer.row {
     padding: 10px;
     padding-top: 60px; }
   .contact-bg {
-    height: auto; } }
+    height: auto; }
+  .sticky-nav-page .row.promo {
+    padding: 0; } }
 
 /*# sourceMappingURL=../sass */
