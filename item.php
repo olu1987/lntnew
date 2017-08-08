@@ -75,12 +75,14 @@ if($_GET['table'] == 'clothing'){
 <div class="container">
     <div class="row">
         <div class="col-md-6">
-            <img class="img-responsive" src="<?= $rows[0][$image]; ?>"/>
+            <img class="img-responsive item-image" src="<?= $rows[0][$image]; ?>"/>
         </div>
-        <div class="col-md-6">
-            <h1><?= $rows[0]['item_name']; ?></h1>
-            <p><?= $rows[0]['item_description']; ?></p>
-            <p>£<?= $rows[0]['item_price']; ?></p>
+        <div class="col-md-6 text-center item-details">
+            <h1><strong><span class="left-dot">.</span><?= $rows[0]['item_name']; ?><span class="right-dot">.</span></strong></h1>
+            <hr class="line-through">
+            <p class="price">£<?= $rows[0]['item_price']; ?></p>
+            <p class="text-left description"><?= $rows[0]['item_description']; ?></p>
+            <hr>
         </div>
       </div>
     </div>

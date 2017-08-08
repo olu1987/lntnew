@@ -276,3 +276,46 @@ footer.row{
     background: url('../../img/best-beauty.jpg') center no-repeat;
   }
 }
+
+.item-image{
+  max-height:80vh;
+  margin: 0 auto;
+
+}
+
+.item-details{
+  .left-dot{
+    margin-right: 10%;
+  }
+  .right-dot{
+    margin-left: 10%;
+  }
+  .price{
+    width: 85px;
+    background: #fff;
+    margin: 0 auto;
+  }
+  hr{
+    border-width: 1px;
+    border-color: #4e4e4e;
+  }
+
+  hr.line-through{
+    margin-bottom: -11px;
+  }
+  h1{
+    margin-bottom: 30px;
+  }
+  .description{
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+}
+
+.item{
+  footer{
+   margin-top: 50px;
+  }
+}
+

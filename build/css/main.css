@@ -205,6 +205,10 @@ textarea {
   h3 {
     page-break-after: avoid; } }
 
+a, a:hover, a:active {
+  text-decoration: none;
+  color: #444444; }
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -415,6 +419,38 @@ footer.row {
     background: url("../../img/lnt-drawings.jpg") center no-repeat; }
   .blog-promo-bg.bg-3 {
     background: url("../../img/best-beauty.jpg") center no-repeat; }
+
+.item-image {
+  max-height: 80vh;
+  margin: 0 auto; }
+
+.item-details .left-dot {
+  margin-right: 10%; }
+
+.item-details .right-dot {
+  margin-left: 10%; }
+
+.item-details .price {
+  width: 85px;
+  background: #fff;
+  margin: 0 auto; }
+
+.item-details hr {
+  border-width: 1px;
+  border-color: #4e4e4e; }
+
+.item-details hr.line-through {
+  margin-bottom: -11px; }
+
+.item-details h1 {
+  margin-bottom: 30px; }
+
+.item-details .description {
+  padding-top: 25px;
+  padding-bottom: 25px; }
+
+.item footer {
+  margin-top: 50px; }
 
 #myCarousel {
   width: 100%;

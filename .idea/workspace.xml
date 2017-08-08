@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e81e76d-29a7-44ca-98b8-42ba4e083cb8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/bert-silk-tiles-images.jpg" afterPath="$PROJECT_DIR$/img/bert-silk-tiles-images.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/css/main.css" afterPath="$PROJECT_DIR$/build/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/item.php" afterPath="$PROJECT_DIR$/item.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_styles.scss" afterPath="$PROJECT_DIR$/sass/_styles.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/main.scss" afterPath="$PROJECT_DIR$/sass/main.scss" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,16 +24,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PrintsService.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/prints/PrintsService.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="prints.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/prints.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -44,11 +34,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_styles.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_styles.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/_styles.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="236" column="15" lean-forward="true" selection-start-line="236" selection-start-column="15" selection-end-line="236" selection-end-column="15" />
+            <state relative-caret-position="265">
+              <caret line="317" column="20" lean-forward="false" selection-start-line="317" selection-start-column="20" selection-end-line="317" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sass/main.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="277" column="0" lean-forward="true" selection-start-line="277" selection-start-column="0" selection-end-line="277" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -74,18 +74,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="item.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gulpfile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="26" column="77" lean-forward="false" selection-start-line="26" selection-start-column="77" selection-end-line="26" selection-end-column="77" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="item.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/item.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="39" lean-forward="false" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+            <state relative-caret-position="-497">
+              <caret line="83" column="34" lean-forward="false" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
               <folding>
-                <marker date="1502192268768" expanded="true" signature="1954:1967" ph="SELECT * FRO... " />
-                <marker date="1502192268768" expanded="true" signature="1954:1998" ph="SELECT * FRO... prints" />
-                <marker date="1502192268768" expanded="true" signature="2392:2504" ph="..." />
-                <marker date="1502192268768" expanded="true" signature="2414:2504" ph="..." />
-                <marker date="1502192268768" expanded="true" signature="2445:2504" ph="..." />
-                <marker date="1502192268768" expanded="true" signature="2564:2594" ph="..." />
+                <marker date="1502197687877" expanded="true" signature="1954:1967" ph="SELECT * FRO... " />
+                <marker date="1502197687877" expanded="true" signature="1954:1998" ph="SELECT * FRO... prints" />
+                <marker date="1502197687877" expanded="true" signature="2392:2515" ph="..." />
+                <marker date="1502197687877" expanded="true" signature="2414:2515" ph="..." />
+                <marker date="1502197687877" expanded="true" signature="2445:2515" ph="..." />
+                <marker date="1502197687877" expanded="true" signature="2600:2669" ph="..." />
               </folding>
             </state>
           </provider>
@@ -96,16 +106,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
               <caret line="9" column="34" lean-forward="false" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClothingController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/clothing/ClothingController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="25" lean-forward="false" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -176,7 +176,6 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/contact.html" />
-        <option value="$PROJECT_DIR$/sass/main.scss" />
         <option value="$PROJECT_DIR$/sass/_carousel.scss" />
         <option value="$PROJECT_DIR$/build/css/main.css" />
         <option value="$PROJECT_DIR$/js/accessories/AccesoriesController.js" />
@@ -203,8 +202,9 @@
         <option value="$PROJECT_DIR$/js/prints/PrintsFilter.js" />
         <option value="$PROJECT_DIR$/prints.html" />
         <option value="$PROJECT_DIR$/clothing.html" />
-        <option value="$PROJECT_DIR$/sass/_styles.scss" />
+        <option value="$PROJECT_DIR$/sass/main.scss" />
         <option value="$PROJECT_DIR$/item.php" />
+        <option value="$PROJECT_DIR$/sass/_styles.scss" />
       </list>
     </option>
   </component>
@@ -431,12 +431,12 @@
       <workItem from="1494100656938" duration="5221000" />
       <workItem from="1494108823619" duration="692000" />
       <workItem from="1502114874792" duration="64000" />
-      <workItem from="1502116369820" duration="25054000" />
+      <workItem from="1502116369820" duration="29059000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="199649000" />
+    <option name="totallyTimeSpent" value="203654000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
@@ -648,14 +648,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../index.php" />
-    <entry file="file://$PROJECT_DIR$/sass/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2210">
-          <caret line="130" column="6" lean-forward="false" selection-start-line="130" selection-start-column="2" selection-end-line="130" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/watch.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2227">
@@ -692,14 +684,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="918">
           <caret line="54" column="32" lean-forward="false" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8245">
-          <caret line="485" column="31" lean-forward="false" selection-start-line="485" selection-start-column="31" selection-end-line="485" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -780,14 +764,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="26" column="77" lean-forward="false" selection-start-line="26" selection-start-column="77" selection-end-line="26" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/prints/PrintsController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -820,14 +796,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/prints/PrintsFilter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/clothing.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -854,14 +822,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/_styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="236" column="15" lean-forward="true" selection-start-line="236" selection-start-column="15" selection-end-line="236" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/prints.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -870,18 +830,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="26" column="77" lean-forward="false" selection-start-line="26" selection-start-column="77" selection-end-line="26" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8245">
+          <caret line="489" column="31" lean-forward="false" selection-start-line="489" selection-start-column="31" selection-end-line="489" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="277" column="0" lean-forward="true" selection-start-line="277" selection-start-column="0" selection-end-line="277" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/prints/PrintsFilter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/item.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="39" lean-forward="false" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+        <state relative-caret-position="-497">
+          <caret line="83" column="34" lean-forward="false" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
           <folding>
-            <marker date="1502192268768" expanded="true" signature="1954:1967" ph="SELECT * FRO... " />
-            <marker date="1502192268768" expanded="true" signature="1954:1998" ph="SELECT * FRO... prints" />
-            <marker date="1502192268768" expanded="true" signature="2392:2504" ph="..." />
-            <marker date="1502192268768" expanded="true" signature="2414:2504" ph="..." />
-            <marker date="1502192268768" expanded="true" signature="2445:2504" ph="..." />
-            <marker date="1502192268768" expanded="true" signature="2564:2594" ph="..." />
+            <marker date="1502197687877" expanded="true" signature="1954:1967" ph="SELECT * FRO... " />
+            <marker date="1502197687877" expanded="true" signature="1954:1998" ph="SELECT * FRO... prints" />
+            <marker date="1502197687877" expanded="true" signature="2392:2515" ph="..." />
+            <marker date="1502197687877" expanded="true" signature="2414:2515" ph="..." />
+            <marker date="1502197687877" expanded="true" signature="2445:2515" ph="..." />
+            <marker date="1502197687877" expanded="true" signature="2600:2669" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/_styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="317" column="20" lean-forward="false" selection-start-line="317" selection-start-column="20" selection-end-line="317" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
