@@ -452,6 +452,9 @@ footer.row {
 .item footer {
   margin-top: 50px; }
 
+.clothing-image {
+  max-height: 500px; }
+
 #myCarousel {
   width: 100%;
   z-index: 11;

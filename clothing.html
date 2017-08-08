@@ -81,11 +81,11 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-9 col-sm-6 col-xs-12">
-            <a ng-repeat="item in items   | chooseCharacter: character_name.toLowerCase() | filter: searchText track by item.id" class="col-md-6 col-sm-6 col-xs-12" href="item.php?table=clothing&id={{item.id}}"><div>
+        <div class="col-md-9 col-sm-6 col-xs-12 ">
+            <a ng-repeat="item in items   | chooseCharacter: character_name.toLowerCase() | filter: searchText track by item.id" class="col-md-6 col-sm-12 col-xs-12" href="item.php?table=clothing&id={{item.id}}"><div>
 
 
-                <img class="img-responsive" src="{{item.item_image_url}}" />
+                <img class="img-responsive clothing-image" src="{{item.item_image_url}}" />
                 <div class="title-wrap">
                     <h4 class="text-center"><strong>. {{item.item_name}} .</strong></h4>
                     <p class="text-center">&pound;{{item.item_price}}</p>
@@ -93,11 +93,6 @@
 
             </div>
             </a>
-        </div>
-    </div>
-    <div class="row promo">
-        <div class="col-md-3 col-sm-6 col-xs-12">
-
         </div>
     </div>
 </div>
