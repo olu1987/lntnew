@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e81e76d-29a7-44ca-98b8-42ba4e083cb8" name="Default" comment="" />
+    <list default="true" id="2e81e76d-29a7-44ca-98b8-42ba4e083cb8" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prints.html" afterPath="$PROJECT_DIR$/prints.html" />
+    </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="prints.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="prints.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/prints.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="81" column="159" lean-forward="false" selection-start-line="81" selection-start-column="159" selection-end-line="81" selection-end-column="159" />
+            <state relative-caret-position="255">
+              <caret line="86" column="104" lean-forward="false" selection-start-line="86" selection-start-column="104" selection-end-line="86" selection-end-column="104" />
               <folding />
             </state>
           </provider>
@@ -69,7 +72,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="item.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="item.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/item.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="159">
@@ -178,8 +181,8 @@
         <option value="$PROJECT_DIR$/configs/connect.php" />
         <option value="$PROJECT_DIR$/getdata.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/prints.html" />
         <option value="$PROJECT_DIR$/item.php" />
+        <option value="$PROJECT_DIR$/prints.html" />
       </list>
     </option>
   </component>
@@ -420,12 +423,12 @@
       <workItem from="1494100656938" duration="5221000" />
       <workItem from="1494108823619" duration="692000" />
       <workItem from="1502114874792" duration="64000" />
-      <workItem from="1502116369820" duration="54721000" />
+      <workItem from="1502116369820" duration="54879000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="229316000" />
+    <option name="totallyTimeSpent" value="229474000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
@@ -855,14 +858,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/prints.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="81" column="159" lean-forward="false" selection-start-line="81" selection-start-column="159" selection-end-line="81" selection-end-column="159" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/item.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
@@ -871,6 +866,14 @@
             <marker date="1502291014756" expanded="true" signature="1039:1052" ph="SELECT * FRO... " />
             <marker date="1502291014756" expanded="true" signature="1039:1083" ph="SELECT * FRO... prints" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prints.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="86" column="104" lean-forward="false" selection-start-line="86" selection-start-column="104" selection-end-line="86" selection-end-column="104" />
+          <folding />
         </state>
       </provider>
     </entry>
