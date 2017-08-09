@@ -65,7 +65,7 @@ if($_GET['table'] == 'clothing'){
                                 <option value="Large">Large </option>
                             </select> </td></tr>
                 </table>
-                <input class="btn-md" type="image" src="" border="0" name="submit" alt="ADD TO CART">
+                <input type="image" src="http://lntlondon.com/img/add-to-cart.jpg" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
                 <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
             </form>
 
