@@ -474,6 +474,9 @@ footer.row {
 .contact .navigation {
   top: 0; }
 
+.clothing-item-wrap {
+  max-height: 350px; }
+
 #myCarousel {
   width: 100%;
   z-index: 11;
@@ -542,5 +545,9 @@ footer.row {
     height: auto; }
   .sticky-nav-page .row.promo {
     padding: 0; } }
+
+@media (max-width: 488px) {
+  .clothing-item-wrap {
+    height: 312px; } }
 
 /*# sourceMappingURL=../sass */
