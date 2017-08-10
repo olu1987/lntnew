@@ -14,7 +14,6 @@
         <li><a href="prints.html">. PRINTS .</a></li>
         <li><a href="accessories.html">. ACCESSORIES .</a></li>
         <li><a href="clothing.html">. CLOTHING .</a></li>
-        <li><a href="blog.html">. BLOG .</a></li>
         <li><a href="contact.html">. CONTACT .</a></li>
         <li class="social">
             <a target="_blank" href="https://en-gb.facebook.com/lntlondon/"><i class="fa fa-facebook"></i></a>
@@ -32,7 +31,6 @@
                 <li><a href="index.html">. LNT . LONDON .</a></li>
                 <li><a href="about.html">. ABOUT .</a></li>
                 <li><a href="#">. SITEMAP .</a></li>
-                <li><a href="blog.html">. BLOG .</a></li>
                 <li><a href="contact.html">. CONTACT .</a></li>
                 <li class="social">
                     <a target="_blank" href="https://en-gb.facebook.com/lntlondon/"><i class="fa fa-facebook"></i></a>
