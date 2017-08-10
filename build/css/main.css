@@ -361,7 +361,8 @@ footer.row {
   border-radius: 0; }
 
 .contact .form-col {
-  padding: 60px; }
+  padding: 60px;
+  padding-top: 100px; }
 
 .btn-md, .btn-md:hover, .btn-md:focus {
   background: #000000;
@@ -464,6 +465,14 @@ footer.row {
   .item-bag-wrap .item-bag {
     height: 21px;
     margin-bottom: -2px; }
+
+.contact-bg {
+  background: url(../../img/contact-background.jpg) center no-repeat;
+  background-size: cover;
+  height: 100vh; }
+
+.contact .navigation {
+  top: 0; }
 
 #myCarousel {
   width: 100%;
