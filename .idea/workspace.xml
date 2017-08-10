@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e81e76d-29a7-44ca-98b8-42ba4e083cb8" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/css/main.css" afterPath="$PROJECT_DIR$/build/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/item.php" afterPath="$PROJECT_DIR$/item.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_styles.scss" afterPath="$PROJECT_DIR$/sass/_styles.scss" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_styles.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_styles.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/_styles.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="322" column="15" lean-forward="false" selection-start-line="322" selection-start-column="15" selection-end-line="322" selection-end-column="15" />
+            <state relative-caret-position="132">
+              <caret line="325" column="0" lean-forward="true" selection-start-line="325" selection-start-column="0" selection-end-line="325" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -71,14 +73,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="item.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="item.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/item.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="67" column="81" lean-forward="false" selection-start-line="67" selection-start-column="81" selection-end-line="67" selection-end-column="81" />
+            <state relative-caret-position="170">
+              <caret line="93" column="35" lean-forward="false" selection-start-line="93" selection-start-column="22" selection-end-line="93" selection-end-column="35" />
               <folding>
-                <marker date="1502317336940" expanded="true" signature="1039:1052" ph="SELECT * FRO... " />
-                <marker date="1502317336940" expanded="true" signature="1039:1083" ph="SELECT * FRO... prints" />
+                <marker date="1502350655377" expanded="true" signature="141:185" ph="SELECT * FRO... ${$_GET['table']}" />
               </folding>
             </state>
           </provider>
@@ -174,7 +175,6 @@
         <option value="$PROJECT_DIR$/js/accessories/AccessoriesService.js" />
         <option value="$PROJECT_DIR$/accessories.html" />
         <option value="$PROJECT_DIR$/js/clothing/ClothingFilter.js" />
-        <option value="$PROJECT_DIR$/sass/_styles.scss" />
         <option value="$PROJECT_DIR$/clothing.html" />
         <option value="$PROJECT_DIR$/sass/_responsive.scss" />
         <option value="$PROJECT_DIR$/configs/connect.php" />
@@ -182,6 +182,7 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/prints.html" />
         <option value="$PROJECT_DIR$/item.php" />
+        <option value="$PROJECT_DIR$/sass/_styles.scss" />
       </list>
     </option>
   </component>
@@ -422,12 +423,12 @@
       <workItem from="1494100656938" duration="5221000" />
       <workItem from="1494108823619" duration="692000" />
       <workItem from="1502114874792" duration="64000" />
-      <workItem from="1502116369820" duration="57388000" />
+      <workItem from="1502116369820" duration="59363000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="231983000" />
+    <option name="totallyTimeSpent" value="233958000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
@@ -789,14 +790,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/_styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="322" column="15" lean-forward="false" selection-start-line="322" selection-start-column="15" selection-end-line="322" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/clothing.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -867,12 +860,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/item.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="67" column="81" lean-forward="false" selection-start-line="67" selection-start-column="81" selection-end-line="67" selection-end-column="81" />
+        <state relative-caret-position="170">
+          <caret line="93" column="35" lean-forward="false" selection-start-line="93" selection-start-column="22" selection-end-line="93" selection-end-column="35" />
           <folding>
-            <marker date="1502317336940" expanded="true" signature="1039:1052" ph="SELECT * FRO... " />
-            <marker date="1502317336940" expanded="true" signature="1039:1083" ph="SELECT * FRO... prints" />
+            <marker date="1502350655377" expanded="true" signature="141:185" ph="SELECT * FRO... ${$_GET['table']}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/_styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="325" column="0" lean-forward="true" selection-start-line="325" selection-start-column="0" selection-end-line="325" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

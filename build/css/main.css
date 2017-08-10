@@ -456,6 +456,15 @@ footer.row {
   max-height: 250px;
   margin: 0 auto; }
 
+.item-bag-wrap {
+  height: 21px;
+  margin-right: 0;
+  margin-bottom: -2px;
+  display: inline-block; }
+  .item-bag-wrap .item-bag {
+    height: 21px;
+    margin-bottom: -2px; }
+
 #myCarousel {
   width: 100%;
   z-index: 11;
