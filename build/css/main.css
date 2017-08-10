@@ -544,7 +544,13 @@ footer.row {
   .contact-bg {
     height: auto; }
   .sticky-nav-page .row.promo {
-    padding: 0; } }
+    padding: 0; }
+  .slideshow-wrapper {
+    height: 300px !important; }
+    .slideshow-wrapper #slideshow {
+      height: 300px; }
+      .slideshow-wrapper #slideshow .row {
+        height: 300px; } }
 
 @media (max-width: 488px) {
   .clothing-item-wrap {

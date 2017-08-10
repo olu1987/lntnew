@@ -73,6 +73,16 @@
     padding: 0;
   }
 
+  .slideshow-wrapper{
+    height:300px !important;
+    #slideshow{
+      height:300px;
+      .row{
+        height:300px;
+      }
+    }
+  }
+
 }
 
 @media (max-width: 488px) {
