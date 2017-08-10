@@ -545,12 +545,12 @@ footer.row {
     height: auto; }
   .sticky-nav-page .row.promo {
     padding: 0; }
-  .slideshow-wrapper {
-    height: 300px !important; }
-    .slideshow-wrapper #slideshow {
-      height: 300px; }
-      .slideshow-wrapper #slideshow .row {
-        height: 300px; } }
+  .accessories .slideshow-wrapper, .prints .slideshow-wrapper, .clothing .slideshow-wrapper {
+    height: 350px !important; }
+    .accessories .slideshow-wrapper #slideshow, .prints .slideshow-wrapper #slideshow, .clothing .slideshow-wrapper #slideshow {
+      height: 350px; }
+      .accessories .slideshow-wrapper #slideshow .row, .prints .slideshow-wrapper #slideshow .row, .clothing .slideshow-wrapper #slideshow .row {
+        height: 350px; } }
 
 @media (max-width: 488px) {
   .clothing-item-wrap {

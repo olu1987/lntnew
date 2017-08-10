@@ -73,15 +73,20 @@
     padding: 0;
   }
 
-  .slideshow-wrapper{
-    height:300px !important;
-    #slideshow{
-      height:300px;
-      .row{
-        height:300px;
+  .accessories, .prints, .clothing{
+    .slideshow-wrapper{
+      height:350px !important;
+      #slideshow{
+        height:350px;
+        .row{
+          height:350px;
+        }
       }
     }
+
   }
+
+
 
 }
 
