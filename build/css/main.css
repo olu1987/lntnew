@@ -323,7 +323,7 @@ html, body {
     border: 1px solid #cccccc; }
 
 .slideshow-wrapper {
-  height: 700px;
+  height: 100vh;
   position: relative; }
 
 .accessories .slideshow-wrapper {
@@ -531,13 +531,7 @@ footer.row {
   .prints .bg {
     height: 800px; }
   .accessories .slideshow-wrapper {
-    height: 800px; }
-  .about .slideshow-wrapper, .home .slideshow-wrapper {
-    height: 100vh !important; }
-    .about .slideshow-wrapper #slideshow, .home .slideshow-wrapper #slideshow {
-      height: 100vh; }
-      .about .slideshow-wrapper #slideshow .row, .home .slideshow-wrapper #slideshow .row {
-        height: 100vh; } }
+    height: 800px; } }
 
 @media (max-width: 1200px) {
   .overlay {

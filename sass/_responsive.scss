@@ -49,18 +49,6 @@
   .accessories .slideshow-wrapper{
     height:800px;
   }
-
-  .about, .home{
-    .slideshow-wrapper{
-      height: 100vh !important;
-      #slideshow{
-        height:100vh;
-        .row{
-          height:100vh;
-        }
-      }
-    }
-  }
 }
 
 @media (max-width:1200px) {
