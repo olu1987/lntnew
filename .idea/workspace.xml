@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e81e76d-29a7-44ca-98b8-42ba4e083cb8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_responsive.scss" afterPath="$PROJECT_DIR$/sass/_responsive.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/css/main.css" afterPath="$PROJECT_DIR$/build/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_styles.scss" afterPath="$PROJECT_DIR$/sass/_styles.scss" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
@@ -69,8 +69,8 @@
       <file leaf-file-name="_styles.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/_styles.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="351" column="1" lean-forward="true" selection-start-line="351" selection-start-column="1" selection-end-line="351" selection-end-column="1" />
+            <state relative-caret-position="-2146">
+              <caret line="207" column="17" lean-forward="true" selection-start-line="207" selection-start-column="17" selection-end-line="207" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -395,12 +395,12 @@
       <workItem from="1494100656938" duration="5221000" />
       <workItem from="1494108823619" duration="692000" />
       <workItem from="1502114874792" duration="64000" />
-      <workItem from="1502116369820" duration="74763000" />
+      <workItem from="1502116369820" duration="74871000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="249358000" />
+    <option name="totallyTimeSpent" value="249466000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
@@ -849,8 +849,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/_styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="351" column="1" lean-forward="true" selection-start-line="351" selection-start-column="1" selection-end-line="351" selection-end-column="1" />
+        <state relative-caret-position="-2146">
+          <caret line="207" column="17" lean-forward="true" selection-start-line="207" selection-start-column="17" selection-end-line="207" selection-end-column="17" />
           <folding />
         </state>
       </provider>

@@ -362,7 +362,7 @@ footer.row {
 
 .contact .form-col {
   padding: 60px;
-  padding-top: 100px; }
+  padding-top: 30px; }
 
 .btn-md, .btn-md:hover, .btn-md:focus {
   background: #000000;
@@ -470,9 +470,6 @@ footer.row {
   background: url(../../img/contact-background.jpg) center no-repeat;
   background-size: cover;
   height: 100vh; }
-
-.contact .navigation {
-  top: 0; }
 
 .clothing-item-wrap {
   max-height: 350px; }
