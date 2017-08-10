@@ -85,6 +85,17 @@
     }
   }
 
+
+
+
+
+}
+
+@media (max-width: 488px) {
+  .clothing-item-wrap {
+    height: 312px;
+  }
+
   .about, .home{
     .slideshow-wrapper{
       height: 100vh !important;
@@ -95,14 +106,5 @@
         }
       }
     }
-  }
-
-
-
-}
-
-@media (max-width: 488px) {
-  .clothing-item-wrap {
-    height: 312px;
   }
 }
