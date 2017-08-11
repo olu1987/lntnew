@@ -485,7 +485,12 @@ footer.row {
 .thumbnails {
   max-height: 30vh;
   display: inline-block;
-  padding: 0 10px; }
+  width: 86%;
+  margin-left: 8px;
+  border: 1px solid transparent;
+  cursor: pointer; }
+  .thumbnails.active {
+    border: 1px solid gold; }
 
 #myCarousel {
   width: 100%;

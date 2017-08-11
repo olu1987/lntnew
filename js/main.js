@@ -54,4 +54,42 @@ $(document).ready(function(){
     }
 
     navScroll();
+
+    var clothingModule = (function () {
+
+        console.log("hello");
+
+        var bigPicture = document.getElementById('big-picture');
+
+        var thumbnails = document.querySelectorAll('.item .thumbnails');
+
+        return {
+            changePicture: function () {
+
+                for(var i = 0, x = thumbnails.length; i < x; i++){
+
+                    thumbnails[i].addEventListener('click', function () {
+
+                        for(var i = 0, x = thumbnails.length; i < x; i++){
+
+                            removeClass(thumbnails[i],'active');
+
+                        }
+
+                        addClass(this,'active');
+
+                        var img = this.getAttribute('src');
+
+                        bigPicture.setAttribute('src',img);
+
+                    })
+
+                }
+
+            }
+        };
+
+    })();
+
+    clothingModule.changePicture();
 });

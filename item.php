@@ -42,10 +42,10 @@ if($result === false) {
     <div class="row">
         <div class="col-md-6">
             <?php if($_GET['table']== 'clothing'):?>
-                <img class="img-responsive item-image" src="<?= $rows[0]['item_image_url']; ?>"/>
+                <img id="big-picture" class="img-responsive item-image" src="<?= $rows[0]['item_image_url']; ?>"/>
                 <div class="row thumbnails-row">
                     <div class="col-md-4 col-sm-4 col-xs-4">
-                        <img class="thumbnails img-responsive item-image" src="<?= $rows[0]['item_image_url']; ?>"/>
+                        <img class="thumbnails img-responsive item-image active" src="<?= $rows[0]['item_image_url']; ?>"/>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-4">
                         <img class="thumbnails img-responsive item-image" src="<?= $rows[0]['item_image_url_2']; ?>"/>
@@ -135,6 +135,7 @@ if($result === false) {
 
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+<script src="node_modules/angular/angular.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="build/js/main.min.js"></script>
