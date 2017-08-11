@@ -1,8 +1,10 @@
 <?php include 'configs/connect.php'; ?>
 <?php
 
+$table = $_GET['table'];
+
 // A select query. $result will be a `mysqli_result` object if successful
-$result = db_query("SELECT * FROM ".$_GET['table']." WHERE id = ".$_GET['id']);
+$result = db_query("SELECT * FROM ".$table." WHERE id = ".$_GET['id']);
 
 if($result === false) {
     // Handle failure - log the error, notify administrator, etc.
@@ -39,6 +41,7 @@ if($result === false) {
 </head>
 <body class="item">
 <div class="container">
+
     <div class="row">
         <div class="col-md-6">
             <?php if($_GET['table']== 'clothing'):?>
@@ -68,7 +71,7 @@ if($result === false) {
                 <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
                     <input type="hidden" name="cmd" value="_s-xclick">
                     <input type="hidden" name="hosted_button_id" value="<?= $rows[0]['button_id']; ?>">
-                    <table>
+                    <table class="sizes-select">
                         <tr><td><input type="hidden" name="on0" value="Sizes">Sizes</td></tr><tr><td><select name="os0">
                                     <option value="Small">Small £50.00 GBP</option>
                                     <option value="Medium">Medium £70.00 GBP</option>
@@ -84,7 +87,7 @@ if($result === false) {
             <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
                 <input type="hidden" name="cmd" value="_s-xclick">
                 <input type="hidden" name="hosted_button_id" value="<?= $rows[0]['button_id']; ?>">
-                <table>
+                <table class="sizes-select">
                     <tr><td><input type="hidden" name="on0" value="Sizes">Sizes</td></tr><tr><td><select name="os0">
                                 <option value="Small">Small </option>
                                 <option value="Medium">Medium </option>
@@ -94,6 +97,49 @@ if($result === false) {
                 <input type="image" src="http://lntlondon.com/img/add-to-cart.jpg" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
                 <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
             </form>
+            <?php endif ?>
+            <?php if(isset($table) && $table == 'clothing'):?>
+            <p data-toggle="collapse" data-target="#details" class="info text-left">DETAILS</p>
+                <?php if($rows[0]['clothing_type'] == 'top'):?>
+                    <ul class="collapse text-left" id="details">
+                        <li>100% silk</li>
+                        <li>made in England</li>
+                        <li>dry clean only</li>
+                    </ul>
+
+                <?php else: ?>
+                    <ul class="collapse text-left" id="details">
+                        <li> 70% polyvinyl chloride, 20% polyurethane and 10% cotton</li>
+                        <li>made in England</li>
+                        <li>hand wash only</li>
+                    </ul>
+                <?php endif ?>
+            <p data-toggle="collapse" data-target="#size" class="text-left info">SIZE & FIT</p>
+            <?php if($rows[0]['clothing_type'] == 'top'):?>
+                    <ul class="collapse text-left" id="size">
+                        <li> Loose fit</li>
+                        <li>Model is UK size 8. height
+                            174cm/5’7” and wears a
+                            size small</li>
+                    </ul>
+
+            <?php else: ?>
+                 <ul class="collapse text-left" id="size">
+                     <li>Model is UK size 8. height
+                         174cm/5’7” and wears a
+                         size small
+                     </li>
+                 </ul>
+                <?php endif ?>
+            <p data-toggle="collapse" data-target="#delivery" class="text-left info">DELIVERY & RETURNS</p>
+            <ul id="delivery" class="text-left collapse">
+                <li>Standard UK delivery: Free</li>
+                <li>Standard Ireland delivery charge: £5</li>
+                <li>European delivery charge: £10</li>
+                <li>Rest of World delivery charge: £15</li>
+                <li>Your order will be dispatched within 1-14 days depending on your order</li>
+                <li>Returns and exchanges are accepted within 14 days - see our full policy here.</li>
+            </ul>
             <?php endif ?>
         </div>
       </div>
