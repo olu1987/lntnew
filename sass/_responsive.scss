@@ -38,7 +38,7 @@
   #slideshow .home-bg{
     background-position: center;
     width: 105%;
-    height: 800px;
+    //height: 800px;
   }
   .prints{
     .bg{
@@ -53,7 +53,7 @@
 
 @media (max-width:1200px) {
   .overlay{
-    padding-top: 38px;
+    padding-top: 0;
 
   }
 

@@ -523,8 +523,7 @@ footer.row {
     top: 75px; }
   #slideshow .home-bg {
     background-position: center;
-    width: 105%;
-    height: 800px; }
+    width: 105%; }
   .prints .bg {
     height: 800px; }
   .accessories .slideshow-wrapper {
@@ -532,7 +531,7 @@ footer.row {
 
 @media (max-width: 1200px) {
   .overlay {
-    padding-top: 38px; } }
+    padding-top: 0; } }
 
 @media (max-width: 767px) {
   .contact .form-col {

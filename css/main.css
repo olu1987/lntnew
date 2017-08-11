@@ -410,7 +410,7 @@ footer.row {
   #slideshow .home-bg {
     background-position: center;
     width: 105%;
-    height: 800px; }
+    /*height: 800px;*/ }
   .prints .bg {
     height: 800px; }
   .accessories .slideshow-wrapper {
