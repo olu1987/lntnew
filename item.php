@@ -55,7 +55,7 @@ if($result === false) {
                     </div>
                 </div>
             <?php else: ?>
-                <img class="img-responsive item-image" src="<?= $rows[0][$image]; ?>"/>
+                <img class="img-responsive item-image" src="<?= $rows[0]['item_image_url']; ?>"/>
             <?php endif; ?>
         </div>
         <div class="col-md-6 text-center item-details">
