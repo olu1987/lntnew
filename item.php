@@ -131,6 +131,7 @@ if($result === false) {
                      </li>
                  </ul>
                 <?php endif ?>
+            <?php endif ?>
             <p data-toggle="collapse" data-target="#delivery" class="text-left info">DELIVERY & RETURNS</p>
             <ul id="delivery" class="text-left collapse">
                 <li>Standard UK delivery: Free</li>
@@ -140,7 +141,7 @@ if($result === false) {
                 <li>Your order will be dispatched within 1-14 days depending on your order</li>
                 <li>Returns and exchanges are accepted within 14 days - see our full policy here.</li>
             </ul>
-            <?php endif ?>
+
         </div>
       </div>
     </div>
