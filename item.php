@@ -14,15 +14,9 @@ if($result === false) {
     }
 }
 
-if($_GET['table'] == 'clothing'){
 
-    $image = 'item_image_url_2';
 
-}else{
 
-    $image = 'item_image_url';
-
-}
 
 ?>
 <!doctype html>
@@ -47,7 +41,22 @@ if($_GET['table'] == 'clothing'){
 <div class="container">
     <div class="row">
         <div class="col-md-6">
-            <img class="img-responsive item-image" src="<?= $rows[0][$image]; ?>"/>
+            <?php if($_GET['table']== 'clothing'):?>
+                <img class="img-responsive item-image" src="<?= $rows[0]['item_image_url']; ?>"/>
+                <div class="row thumbnails-row">
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <img class="thumbnails img-responsive item-image" src="<?= $rows[0]['item_image_url']; ?>"/>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <img class="thumbnails img-responsive item-image" src="<?= $rows[0]['item_image_url_2']; ?>"/>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <img class="thumbnails img-responsive item-image" src="<?= $rows[0]['item_image_url_3']; ?>"/>
+                    </div>
+                </div>
+            <?php else: ?>
+                <img class="img-responsive item-image" src="<?= $rows[0][$image]; ?>"/>
+            <?php endif; ?>
         </div>
         <div class="col-md-6 text-center item-details">
             <h1><strong><span class="left-dot">.</span><?= $rows[0]['item_name']; ?><span class="right-dot">.</span></strong></h1>

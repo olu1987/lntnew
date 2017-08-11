@@ -49,6 +49,7 @@
   .accessories .slideshow-wrapper{
     height:800px;
   }
+
 }
 
 @media (max-width:1200px) {
@@ -85,14 +86,17 @@
     }
   }
 
-
-
-
-
 }
 
 @media (max-width: 488px) {
   .clothing-item-wrap {
     height: 312px;
   }
+}
+
+@media (max-width: 391px) {
+  .thumbnails-row {
+    width: 100%;
+  }
+
 }

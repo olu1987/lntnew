@@ -279,7 +279,7 @@ footer.row{
 }
 
 .item-image{
-  max-height:90vh;
+  max-height:70vh;
   margin: 0 auto;
 
 }
@@ -347,3 +347,17 @@ footer.row{
   max-height:350px;
 }
 
+.thumbnails-row{
+  display: block;
+  margin: 0 auto;
+  width: 346px;
+  padding-top: 10px;
+  .col-md-4{
+    padding: 0;
+  }
+}
+.thumbnails{
+  max-height: 30vh;
+  display: inline-block;
+  padding: 0 10px;
+}

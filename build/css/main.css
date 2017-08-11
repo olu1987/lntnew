@@ -422,7 +422,7 @@ footer.row {
     background: url("../../img/best-beauty.jpg") center no-repeat; }
 
 .item-image {
-  max-height: 90vh;
+  max-height: 70vh;
   margin: 0 auto; }
 
 .item-details .left-dot {
@@ -473,6 +473,19 @@ footer.row {
 
 .clothing-item-wrap {
   max-height: 350px; }
+
+.thumbnails-row {
+  display: block;
+  margin: 0 auto;
+  width: 346px;
+  padding-top: 10px; }
+  .thumbnails-row .col-md-4 {
+    padding: 0; }
+
+.thumbnails {
+  max-height: 30vh;
+  display: inline-block;
+  padding: 0 10px; }
 
 #myCarousel {
   width: 100%;
@@ -551,5 +564,9 @@ footer.row {
 @media (max-width: 488px) {
   .clothing-item-wrap {
     height: 312px; } }
+
+@media (max-width: 391px) {
+  .thumbnails-row {
+    width: 100%; } }
 
 /*# sourceMappingURL=../sass */
