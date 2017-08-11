@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e81e76d-29a7-44ca-98b8-42ba4e083cb8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_styles.scss" afterPath="$PROJECT_DIR$/sass/_styles.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/item.php" afterPath="$PROJECT_DIR$/item.php" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,7 +65,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_styles.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_styles.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/_styles.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="114">
@@ -85,13 +85,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="item.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="item.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/item.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="47" column="79" lean-forward="false" selection-start-line="47" selection-start-column="79" selection-end-line="47" selection-end-column="79" />
+            <state relative-caret-position="80">
+              <caret line="69" column="101" lean-forward="false" selection-start-line="69" selection-start-column="101" selection-end-line="69" selection-end-column="101" />
               <folding>
-                <marker date="1502451169040" expanded="true" signature="141:185" ph="SELECT * FRO... ${$_GET['table']}" />
+                <marker date="1502452808868" expanded="true" signature="141:185" ph="SELECT * FRO... ${$_GET['table']}" />
+                <marker date="1502452808868" expanded="true" signature="11080:11270" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -160,8 +161,8 @@
       <find>.overlay</find>
       <find>991</find>
       <find>thumbnails-row</find>
-      <find>item-</find>
       <find>h1</find>
+      <find>item-</find>
     </findStrings>
     <replaceStrings>
       <replace>sm</replace>
@@ -213,8 +214,8 @@
         <option value="$PROJECT_DIR$/sass/_responsive.scss" />
         <option value="$PROJECT_DIR$/js/clothing/ClothingController.js" />
         <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/item.php" />
         <option value="$PROJECT_DIR$/sass/_styles.scss" />
+        <option value="$PROJECT_DIR$/item.php" />
       </list>
     </option>
   </component>
@@ -420,12 +421,12 @@
       <workItem from="1494108823619" duration="692000" />
       <workItem from="1502114874792" duration="64000" />
       <workItem from="1502116369820" duration="76380000" />
-      <workItem from="1502438458749" duration="5824000" />
+      <workItem from="1502438458749" duration="6586000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="256799000" />
+    <option name="totallyTimeSpent" value="257561000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
@@ -850,21 +851,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/item.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="47" column="79" lean-forward="false" selection-start-line="47" selection-start-column="79" selection-end-line="47" selection-end-column="79" />
-          <folding>
-            <marker date="1502451169040" expanded="true" signature="141:185" ph="SELECT * FRO... ${$_GET['table']}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sass/_styles.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="352" column="12" lean-forward="false" selection-start-line="352" selection-start-column="12" selection-end-line="352" selection-end-column="12" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/item.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="69" column="101" lean-forward="false" selection-start-line="69" selection-start-column="101" selection-end-line="69" selection-end-column="101" />
+          <folding>
+            <marker date="1502452808868" expanded="true" signature="141:185" ph="SELECT * FRO... ${$_GET['table']}" />
+            <marker date="1502452808868" expanded="true" signature="11080:11270" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>

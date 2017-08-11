@@ -64,6 +64,28 @@ if($result === false) {
             <p class="price">£<?= $rows[0]['item_price']; ?></p>
             <p class="text-left description"><?= $rows[0]['item_description']; ?></p>
             <hr>
+            <?php if($_GET['table'] == 'prints'): ?>
+                <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="<?= $rows[0]['button_id']; ?>">
+                    <table>
+                        <tr><td><input type="hidden" name="on0" value="Sizes">Sizes</td></tr><tr><td><select name="os0">
+                                    <option value="Small">Small £50.00 GBP</option>
+                                    <option value="Medium">Medium £70.00 GBP</option>
+                                    <option value="Large">Large £130.00 GBP</option>
+                                </select> </td></tr>
+                        <tr><td><input type="hidden" name="on1" value="Sizes">Sizes</td></tr><tr><td><select name="os1">
+                                    <option value="Small">Small </option>
+                                    <option value="Medium">Medium </option>
+                                    <option value="Large">Large </option>
+                                </select> </td></tr>
+                    </table>
+                    <input type="hidden" name="currency_code" value="GBP">
+                    <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                </form>
+
+            <?php else: ?>
             <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
                 <input type="hidden" name="cmd" value="_s-xclick">
                 <input type="hidden" name="hosted_button_id" value="<?= $rows[0]['button_id']; ?>">
@@ -77,6 +99,7 @@ if($result === false) {
                 <input type="image" src="http://lntlondon.com/img/add-to-cart.jpg" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
                 <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
             </form>
+            <?php endif ?>
         </div>
       </div>
     </div>
