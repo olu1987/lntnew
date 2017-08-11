@@ -74,11 +74,6 @@ if($result === false) {
                                     <option value="Medium">Medium £70.00 GBP</option>
                                     <option value="Large">Large £130.00 GBP</option>
                                 </select> </td></tr>
-                        <tr><td><input type="hidden" name="on1" value="Sizes">Sizes</td></tr><tr><td><select name="os1">
-                                    <option value="Small">Small </option>
-                                    <option value="Medium">Medium </option>
-                                    <option value="Large">Large </option>
-                                </select> </td></tr>
                     </table>
                     <input type="hidden" name="currency_code" value="GBP">
                     <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
