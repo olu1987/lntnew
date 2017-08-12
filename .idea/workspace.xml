@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e81e76d-29a7-44ca-98b8-42ba4e083cb8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/css/main.css" afterPath="$PROJECT_DIR$/build/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/item.php" afterPath="$PROJECT_DIR$/item.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_styles.scss" afterPath="$PROJECT_DIR$/sass/_styles.scss" />
@@ -47,8 +46,8 @@
       <file leaf-file-name="_styles.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/_styles.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="424" column="16" lean-forward="false" selection-start-line="424" selection-start-column="16" selection-end-line="424" selection-end-column="16" />
+            <state relative-caret-position="157">
+              <caret line="425" column="15" lean-forward="false" selection-start-line="425" selection-start-column="15" selection-end-line="425" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -69,11 +68,11 @@
       <file leaf-file-name="item.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/item.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="159" column="97" lean-forward="false" selection-start-line="159" selection-start-column="97" selection-end-line="159" selection-end-column="97" />
+            <state relative-caret-position="97">
+              <caret line="158" column="105" lean-forward="false" selection-start-line="158" selection-start-column="105" selection-end-line="158" selection-end-column="105" />
               <folding>
-                <marker date="1502543035776" expanded="true" signature="167:203" ph="SELECT * FRO... ${$_GET['table']}" />
-                <marker date="1502543035776" expanded="true" signature="15033:15223" ph="{...}" />
+                <marker date="1502543327777" expanded="true" signature="167:203" ph="SELECT * FRO... ${$_GET['table']}" />
+                <marker date="1502543327777" expanded="true" signature="15033:15223" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -458,12 +457,12 @@
       <workItem from="1502114874792" duration="64000" />
       <workItem from="1502116369820" duration="76380000" />
       <workItem from="1502438458749" duration="8353000" />
-      <workItem from="1502478823506" duration="25302000" />
+      <workItem from="1502478823506" duration="25595000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="284630000" />
+    <option name="totallyTimeSpent" value="284923000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -969,19 +968,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/_styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="424" column="16" lean-forward="false" selection-start-line="424" selection-start-column="16" selection-end-line="424" selection-end-column="16" />
+        <state relative-caret-position="157">
+          <caret line="425" column="15" lean-forward="false" selection-start-line="425" selection-start-column="15" selection-end-line="425" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/item.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="159" column="97" lean-forward="false" selection-start-line="159" selection-start-column="97" selection-end-line="159" selection-end-column="97" />
+        <state relative-caret-position="97">
+          <caret line="158" column="105" lean-forward="false" selection-start-line="158" selection-start-column="105" selection-end-line="158" selection-end-column="105" />
           <folding>
-            <marker date="1502543035776" expanded="true" signature="167:203" ph="SELECT * FRO... ${$_GET['table']}" />
-            <marker date="1502543035776" expanded="true" signature="15033:15223" ph="{...}" />
+            <marker date="1502543327777" expanded="true" signature="167:203" ph="SELECT * FRO... ${$_GET['table']}" />
+            <marker date="1502543327777" expanded="true" signature="15033:15223" ph="{...}" />
           </folding>
         </state>
       </provider>

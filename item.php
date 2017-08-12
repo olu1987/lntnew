@@ -156,7 +156,7 @@ if($result === false) {
 
                     </div>
                 </div>
-                <input class="add-to-cart-btn" type="image" src="http://lntlondon.com/img/add-to-cart.png" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                <input class="add-to-cart-btn" type="image" src="http://lntlondon.com/img/add-to-cart.jpg" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
                 <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
             </form>
             <?php endif ?>

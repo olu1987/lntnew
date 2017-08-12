@@ -530,7 +530,8 @@ footer.row {
     transform: scale(1.1); }
 
 .add-to-cart-btn {
-  margin-top: 15px; }
+  margin-top: 15px;
+  width: 164px; }
 
 #myCarousel {
   width: 100%;
