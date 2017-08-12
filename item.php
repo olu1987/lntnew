@@ -160,7 +160,7 @@ if($result === false) {
                 <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
             </form>
             <?php endif ?>
-
+            <a href="<?= $table ?>">back to <?= $table ?></a>
         </div>
       </div>
     </div>
