@@ -518,7 +518,10 @@ footer.row {
 
 .size-link-wrap {
   width: 100%;
-  text-align: right; }
+  text-align: right;
+  transition: 300ms; }
+  .size-link-wrap:hover {
+    transform: scale(1.1); }
 
 .col-sm-6.print {
   height: 400px;
