@@ -268,7 +268,7 @@ html, body {
     background: #000; }
     .navigation ul li {
       display: inline-block;
-      padding: 10px 0px 10px 52px; }
+      padding: 10px 0px 10px 70px; }
       .navigation ul li a {
         color: #ffffff;
         text-decoration: none;
@@ -459,8 +459,8 @@ footer.row {
 
 .item-bag-wrap {
   height: 21px;
-  margin-right: 0;
   margin-bottom: -2px;
+  margin-right: 45px;
   display: inline-block; }
   .item-bag-wrap .item-bag {
     height: 21px;
@@ -587,8 +587,6 @@ footer.row {
     background-position: center;
     width: 105%; }
   .prints .bg {
-    height: 800px; }
-  .accessories .slideshow-wrapper {
     height: 800px; } }
 
 @media (max-width: 1200px) {
