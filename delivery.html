@@ -1,9 +1,9 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="" ng-app="store">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>HOME | LNT LONDON</title>
+    <title>PRINTS | LNT LONDON</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,23 +16,8 @@
     <link rel="stylesheet" href="build/css/main.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
-<body class="home">
-<div class="slideshow-wrapper">
-    <div id="slideshow" class="container-fluid">
-
-        <div class="row home-bg pic-one">
-        </div>
-        <div class="row home-bg pic-two">
-        </div>
-        <div class="row home-bg pic-three">
-        </div>
-    </div>
-    <!--[if lt IE 8]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
-    <!-- Add your site or application content here -->
-    <div class="navigation text-center">
+<body class="delivery-terms sticky-nav-page">
+    <div class="navbar navbar-default navigation text-center">
         <ul class="list-inline text-right toggle-button">
             <li><a data-toggle="collapse" data-target="#nav" class="btn fa fa-bars"></a></li>
         </ul>
@@ -48,7 +33,7 @@
                     <input type="hidden" name="cmd" value="_s-xclick">
                     <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
 ">
-                    <input class="item-bag" style="height: 21px" type="image" src="img/view-bag.png" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                    <input class="item-bag" type="image" src="img/view-bag.png" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
                     <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
                 </form>
                 <a target="_blank" href="https://en-gb.facebook.com/lntlondon/"><i class="fa fa-facebook"></i></a>
@@ -57,7 +42,109 @@
             </li>
         </ul>
     </div>
+
+
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+<div class="container content">
+    <div class="col-md-12">
+        <h3>Returns & Exchanges</h3>
+
+        <h4>Returns</h4>
+
+        <p>
+            If for any reason you are not completely satisfied with your online purchase and wish to return it for a full refund,
+            please ensure that the goods are returned in perfect saleable condition, in their original packaging, and with
+            invoice as proof of purchase within 14 days of receipt to:
+        </p>
+
+
+        <address>
+            LNT London<br>
+            65 John Barnes Walk<br>
+            London<br>
+            E15 4SY
+        </address>
+
+        <p>Our policy lasts 14 days. If 14 days have gone by since you received your purchase, unfortunately we can’t offer
+        you a refund or exchange (except for Christmas gifts where the period is extended to 15th January as above).
+        </p>
+
+        <p>To be eligible for a return, your item must be unused and in the same condition that you received it. It must also
+        be in the original packaging.
+        </p>
+
+        <p>
+        To complete your return, we require a receipt or proof of purchase.
+        </p>
+
+
+        <h4>Refunds</h4>
+
+        <p>
+            Once your return is received and inspected, we will send you an email to notify you that we have received your returned
+            item. We will also notify you of the approval or rejection of your refund.
+        </p>
+
+
+        <p>
+            If you are approved, then your refund will be processed, and a credit will automatically be applied to your credit
+            card or original method of payment, within 14 days.
+        </p>
+
+
+        <h4>
+            Late or missing refunds
+        </h4>
+
+
+        <p>
+            If you haven’t received a refund yet, first check your bank account again.
+            Then contact your credit card company, it may take some time before your refund is officially posted.
+            Next contact your bank. There is often some processing time before a refund is posted.
+            If you’ve done all of this and you still have not received your refund yet, please contact us at sales@lntlondon.com
+
+        </p>
+
+        <h4>
+            Exchanges
+        </h4>
+
+
+        <p>
+            If you need to exchange you purchase for the same item or something of equivalent value, please send us an email at sales@lntlondon.com and send your item to: LNT London, 65 John Barnes Walk, London, E15 4SY.
+        </p>
+
+
+        <h4>
+            Shipping
+        </h4>
+
+        <p>
+            To return your product, you should mail your product to: LNT London, 65 John Barnes Walk, London, E15 4SY.
+            You will be responsible for paying for your own shipping costs for returning your item. Shipping costs
+            are non-refundable. If you receive a refund, the cost of return shipping will be deducted from your refund.
+        </p>
+
+
+        <p>
+            Depending on where you live, the time it may take for your exchanged product to reach you, may vary.
+        </p>
+
+        <p>
+            The cost of returning the goods and the safe return of goods is your responsibility until the order is received
+            at our returns depot; therefore we suggest you arranged a tracked or recorded delivery service. For high-value
+            items we recommend you insure the costs of goods before you send them. We will issue a full refund to the card
+            used when placing the order once the return has been processed. Please allow up to 10-15 days for a full refund
+            from date of receipt of goods.
+        </p>
+    </div>
+
 </div>
+
 
 <div class="container-fluid">
     <footer class="row">
@@ -68,7 +155,6 @@
                 <li><a href="#">. SITEMAP .</a></li>
                 <li><a href="contact">. CONTACT .</a></li>
                 <li class="social">
-
                     <a target="_blank" href="https://en-gb.facebook.com/lntlondon/"><i class="fa fa-facebook"></i></a>
                     <a target="_blank" href="https://twitter.com/LNTLondon"><i class="fa fa-twitter"></i></a>
                     <a target="_blank" href="https://www.instagram.com/lntlondon/?hl=en"><i class="fa fa-instagram"></i></a>
@@ -81,9 +167,10 @@
 
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+<script src="node_modules/angular/angular.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
+<script src="build/js/main.min.js"></script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>

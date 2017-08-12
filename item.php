@@ -139,7 +139,7 @@ if($result === false) {
                 <li>European delivery charge: £10</li>
                 <li>Rest of World delivery charge: £15</li>
                 <li>Your order will be dispatched within 1-14 days depending on your order</li>
-                <li>Returns and exchanges are accepted within 14 days - see our full policy here.</li>
+                <li>Returns and exchanges are accepted within 14 days - see our full policy <a href="delivery"><strong>here</strong></a>.</li>
             </ul>
 
         </div>
@@ -158,11 +158,11 @@ if($result === false) {
     </ul>
     <ul id="nav" class="list-inline collapse">
         <li><a href="index.html">. LNT . LONDON .</a></li>
-        <li><a href="about.html">. ABOUT .</a></li>
-        <li><a href="prints.html">. PRINTS .</a></li>
-        <li><a href="accessories.html">. ACCESSORIES .</a></li>
-        <li><a href="clothing.html">. CLOTHING .</a></li>
-        <li><a href="contact.html">. CONTACT .</a></li>
+        <li><a href="about">. ABOUT .</a></li>
+        <li><a href="prints">. PRINTS .</a></li>
+        <li><a href="accessories">. ACCESSORIES .</a></li>
+        <li><a href="clothing">. CLOTHING .</a></li>
+        <li><a href="contact">. CONTACT .</a></li>
         <li class="social">
                 <form class="item-bag-wrap" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
                     <input type="hidden" name="cmd" value="_s-xclick">
@@ -184,9 +184,9 @@ if($result === false) {
         <div class="col-md-12">
             <ul>
                 <li><a href="index.html">. LNT . LONDON .</a></li>
-                <li><a href="about.html">. ABOUT .</a></li>
+                <li><a href="about">. ABOUT .</a></li>
                 <li><a href="#">. SITEMAP .</a></li>
-                <li><a href="contact.html">. CONTACT .</a></li>
+                <li><a href="contact">. CONTACT .</a></li>
                 <li class="social">
                     <a target="_blank" href="https://en-gb.facebook.com/lntlondon/"><i class="fa fa-facebook"></i></a>
                     <a target="_blank" href="https://twitter.com/LNTLondon"><i class="fa fa-twitter"></i></a>

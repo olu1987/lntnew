@@ -238,7 +238,7 @@ footer.row{
   height:100px;
 }
 
-.blog,.item{
+.blog,.item,.delivery-terms{
   .container{
     padding-top: 100px;
   }
@@ -383,5 +383,11 @@ footer.row{
 
 .info{
   cursor: pointer;
+}
+
+.delivery-terms .content{
+
+  font-family: SansSerif,Calibri, "Arial Black";
+
 }
 

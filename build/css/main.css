@@ -391,10 +391,10 @@ footer.row {
 .title-wrap {
   height: 100px; }
 
-.blog .container, .item .container {
+.blog .container, .item .container, .delivery-terms .container {
   padding-top: 100px; }
 
-.blog .navigation, .item .navigation {
+.blog .navigation, .item .navigation, .delivery-terms .navigation {
   top: 0; }
 
 .blog-promo-bg {
@@ -503,6 +503,9 @@ footer.row {
 
 .info {
   cursor: pointer; }
+
+.delivery-terms .content {
+  font-family: SansSerif,Calibri, "Arial Black"; }
 
 #myCarousel {
   width: 100%;
