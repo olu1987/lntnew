@@ -472,7 +472,7 @@ footer.row {
   height: 100vh; }
 
 .clothing-item-wrap {
-  max-height: 400px;
+  height: 440px;
   transition: 300ms; }
   .clothing-item-wrap:hover {
     transform: scale(1.1); }
@@ -612,12 +612,10 @@ footer.row {
   .col-sm-6.print {
     height: 250px; } }
 
-@media (max-width: 488px) {
-  .clothing-item-wrap {
-    height: 312px; } }
-
 @media (max-width: 391px) {
   .thumbnails-row {
-    width: 100%; } }
+    width: 100%; }
+  .clothing-item-wrap {
+    height: 312px; } }
 
 /*# sourceMappingURL=../sass */
