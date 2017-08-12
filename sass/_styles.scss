@@ -20,19 +20,19 @@ html, body{
 }
 
 .pic-one{
-  background: url('../../img/white-top-stairs-doorway-1.jpeg') center no-repeat;
+  background: url('../../img/header-blue-door.jpg') top no-repeat;
   background-size: cover;
 }
 
 .pic-two{
-  background: url('../../img/stairs-smoulder-opt.jpg') center no-repeat;
+  background: url('../../img/white-top-stairs-doorway-1.jpeg') top no-repeat;
   background-size: cover;
 }
 
 .pic-three{
-  background: url('../../img/doorway-blackskirt.jpg') center no-repeat;
+  background: url('../../img/doorway-blackskirt.jpg') top no-repeat;
   background-size: cover;
-  background-position: 0 -100px;
+  background-position: 0 -50px;
 }
 
 .accessories, .clothing{
@@ -41,12 +41,14 @@ html, body{
     background-size: cover;
   }
   .pic-two{
-    background: url('../../img/scarf-green-stairs-opt.jpg') center no-repeat;
+    background: url('../../img/scarf-green-stairs-opt.jpg')  no-repeat;
     background-size: cover;
+    background-position-y:-39px;
   }
   .pic-three{
     background: url('../../img/white-balcony-scarf-opt.jpg') center no-repeat;
     background-size: cover;
+    
   }
 }
 
