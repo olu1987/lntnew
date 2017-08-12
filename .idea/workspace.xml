@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e81e76d-29a7-44ca-98b8-42ba4e083cb8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/js/main.min.js" afterPath="$PROJECT_DIR$/build/js/main.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/item.php" afterPath="$PROJECT_DIR$/item.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clothing.html" afterPath="$PROJECT_DIR$/clothing.html" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,7 +41,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="item.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="item.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/item.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="131">
@@ -89,6 +85,18 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="prints.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/prints.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="100" column="16" lean-forward="true" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="16" />
+              <folding>
+                <element signature="e#8245#8252#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="PrintsFilter.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/prints/PrintsFilter.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -109,23 +117,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="accessories.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accessories.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="75" column="46" lean-forward="false" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="clothing.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="clothing.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/clothing.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="61">
-              <caret line="75" column="46" lean-forward="false" selection-start-line="75" selection-start-column="46" selection-end-line="75" selection-end-column="46" />
+            <state relative-caret-position="129">
+              <caret line="100" column="81" lean-forward="false" selection-start-line="100" selection-start-column="81" selection-end-line="100" selection-end-column="81" />
               <folding>
-                <element signature="e#8106#8113#0" expanded="true" />
+                <element signature="e#8188#8195#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -219,8 +217,6 @@
         <option value="$PROJECT_DIR$/getdata.php" />
         <option value="$PROJECT_DIR$/about.html" />
         <option value="$PROJECT_DIR$/accessories.html" />
-        <option value="$PROJECT_DIR$/prints.html" />
-        <option value="$PROJECT_DIR$/clothing.html" />
         <option value="$PROJECT_DIR$/sass/_responsive.scss" />
         <option value="$PROJECT_DIR$/sass/_styles.scss" />
         <option value="$PROJECT_DIR$/js/prints/PrintsService.js" />
@@ -229,6 +225,8 @@
         <option value="$PROJECT_DIR$/js/prints/PrintsController.js" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/item.php" />
+        <option value="$PROJECT_DIR$/prints.html" />
+        <option value="$PROJECT_DIR$/clothing.html" />
       </list>
     </option>
   </component>
@@ -472,12 +470,12 @@
       <workItem from="1502114874792" duration="64000" />
       <workItem from="1502116369820" duration="76380000" />
       <workItem from="1502438458749" duration="8353000" />
-      <workItem from="1502478823506" duration="34704000" />
+      <workItem from="1502478823506" duration="35157000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="294032000" />
+    <option name="totallyTimeSpent" value="294485000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -903,31 +901,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/prints.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="73" column="46" lean-forward="false" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
-          <folding>
-            <element signature="e#8245#8252#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/accessories.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
           <caret line="75" column="46" lean-forward="false" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="46" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clothing.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="75" column="46" lean-forward="false" selection-start-line="75" selection-start-column="46" selection-end-line="75" selection-end-column="46" />
-          <folding>
-            <element signature="e#8106#8113#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -995,6 +973,26 @@
             <marker date="1502561809055" expanded="true" signature="167:203" ph="SELECT * FRO... ${$_GET['table']}" />
             <marker date="1502561809055" expanded="true" signature="9185:9205" ph="..." />
             <marker date="1502561809055" expanded="true" signature="15159:15349" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prints.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="100" column="16" lean-forward="true" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="16" />
+          <folding>
+            <element signature="e#8245#8252#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clothing.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="100" column="81" lean-forward="false" selection-start-line="100" selection-start-column="81" selection-end-line="100" selection-end-column="81" />
+          <folding>
+            <element signature="e#8188#8195#0" expanded="true" />
           </folding>
         </state>
       </provider>
