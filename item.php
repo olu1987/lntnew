@@ -71,13 +71,20 @@ if($result === false) {
                 <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
                     <input type="hidden" name="cmd" value="_s-xclick">
                     <input type="hidden" name="hosted_button_id" value="<?= $rows[0]['button_id']; ?>">
-                    <table class="sizes-select">
-                        <tr><td><input type="hidden" name="on0" value="Sizes">Sizes</td></tr><tr><td><select name="os0">
-                                    <option value="Small">Small £50.00 GBP</option>
-                                    <option value="Medium">Medium £70.00 GBP</option>
-                                    <option value="Large">Large £130.00 GBP</option>
-                                </select> </td></tr>
-                    </table>
+                        <table class="sizes-select">
+                            <tr><td class="text-left"><input type="hidden" name="on0" value="Sizes">Sizes</td></tr><tr><td><select name="os0">
+                                        <option value="Small">Small £50.00 GBP</option>
+                                        <option value="Medium">Medium £70.00 GBP</option>
+                                        <option value="Large">Large £130.00 GBP</option>
+                                    </select>
+                                </td>
+                                <?php if($_GET['table'] != 'accessories'): ?>
+                                <td class="size-link-wrap">
+                                    <a class="size-link" data-toggle="modal" data-target="#myModal">SIZE GUIDE</a>
+                                </td>
+                                <?php endif ?>
+                            </tr>
+                        </table>
                     <input type="hidden" name="currency_code" value="GBP">
                     <input type="image" src="http://lntlondon.com/img/add-to-cart.jpg" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
                     <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
@@ -87,13 +94,25 @@ if($result === false) {
             <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
                 <input type="hidden" name="cmd" value="_s-xclick">
                 <input type="hidden" name="hosted_button_id" value="<?= $rows[0]['button_id']; ?>">
-                <table class="sizes-select">
-                    <tr><td><input type="hidden" name="on0" value="Sizes">Sizes</td></tr><tr><td><select name="os0">
-                                <option value="Small">Small </option>
-                                <option value="Medium">Medium </option>
-                                <option value="Large">Large </option>
-                            </select> </td></tr>
-                </table>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <table class="sizes-select">
+                            <tr><td class="text-left" colspan="2"><input  type="hidden" name="on0" value="Sizes">Sizes</td></tr><tr><td>
+                                    <select name="os0">
+                                        <option value="Small">Small </option>
+                                        <option value="Medium">Medium </option>
+                                        <option value="Large">Large </option>
+                                    </select> </td>
+                          <?php if($_GET['table'] != 'accessories'): ?>
+                                <td class="size-link-wrap">
+                                    <a class="size-link" data-toggle="modal" data-target="#myModal">SIZE GUIDE</a>
+                                </td>
+                          <?php endif; ?>
+                            </tr>
+                        </table>
+
+                    </div>
+                </div>
                 <input type="image" src="http://lntlondon.com/img/add-to-cart.jpg" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
                 <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
             </form>
@@ -195,6 +214,15 @@ if($result === false) {
             </ul>
         </div>
     </footer>
+</div>
+<div id="myModal" class="modal fade size-modal" role="dialog">
+    <div class="modal-dialog">
+        <?php if($_GET['table'] == 'prints'): ?>
+        <img class="img-responsive" src="img/prints-sizing.jpg"/>
+        <?php elseif ($_GET['table'] == 'clothing'): ?>
+        <img class="img-responsive" src="img/garment-sizing.jpg"/>
+        <?php endif; ?>
+    </div>
 </div>
 
 

@@ -493,19 +493,32 @@ footer.row {
     border: 1px solid gold; }
 
 .sizes-select {
-  margin: 0 auto;
   margin-bottom: 30px;
   margin-top: 42px; }
   .sizes-select select {
     width: 300px;
     margin-top: 14px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    margin-right: 24px; }
 
 .info {
   cursor: pointer; }
 
 .delivery-terms .content {
   font-family: SansSerif,Calibri, "Arial Black"; }
+
+.size-modal {
+  margin: 0 auto; }
+
+.size-link {
+  display: block;
+  margin-top: 8px;
+  cursor: pointer;
+  font-weight: 700; }
+
+.size-link-wrap {
+  width: 100%;
+  text-align: right; }
 
 #myCarousel {
   width: 100%;
@@ -579,7 +592,9 @@ footer.row {
     .accessories .slideshow-wrapper #slideshow, .prints .slideshow-wrapper #slideshow, .clothing .slideshow-wrapper #slideshow {
       height: 350px; }
       .accessories .slideshow-wrapper #slideshow .row, .prints .slideshow-wrapper #slideshow .row, .clothing .slideshow-wrapper #slideshow .row {
-        height: 350px; } }
+        height: 350px; }
+  .sizes-select select {
+    width: 150px; } }
 
 @media (max-width: 488px) {
   .clothing-item-wrap {
