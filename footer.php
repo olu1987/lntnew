@@ -32,6 +32,8 @@
                 <li><a href="about.html">. ABOUT .</a></li>
                 <li><a href="#">. SITEMAP .</a></li>
                 <li><a href="contact.html">. CONTACT .</a></li>
+                <li><a href="terms">. TERMS & CONDITIONS .</a></li>
+                <li><a href="privacy">. PRIVACY .</a></li>
                 <li class="social">
                     <a target="_blank" href="https://en-gb.facebook.com/lntlondon/"><i class="fa fa-facebook"></i></a>
                     <a target="_blank" href="https://twitter.com/LNTLondon"><i class="fa fa-twitter"></i></a>
