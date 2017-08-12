@@ -454,7 +454,7 @@ footer.row {
   margin-top: 50px; }
 
 .clothing-image {
-  max-height: 250px;
+  max-height: 300px;
   margin: 0 auto; }
 
 .item-bag-wrap {
@@ -472,7 +472,7 @@ footer.row {
   height: 100vh; }
 
 .clothing-item-wrap {
-  max-height: 350px; }
+  max-height: 400px; }
 
 .thumbnails-row {
   display: block;
@@ -521,7 +521,10 @@ footer.row {
   text-align: right; }
 
 .col-sm-6.print {
-  height: 400px; }
+  height: 400px;
+  transition: all ease-in-out 300ms; }
+  .col-sm-6.print:hover {
+    transform: scale(1.1); }
 
 #myCarousel {
   width: 100%;

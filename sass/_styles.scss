@@ -321,7 +321,7 @@ footer.row{
 }
 
 .clothing-image{
-  max-height: 250px;
+  max-height: 300px;
   margin: 0 auto;
 }
 
@@ -344,7 +344,7 @@ footer.row{
 }
 
 .clothing-item-wrap{
-  max-height:350px;
+  max-height:400px;
 }
 
 .thumbnails-row{
@@ -409,6 +409,10 @@ footer.row{
 
 .col-sm-6.print{
   height:400px;
+  transition:all ease-in-out 300ms;
+  &:hover{
+    transform: scale(1.1);
+  }
 
 }
 
