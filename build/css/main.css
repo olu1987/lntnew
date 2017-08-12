@@ -597,7 +597,9 @@ footer.row {
       .accessories .slideshow-wrapper #slideshow .row, .prints .slideshow-wrapper #slideshow .row, .clothing .slideshow-wrapper #slideshow .row {
         height: 350px; }
   .sizes-select select {
-    width: 150px; } }
+    width: 150px; }
+  .col-sm-6.print {
+    height: 250px; } }
 
 @media (max-width: 488px) {
   .clothing-item-wrap {
