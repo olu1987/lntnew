@@ -389,7 +389,6 @@ footer.row {
   display: block; }
 
 .contact-bg {
-  background: url("../img/contact-background.jpg") center no-repeat;
   background-size: cover;
   height: 100vh; }
 

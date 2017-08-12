@@ -35,8 +35,8 @@
       <file leaf-file-name="_styles.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/_styles.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="94" column="33" lean-forward="false" selection-start-line="94" selection-start-column="33" selection-end-line="94" selection-end-column="33" />
+            <state relative-caret-position="114">
+              <caret line="237" column="4" lean-forward="false" selection-start-line="237" selection-start-column="4" selection-end-line="237" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -141,7 +141,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>xxx</find>
       <find>access</find>
       <find>side</find>
       <find>searc</find>
@@ -171,6 +170,7 @@
       <find>sub</find>
       <find>clothing-</find>
       <find>pic</find>
+      <find>contact</find>
     </findStrings>
     <replaceStrings>
       <replace>sm</replace>
@@ -471,12 +471,12 @@
       <workItem from="1502114874792" duration="64000" />
       <workItem from="1502116369820" duration="76380000" />
       <workItem from="1502438458749" duration="8353000" />
-      <workItem from="1502478823506" duration="43840000" />
+      <workItem from="1502478823506" duration="44321000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="303168000" />
+    <option name="totallyTimeSpent" value="303649000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -992,8 +992,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/_styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="94" column="33" lean-forward="false" selection-start-line="94" selection-start-column="33" selection-end-line="94" selection-end-column="33" />
+        <state relative-caret-position="114">
+          <caret line="237" column="4" lean-forward="false" selection-start-line="237" selection-start-column="4" selection-end-line="237" selection-end-column="4" />
           <folding />
         </state>
       </provider>
