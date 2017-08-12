@@ -2,7 +2,7 @@
 <?php
 
 // A select query. $result will be a `mysqli_result` object if successful
-$result = db_query("SELECT * FROM ".$_GET['group']);
+$result = db_query("SELECT * FROM ".$_GET['group']." ORDER BY random_id" );
 
 if($result === false) {
     // Handle failure - log the error, notify administrator, etc.
