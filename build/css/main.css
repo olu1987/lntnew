@@ -520,6 +520,9 @@ footer.row {
   width: 100%;
   text-align: right; }
 
+.col-sm-6.print {
+  height: 400px; }
+
 #myCarousel {
   width: 100%;
   z-index: 11;

@@ -83,7 +83,7 @@
             </div>
         </div>
         <div class="col-md-9 col-sm-12 col-xs-12">
-            <a ng-repeat="item in items   | chooseCharacter: character.toLowerCase() | filter: searchText track by item.id" class="col-md-4 col-sm-6 col-xs-6" href="item.php?table=prints&id={{item.id}}"><div>
+            <a ng-repeat="item in items   | chooseCharacter: character.toLowerCase() | filter: searchText track by item.id" class="col-md-4 col-sm-6 col-xs-6 print" href="item.php?table=prints&id={{item.id}}"><div>
 
 
                 <img class="img-responsive" src="{{item.item_image_url}}" />
