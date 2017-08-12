@@ -472,7 +472,10 @@ footer.row {
   height: 100vh; }
 
 .clothing-item-wrap {
-  max-height: 400px; }
+  max-height: 400px;
+  transition: 300ms; }
+  .clothing-item-wrap:hover {
+    transform: scale(1.1); }
 
 .thumbnails-row {
   display: block;
@@ -518,10 +521,7 @@ footer.row {
 
 .size-link-wrap {
   width: 100%;
-  text-align: right;
-  transition: 300ms; }
-  .size-link-wrap:hover {
-    transform: scale(1.1); }
+  text-align: right; }
 
 .col-sm-6.print {
   height: 400px;

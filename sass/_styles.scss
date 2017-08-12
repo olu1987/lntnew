@@ -345,6 +345,10 @@ footer.row{
 
 .clothing-item-wrap{
   max-height:400px;
+  transition: 300ms;
+  &:hover{
+    transform: scale(1.1);
+  }
 }
 
 .thumbnails-row{
@@ -405,10 +409,7 @@ footer.row{
 .size-link-wrap{
   width: 100%;
   text-align: right;
-  transition: 300ms;
-  &:hover{
-    transform: scale(1.1);
-  }
+
 }
 
 .col-sm-6.print{
