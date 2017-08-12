@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e81e76d-29a7-44ca-98b8-42ba4e083cb8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/css/main.css" afterPath="$PROJECT_DIR$/build/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/item.php" afterPath="$PROJECT_DIR$/item.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_responsive.scss" afterPath="$PROJECT_DIR$/sass/_responsive.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_styles.scss" afterPath="$PROJECT_DIR$/sass/_styles.scss" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_responsive.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_responsive.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/_responsive.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="99" column="2" lean-forward="false" selection-start-line="99" selection-start-column="2" selection-end-line="99" selection-end-column="2" />
+            <state relative-caret-position="225">
+              <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -43,15 +43,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="item.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="item.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/item.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="65" column="45" lean-forward="false" selection-start-line="65" selection-start-column="45" selection-end-line="65" selection-end-column="45" />
+            <state relative-caret-position="191">
+              <caret line="90" column="53" lean-forward="false" selection-start-line="90" selection-start-column="53" selection-end-line="90" selection-end-column="53" />
               <folding>
-                <marker date="1502561809055" expanded="true" signature="167:203" ph="SELECT * FRO... ${$_GET['table']}" />
-                <marker date="1502561809055" expanded="true" signature="9185:9205" ph="..." />
-                <marker date="1502561809055" expanded="true" signature="15159:15349" ph="{...}" />
+                <marker date="1502565419699" expanded="true" signature="167:203" ph="SELECT * FRO... ${$_GET['table']}" />
+                <marker date="1502565419699" expanded="true" signature="10993:11013" ph="..." />
+                <marker date="1502565419699" expanded="true" signature="16967:17157" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -224,11 +224,11 @@
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/js/prints/PrintsController.js" />
         <option value="$PROJECT_DIR$/.htaccess" />
-        <option value="$PROJECT_DIR$/item.php" />
         <option value="$PROJECT_DIR$/prints.html" />
         <option value="$PROJECT_DIR$/clothing.html" />
         <option value="$PROJECT_DIR$/sass/_styles.scss" />
         <option value="$PROJECT_DIR$/sass/_responsive.scss" />
+        <option value="$PROJECT_DIR$/item.php" />
       </list>
     </option>
   </component>
@@ -472,12 +472,12 @@
       <workItem from="1502114874792" duration="64000" />
       <workItem from="1502116369820" duration="76380000" />
       <workItem from="1502438458749" duration="8353000" />
-      <workItem from="1502478823506" duration="35813000" />
+      <workItem from="1502478823506" duration="38281000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="295141000" />
+    <option name="totallyTimeSpent" value="297609000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -951,18 +951,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/item.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="65" column="45" lean-forward="false" selection-start-line="65" selection-start-column="45" selection-end-line="65" selection-end-column="45" />
-          <folding>
-            <marker date="1502561809055" expanded="true" signature="167:203" ph="SELECT * FRO... ${$_GET['table']}" />
-            <marker date="1502561809055" expanded="true" signature="9185:9205" ph="..." />
-            <marker date="1502561809055" expanded="true" signature="15159:15349" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/prints.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -993,9 +981,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/_responsive.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="99" column="2" lean-forward="false" selection-start-line="99" selection-start-column="2" selection-end-line="99" selection-end-column="2" />
+        <state relative-caret-position="225">
+          <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/item.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="90" column="53" lean-forward="false" selection-start-line="90" selection-start-column="53" selection-end-line="90" selection-end-column="53" />
+          <folding>
+            <marker date="1502565419699" expanded="true" signature="167:203" ph="SELECT * FRO... ${$_GET['table']}" />
+            <marker date="1502565419699" expanded="true" signature="10993:11013" ph="..." />
+            <marker date="1502565419699" expanded="true" signature="16967:17157" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -79,13 +79,26 @@ if($result === false) {
                                         <option value="Large">Large £130.00 GBP</option>
                                     </select>
                                 </td>
-                                <?php if($_GET['table'] != 'accessories'): ?>
                                 <td class="size-link-wrap">
                                     <a class="size-link" data-toggle="modal" data-target="#myModal">SIZE GUIDE</a>
                                 </td>
-                                <?php endif ?>
                             </tr>
                         </table>
+                <p data-toggle="collapse" data-target="#details" class="info text-left">DETAILS</p>
+                    <ul class="collapse text-left" id="details">
+                        <li>limited edition of 50</li>
+                        <li>unframed</li>
+                        <li>printed in London England</li>
+                    </ul>
+                    <p data-toggle="collapse" data-target="#delivery" class="text-left info">DELIVERY & RETURNS</p>
+                    <ul id="delivery" class="text-left collapse">
+                        <li>Standard UK delivery: Free</li>
+                        <li>Standard Ireland delivery charge: £5</li>
+                        <li>European delivery charge: £10</li>
+                        <li>Rest of World delivery charge: £15</li>
+                        <li>Your order will be dispatched within 1-14 days depending on your order</li>
+                        <li>Returns and exchanges are accepted within 14 days - see our full policy <a href="delivery"><strong>here</strong></a>.</li>
+                    </ul>
                     <input type="hidden" name="currency_code" value="GBP">
                     <input type="image" src="http://lntlondon.com/img/add-to-cart.jpg" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
                     <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
@@ -97,6 +110,7 @@ if($result === false) {
                 <input type="hidden" name="hosted_button_id" value="<?= $rows[0]['button_id']; ?>">
                 <div class="row">
                     <div class="col-md-12 col-sm-12">
+                        <?php if($_GET['table'] != 'accessories'): ?>
                         <table class="sizes-select">
                             <tr><td class="text-left" colspan="2"><input  type="hidden" name="on0" value="Sizes">Sizes</td></tr><tr><td>
                                     <select name="os0">
@@ -111,15 +125,21 @@ if($result === false) {
                           <?php endif; ?>
                             </tr>
                         </table>
-                        <?php if(isset($table) && $table == 'clothing'):?>
+                        <?php endif; ?>
+                        <?php if(isset($table) && $table == 'clothing' || isset($table) && $table == 'accessories'|| isset($table) && $table == 'prints' ):?>
                             <p data-toggle="collapse" data-target="#details" class="info text-left">DETAILS</p>
-                            <?php if($rows[0]['clothing_type'] == 'top'):?>
+                            <?php if($table == 'clothing' && $rows[0]['clothing_type'] == 'top'):?>
                                 <ul class="collapse text-left" id="details">
                                     <li>100% silk</li>
                                     <li>made in England</li>
                                     <li>dry clean only</li>
                                 </ul>
-
+                            <?php elseif(isset($table) && $table == 'accessories'): ?>
+                                <ul class="collapse text-left" id="details">
+                                    <li>100% silk</li>
+                                    <li>made in England</li>
+                                    <li>dry clean only</li>
+                                </ul>
                             <?php else: ?>
                                 <ul class="collapse text-left" id="details">
                                     <li> 70% polyvinyl chloride, 20% polyurethane and 10% cotton</li>
@@ -128,12 +148,16 @@ if($result === false) {
                                 </ul>
                             <?php endif ?>
                             <p data-toggle="collapse" data-target="#size" class="text-left info">SIZE & FIT</p>
-                            <?php if($rows[0]['clothing_type'] == 'top'):?>
+                            <?php if(($table == 'clothing') && $rows[0]['clothing_type'] == 'top'):?>
                                 <ul class="collapse text-left" id="size">
                                     <li> Loose fit</li>
                                     <li>Model is UK size 8. height
                                         174cm/5’7” and wears a
                                         size small</li>
+                                </ul>
+                                <?php elseif($table == 'accessories'):?>
+                                <ul class="collapse text-left" id="size">
+                                    <li>33cm x 33cm</li>
                                 </ul>
 
                             <?php else: ?>
