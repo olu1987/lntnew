@@ -240,17 +240,42 @@ html, body {
   background-size: cover;
   background-position: 0 -50px; }
 
-.accessories .pic-one, .clothing .pic-one {
+.accessories .pic-one {
   background: url("../../img/green-door-scarf-opt.jpg") center no-repeat;
   background-size: cover; }
 
-.accessories .pic-two, .clothing .pic-two {
+.accessories .pic-two {
   background: url("../../img/scarf-green-stairs-opt.jpg") no-repeat;
   background-size: cover;
   background-position-y: -39px; }
 
-.accessories .pic-three, .clothing .pic-three {
+.accessories .pic-three {
   background: url("../../img/white-balcony-scarf-opt.jpg") center no-repeat;
+  background-size: cover; }
+
+.clothing .pic-one {
+  background: url("../../img/header-blue-door.jpg") top no-repeat;
+  background-size: cover; }
+
+.clothing .pic-two {
+  background: url("../../img/white-top-stairs-doorway-1.jpeg") top no-repeat;
+  background-size: cover; }
+
+.clothing .pic-three {
+  background: url("../../img/doorway-blackskirt.jpg") top no-repeat;
+  background-size: cover;
+  background-position: 0 -50px; }
+
+.prints .pic-one {
+  background: url("../../img/prints3.jpg") center no-repeat;
+  background-size: cover; }
+
+.prints .pic-two {
+  background: url("../../img/prints2.jpg") no-repeat;
+  background-size: cover; }
+
+.prints .pic-three {
+  background: url("../../img/prints.jpg") center no-repeat;
   background-size: cover; }
 
 .navigation {
