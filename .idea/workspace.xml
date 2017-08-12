@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e81e76d-29a7-44ca-98b8-42ba4e083cb8" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/css/main.css" afterPath="$PROJECT_DIR$/build/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/item.php" afterPath="$PROJECT_DIR$/item.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_styles.scss" afterPath="$PROJECT_DIR$/sass/_styles.scss" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
@@ -31,49 +34,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="privacy.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/privacy.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="53" column="31" lean-forward="false" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
-              <folding>
-                <element signature="e#5441#5447#0" expanded="true" />
-                <element signature="e#5533#5540#0" expanded="true" />
-                <element signature="e#5815#5821#0" expanded="true" />
-                <element signature="e#5857#5863#0" expanded="true" />
-                <element signature="e#6372#6378#0" expanded="true" />
-                <element signature="e#6638#6644#0" expanded="true" />
-                <element signature="e#6718#6724#0" expanded="true" />
-                <element signature="e#6772#6778#0" expanded="true" />
-                <element signature="e#7002#7008#0" expanded="true" />
-                <element signature="e#7203#7209#0" expanded="true" />
-                <element signature="e#7259#7266#0" expanded="true" />
-                <element signature="e#8020#8026#0" expanded="true" />
-                <element signature="e#8227#8234#0" expanded="true" />
-                <element signature="e#8333#8339#0" expanded="true" />
-                <element signature="e#8540#8546#0" expanded="true" />
-                <element signature="e#9004#9010#0" expanded="true" />
-                <element signature="e#9760#9767#0" expanded="true" />
-                <element signature="e#9900#9907#0" expanded="true" />
-                <element signature="e#9926#9932#0" expanded="true" />
-                <element signature="e#10195#10201#0" expanded="true" />
-                <element signature="e#10330#10336#0" expanded="true" />
-                <element signature="e#10373#10379#0" expanded="true" />
-                <element signature="e#10752#10758#0" expanded="true" />
-                <element signature="e#11094#11101#0" expanded="true" />
-                <element signature="e#11297#11303#0" expanded="true" />
-                <element signature="e#11593#11599#0" expanded="true" />
-                <element signature="e#11919#11925#1" expanded="true" />
-                <element signature="e#11960#11966#0" expanded="true" />
-                <element signature="e#13088#13094#0" expanded="true" />
-                <element signature="e#13355#13361#0" expanded="true" />
-                <element signature="e#13435#13441#0" expanded="true" />
-                <element signature="e#13534#13540#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_responsive.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/_responsive.scss">
           <provider selected="true" editor-type-id="text-editor">
@@ -84,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_styles.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_styles.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/_styles.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="350" column="3" lean-forward="false" selection-start-line="350" selection-start-column="3" selection-end-line="350" selection-end-column="3" />
+            <state relative-caret-position="140">
+              <caret line="424" column="16" lean-forward="false" selection-start-line="424" selection-start-column="16" selection-end-line="424" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -101,6 +61,19 @@
               <caret line="85" column="163" lean-forward="false" selection-start-line="85" selection-start-column="163" selection-end-line="85" selection-end-column="163" />
               <folding>
                 <element signature="e#7976#7983#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="item.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/item.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="159" column="97" lean-forward="false" selection-start-line="159" selection-start-column="97" selection-end-line="159" selection-end-column="97" />
+              <folding>
+                <marker date="1502543035776" expanded="true" signature="167:203" ph="SELECT * FRO... ${$_GET['table']}" />
+                <marker date="1502543035776" expanded="true" signature="15033:15223" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -173,7 +146,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>home</find>
       <find>xs</find>
       <find>acc</find>
       <find>ruby</find>
@@ -202,6 +174,7 @@
       <find>first_</find>
       <find>@</find>
       <find>deliver</find>
+      <find>cart</find>
       <find>clothing-</find>
     </findStrings>
     <replaceStrings>
@@ -247,7 +220,6 @@
         <option value="$PROJECT_DIR$/blog.html" />
         <option value="$PROJECT_DIR$/footer.php" />
         <option value="$PROJECT_DIR$/clothing.html" />
-        <option value="$PROJECT_DIR$/item.php" />
         <option value="$PROJECT_DIR$/delivery.html" />
         <option value="$PROJECT_DIR$/terms.html" />
         <option value="$PROJECT_DIR$/privacy.html" />
@@ -260,6 +232,7 @@
         <option value="$PROJECT_DIR$/sass/_responsive.scss" />
         <option value="$PROJECT_DIR$/accessories.html" />
         <option value="$PROJECT_DIR$/sass/_styles.scss" />
+        <option value="$PROJECT_DIR$/item.php" />
       </list>
     </option>
   </component>
@@ -485,12 +458,12 @@
       <workItem from="1502114874792" duration="64000" />
       <workItem from="1502116369820" duration="76380000" />
       <workItem from="1502438458749" duration="8353000" />
-      <workItem from="1502478823506" duration="24001000" />
+      <workItem from="1502478823506" duration="25302000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="283329000" />
+    <option name="totallyTimeSpent" value="284630000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -824,19 +797,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/item.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="84" column="46" lean-forward="false" selection-start-line="84" selection-start-column="46" selection-end-line="84" selection-end-column="46" />
-          <folding>
-            <marker date="1502526318205" expanded="true" signature="167:203" ph="SELECT * FRO... ${$_GET['table']}" />
-            <marker date="1502526318205" expanded="true" signature="7565:7751" ph="..." />
-            <marker date="1502526318205" expanded="true" signature="7975:8461" ph="..." />
-            <marker date="1502526318205" expanded="true" signature="14483:14673" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/terms.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
@@ -1009,9 +969,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/_styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="350" column="3" lean-forward="false" selection-start-line="350" selection-start-column="3" selection-end-line="350" selection-end-column="3" />
+        <state relative-caret-position="140">
+          <caret line="424" column="16" lean-forward="false" selection-start-line="424" selection-start-column="16" selection-end-line="424" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/item.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="159" column="97" lean-forward="false" selection-start-line="159" selection-start-column="97" selection-end-line="159" selection-end-column="97" />
+          <folding>
+            <marker date="1502543035776" expanded="true" signature="167:203" ph="SELECT * FRO... ${$_GET['table']}" />
+            <marker date="1502543035776" expanded="true" signature="15033:15223" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>

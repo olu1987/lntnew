@@ -496,7 +496,7 @@ footer.row {
     border: 1px solid gold; }
 
 .sizes-select {
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   margin-top: 42px; }
   .sizes-select select {
     width: 300px;
@@ -528,6 +528,9 @@ footer.row {
   transition: all ease-in-out 300ms; }
   .col-sm-6.print:hover {
     transform: scale(1.1); }
+
+.add-to-cart-btn {
+  margin-top: 15px; }
 
 #myCarousel {
   width: 100%;
