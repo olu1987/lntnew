@@ -57,8 +57,6 @@ $(document).ready(function(){
 
     var clothingModule = (function () {
 
-        console.log("hello");
-
         var bigPicture = document.getElementById('big-picture');
 
         var thumbnails = document.querySelectorAll('.item .thumbnails');

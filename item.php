@@ -84,7 +84,7 @@ if($result === false) {
                                 </td>
                             </tr>
                         </table>
-                <p data-toggle="collapse" data-target="#details" class="info text-left">DETAILS</p>
+                <p data-toggle="collapse" data-target="#details" class="info text-left print-details">DETAILS</p>
                     <ul class="collapse text-left" id="details">
                         <li>limited edition of 50</li>
                         <li>unframed</li>

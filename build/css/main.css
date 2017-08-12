@@ -536,6 +536,9 @@ footer.row {
 .about-header {
   margin-bottom: 27px; }
 
+.print-details {
+  margin-top: 42px; }
+
 #myCarousel {
   width: 100%;
   z-index: 11;
