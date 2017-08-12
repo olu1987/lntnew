@@ -84,7 +84,7 @@ if($result === false) {
                                 </td>
                             </tr>
                         </table>
-                <p data-toggle="collapse" data-target="#details" class="info text-left print-details">DETAILS</p>
+                <p data-toggle="collapse" data-target="#details" class="info text-left">DETAILS</p>
                     <ul class="collapse text-left" id="details">
                         <li>limited edition of 50</li>
                         <li>unframed</li>
@@ -127,7 +127,7 @@ if($result === false) {
                         </table>
                         <?php endif; ?>
                         <?php if(isset($table) && $table == 'clothing' || isset($table) && $table == 'accessories'|| isset($table) && $table == 'prints' ):?>
-                            <p data-toggle="collapse" data-target="#details" class="info text-left">DETAILS</p>
+                            <p data-toggle="collapse" data-target="#details" class="info text-left <?php if($table == 'accessories'):?>accessories-details <?php endif; ?>">DETAILS</p>
                             <?php if($table == 'clothing' && $rows[0]['clothing_type'] == 'top'):?>
                                 <ul class="collapse text-left" id="details">
                                     <li>100% silk</li>
