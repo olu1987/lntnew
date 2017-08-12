@@ -246,8 +246,7 @@ html, body {
 
 .accessories .pic-two {
   background: url("../../img/scarf-green-stairs-opt.jpg") no-repeat;
-  background-size: cover;
-  background-position-y: -39px; }
+  background-size: cover; }
 
 .accessories .pic-three {
   background: url("../../img/white-balcony-scarf-opt.jpg") center no-repeat;
@@ -263,8 +262,7 @@ html, body {
 
 .clothing .pic-three {
   background: url("../../img/doorway-blackskirt.jpg") top no-repeat;
-  background-size: cover;
-  background-position: 0 -50px; }
+  background-size: cover; }
 
 .prints .pic-one {
   background: url("../../img/prints3.jpg") center no-repeat;
