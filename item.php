@@ -63,6 +63,7 @@ if($result === false) {
         </div>
         <div class="col-md-6 text-center item-details">
             <h1><strong><span class="left-dot">.</span><?= $rows[0]['item_name']; ?><span class="right-dot">.</span></strong></h1>
+            <h1><small><?= $rows[0]['sub_text']; ?></small></h1>
             <hr class="line-through">
             <p class="price">£<?= $rows[0]['item_price']; ?></p>
             <p class="text-left description"><?= $rows[0]['item_description']; ?></p>
