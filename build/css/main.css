@@ -233,8 +233,7 @@ html, body {
 
 .pic-two {
   background: url("../../img/white-top-stairs-doorway-1.jpeg") top no-repeat;
-  background-size: cover;
-  background-attachment: fixed; }
+  background-size: cover; }
 
 .pic-three {
   background: url("../../img/doorway-blackskirt.jpg") top no-repeat;
