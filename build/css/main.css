@@ -239,7 +239,8 @@ html, body {
 .pic-three {
   background: url("../../img/doorway-blackskirt.jpg") top no-repeat;
   background-size: cover;
-  background-position: 0 -50px; }
+  background-position: 0 -50px;
+  background-attachment: fixed; }
 
 .accessories .pic-one {
   background: url("../../img/green-door-scarf-opt.jpg") center no-repeat;
