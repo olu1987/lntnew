@@ -215,7 +215,6 @@ a, a:hover, a:active {
 html, body {
   height: 100%;
   width: 100%;
-  overflow-x: hidden;
   font-family: 'Cinzel', serif; }
 
 #slideshow {
@@ -223,17 +222,19 @@ html, body {
   overflow: hidden; }
 
 .home-bg {
-  width: 102%;
+  width: 100% !important;
   height: 100%;
   position: absolute; }
 
 .pic-one {
   background: url("../../img/header-blue-door.jpg") top no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 .pic-two {
   background: url("../../img/white-top-stairs-doorway-1.jpeg") top no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 .pic-three {
   background: url("../../img/doorway-blackskirt.jpg") top no-repeat;
@@ -242,39 +243,48 @@ html, body {
 
 .accessories .pic-one {
   background: url("../../img/green-door-scarf-opt.jpg") center no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 .accessories .pic-two {
   background: url("../../img/scarf-green-stairs-opt.jpg") no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 .accessories .pic-three {
   background: url("../../img/white-balcony-scarf-opt.jpg") center no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 .clothing .pic-one {
   background: url("../../img/header-blue-door.jpg") top no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 .clothing .pic-two {
   background: url("../../img/white-top-stairs-doorway-1.jpeg") top no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 .clothing .pic-three {
   background: url("../../img/doorway-blackskirt.jpg") top no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 .prints .pic-one {
   background: url("../../img/prints3.jpg") center no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 .prints .pic-two {
   background: url("../../img/prints2.jpg") no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 .prints .pic-three {
   background: url("../../img/prints.jpg") center no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 .navigation {
   position: absolute;
@@ -594,7 +604,7 @@ footer.row {
 @media (max-width: 991px) {
   .navigation, .accessories .navigation {
     bottom: 100%;
-    width: 102%;
+    width: 100%;
     top: 0; }
     .navigation ul li, .accessories .navigation ul li {
       display: block;
@@ -610,7 +620,7 @@ footer.row {
     top: 75px; }
   #slideshow .home-bg {
     background-position: center;
-    width: 105%; }
+    width: 100%; }
   .prints .bg {
     height: 800px; } }
 

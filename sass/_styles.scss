@@ -4,7 +4,6 @@
 html, body{
   height:100%;
   width:100%;
-  overflow-x: hidden;
   font-family: 'Cinzel', serif;
 }
 
@@ -14,7 +13,7 @@ html, body{
 }
 
 .home-bg{
-  width:102%;
+  width:100% !important;
   height:100%;
   position: absolute;
 }
@@ -22,13 +21,13 @@ html, body{
 .pic-one{
   background: url('../../img/header-blue-door.jpg') top no-repeat;
   background-size: cover;
-  //background-attachment: fixed;
+  background-attachment: fixed;
 }
 
 .pic-two{
   background: url('../../img/white-top-stairs-doorway-1.jpeg') top no-repeat;
   background-size: cover;
-  //background-attachment: fixed;
+  background-attachment: fixed;
 }
 
 .pic-three{
@@ -42,17 +41,17 @@ html, body{
   .pic-one{
     background: url('../../img/green-door-scarf-opt.jpg') center no-repeat;
     background-size: cover;
-    //background-attachment: fixed;
+    background-attachment: fixed;
   }
   .pic-two{
     background: url('../../img/scarf-green-stairs-opt.jpg')  no-repeat;
     background-size: cover;
-    //background-attachment: fixed;
+    background-attachment: fixed;
   }
   .pic-three{
     background: url('../../img/white-balcony-scarf-opt.jpg') center no-repeat;
     background-size: cover;
-    //background-attachment: fixed;
+    background-attachment: fixed;
 
   }
 }
@@ -61,19 +60,19 @@ html, body{
   .pic-one{
     background: url('../../img/header-blue-door.jpg') top no-repeat;
     background-size: cover;
-    //background-attachment: fixed;
+    background-attachment: fixed;
   }
 
   .pic-two{
     background: url('../../img/white-top-stairs-doorway-1.jpeg') top no-repeat;
     background-size: cover;
-    //background-attachment: fixed;
+    background-attachment: fixed;
   }
 
   .pic-three{
     background: url('../../img/doorway-blackskirt.jpg') top no-repeat;
     background-size: cover;
-    //background-attachment: fixed;
+    background-attachment: fixed;
   }
 }
 
@@ -81,18 +80,18 @@ html, body{
   .pic-one{
     background: url('../../img/prints3.jpg') center no-repeat;
     background-size: cover;
-    //background-attachment: fixed;
+    background-attachment: fixed;
   }
   .pic-two{
     background: url('../../img/prints2.jpg')  no-repeat;
     background-size: cover;
-    //background-attachment: fixed;
+    background-attachment: fixed;
 
   }
   .pic-three{
     background: url('../../img/prints.jpg') center no-repeat;
     background-size: cover;
-    //background-attachment: fixed;
+    background-attachment: fixed;
 
   }
 }
