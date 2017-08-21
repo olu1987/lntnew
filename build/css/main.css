@@ -647,11 +647,11 @@ footer.row {
     width: 150px; }
   .col-sm-6.print {
     height: 250px; }
-  .prints .pic-one {
+  .prints .pic-one, .accessories .pic-one, .clothing .pic-one {
     background-attachment: scroll; }
-  .prints .pic-two {
+  .prints .pic-two, .accessories .pic-two, .clothing .pic-two {
     background-attachment: scroll; }
-  .prints .pic-three {
+  .prints .pic-three, .accessories .pic-three, .clothing .pic-three {
     background-attachment: scroll; } }
 
 @media (max-width: 391px) {
