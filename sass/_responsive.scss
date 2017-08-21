@@ -70,6 +70,18 @@
     padding: 0;
   }
 
+  .accessories, .prints, .clothing{
+    .slideshow-wrapper{
+      height:350px !important;
+      #slideshow{
+        height:350px;
+        .row{
+          height:350px;
+        }
+      }
+    }
+  }
+
   .sizes-select{
     select{
 
@@ -84,20 +96,14 @@
 
   .prints{
     .pic-one{
-      background: url('../../img/prints3.jpg') center no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
+      background-attachment: scroll;
     }
     .pic-two{
-      background: url('../../img/prints2.jpg')  no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
+      background-attachment: scroll;
 
     }
     .pic-three{
-      background: url('../../img/print-header-1.jpg') center no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
+      background-attachment: scroll;
 
     }
   }
