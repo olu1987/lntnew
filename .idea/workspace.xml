@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e81e76d-29a7-44ca-98b8-42ba4e083cb8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_styles.scss" afterPath="$PROJECT_DIR$/sass/_styles.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/css/main.css" afterPath="$PROJECT_DIR$/build/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_responsive.scss" afterPath="$PROJECT_DIR$/sass/_responsive.scss" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,21 +22,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_responsive.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_responsive.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/_responsive.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="17" />
+            <state relative-caret-position="174">
+              <caret line="109" column="51" lean-forward="false" selection-start-line="109" selection-start-column="51" selection-end-line="109" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_styles.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_styles.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/_styles.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="36" column="2" lean-forward="false" selection-start-line="36" selection-start-column="2" selection-end-line="36" selection-end-column="2" />
+            <state relative-caret-position="259">
+              <caret line="98" column="12" lean-forward="true" selection-start-line="98" selection-start-column="12" selection-end-line="98" selection-end-column="12" />
               <folding>
                 <marker date="1502741611683" expanded="true" signature="343:383" ph="{...}" />
               </folding>
@@ -74,7 +75,24 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="314">
               <caret line="997" column="11" lean-forward="false" selection-start-line="997" selection-start-column="11" selection-end-line="997" selection-end-column="11" />
-              <folding />
+              <folding>
+                <marker date="1502687695753" expanded="true" signature="1479:1755" ph="&lt;IfModule mod_setenvif.c&gt;" />
+                <marker date="1502687695753" expanded="true" signature="2020:2171" ph="&lt;IfModule mod_headers.c&gt;" />
+                <marker date="1502687695753" expanded="true" signature="5086:5691" ph="&lt;IfModule mod_headers.c&gt;" />
+                <marker date="1502687695753" expanded="true" signature="6886:9840" ph="&lt;IfModule mod_mime.c&gt;" />
+                <marker date="1502687695753" expanded="true" signature="10517:11027" ph="&lt;IfModule mod_mime.c&gt;" />
+                <marker date="1502687695753" expanded="true" signature="12745:13118" ph="&lt;IfModule mod_rewrite.c&gt;" />
+                <marker date="1502687695753" expanded="true" signature="14497:14690" ph="&lt;IfModule mod_rewrite.c&gt;" />
+                <marker date="1502687695753" expanded="true" signature="19729:19788" ph="&lt;IfModule mod_autoindex.c&gt;" />
+                <marker date="1502687695753" expanded="true" signature="20538:20779" ph="&lt;IfModule mod_rewrite.c&gt;" />
+                <marker date="1502687695753" expanded="true" signature="21452:21774" ph="&lt;FilesMatch &quot;(^##.*##|\.(bak|conf|dist|fla|in[ci]|log|psd|sh|sql|sw[op])|~)$&quot;&gt;" />
+                <marker date="1502687695753" expanded="true" signature="23767:23851" ph="&lt;IfModule mod_headers.c&gt;" />
+                <marker date="1502687695753" expanded="true" signature="27185:27251" ph="&lt;IfModule mod_headers.c&gt;" />
+                <marker date="1502687695753" expanded="true" signature="28677:32437" ph="&lt;IfModule mod_deflate.c&gt;" />
+                <marker date="1502687695753" expanded="true" signature="33778:33836" ph="&lt;IfModule mod_headers.c&gt;" />
+                <marker date="1502687695753" expanded="true" signature="34340:37777" ph="&lt;IfModule mod_expires.c&gt;" />
+                <marker date="1502687695753" expanded="true" signature="39857:39975" ph="&lt;IfModule mod_deflate.c&gt;" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -268,11 +286,11 @@
         <option value="$PROJECT_DIR$/js/prints/PrintsController.js" />
         <option value="$PROJECT_DIR$/item.php" />
         <option value="$PROJECT_DIR$/clothing.html" />
-        <option value="$PROJECT_DIR$/sass/_responsive.scss" />
         <option value="$PROJECT_DIR$/prints.html" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/sass/_styles.scss" />
+        <option value="$PROJECT_DIR$/sass/_responsive.scss" />
       </list>
     </option>
   </component>
@@ -486,15 +504,15 @@
       <workItem from="1502116369820" duration="76380000" />
       <workItem from="1502438458749" duration="8353000" />
       <workItem from="1502478823506" duration="45279000" />
-      <workItem from="1502685080599" duration="3772000" />
+      <workItem from="1502685080599" duration="4498000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="308379000" />
+    <option name="totallyTimeSpent" value="309105000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26096824" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -870,14 +888,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/_responsive.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -956,7 +966,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
           <caret line="997" column="11" lean-forward="false" selection-start-line="997" selection-start-column="11" selection-end-line="997" selection-end-column="11" />
-          <folding />
+          <folding>
+            <marker date="1502687695753" expanded="true" signature="1479:1755" ph="&lt;IfModule mod_setenvif.c&gt;" />
+            <marker date="1502687695753" expanded="true" signature="2020:2171" ph="&lt;IfModule mod_headers.c&gt;" />
+            <marker date="1502687695753" expanded="true" signature="5086:5691" ph="&lt;IfModule mod_headers.c&gt;" />
+            <marker date="1502687695753" expanded="true" signature="6886:9840" ph="&lt;IfModule mod_mime.c&gt;" />
+            <marker date="1502687695753" expanded="true" signature="10517:11027" ph="&lt;IfModule mod_mime.c&gt;" />
+            <marker date="1502687695753" expanded="true" signature="12745:13118" ph="&lt;IfModule mod_rewrite.c&gt;" />
+            <marker date="1502687695753" expanded="true" signature="14497:14690" ph="&lt;IfModule mod_rewrite.c&gt;" />
+            <marker date="1502687695753" expanded="true" signature="19729:19788" ph="&lt;IfModule mod_autoindex.c&gt;" />
+            <marker date="1502687695753" expanded="true" signature="20538:20779" ph="&lt;IfModule mod_rewrite.c&gt;" />
+            <marker date="1502687695753" expanded="true" signature="21452:21774" ph="&lt;FilesMatch &quot;(^##.*##|\.(bak|conf|dist|fla|in[ci]|log|psd|sh|sql|sw[op])|~)$&quot;&gt;" />
+            <marker date="1502687695753" expanded="true" signature="23767:23851" ph="&lt;IfModule mod_headers.c&gt;" />
+            <marker date="1502687695753" expanded="true" signature="27185:27251" ph="&lt;IfModule mod_headers.c&gt;" />
+            <marker date="1502687695753" expanded="true" signature="28677:32437" ph="&lt;IfModule mod_deflate.c&gt;" />
+            <marker date="1502687695753" expanded="true" signature="33778:33836" ph="&lt;IfModule mod_headers.c&gt;" />
+            <marker date="1502687695753" expanded="true" signature="34340:37777" ph="&lt;IfModule mod_expires.c&gt;" />
+            <marker date="1502687695753" expanded="true" signature="39857:39975" ph="&lt;IfModule mod_deflate.c&gt;" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -972,11 +999,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/_styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="36" column="2" lean-forward="false" selection-start-line="36" selection-start-column="2" selection-end-line="36" selection-end-column="2" />
+        <state relative-caret-position="259">
+          <caret line="98" column="12" lean-forward="true" selection-start-line="98" selection-start-column="12" selection-end-line="98" selection-end-column="12" />
           <folding>
             <marker date="1502741611683" expanded="true" signature="343:383" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/_responsive.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="109" column="51" lean-forward="false" selection-start-line="109" selection-start-column="51" selection-end-line="109" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>
