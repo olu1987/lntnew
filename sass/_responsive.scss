@@ -95,18 +95,6 @@
   }
 
 
-    .pic-one{
-      background-attachment: scroll !important;
-    }
-    .pic-two{
-      background-attachment: scroll !important;
-
-    }
-    .pic-three{
-      background-attachment: scroll !important;
-
-    }
-
 }
 
 @media (max-width: 488px) {
@@ -122,3 +110,21 @@
   }
 
 }
+
+@media (min-width:767px) {
+
+  .pic-one{
+    background-attachment: fixed !important;
+  }
+  .pic-two{
+    background-attachment: fixed !important;
+
+  }
+  .pic-three{
+    background-attachment: fixed !important;
+
+  }
+
+
+}
+
