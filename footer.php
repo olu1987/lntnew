@@ -30,7 +30,7 @@
             <ul>
                 <li><a href="index.html">. LNT . LONDON .</a></li>
                 <li><a href="about.html">. ABOUT .</a></li>
-                <li><a href="#">. SITEMAP .</a></li>
+                <li><a href="sitemap.xml">. SITEMAP .</a></li>
                 <li><a href="contact.html">. CONTACT .</a></li>
                 <li><a href="terms">. TERMS & CONDITIONS .</a></li>
                 <li><a href="privacy">. PRIVACY .</a></li>
