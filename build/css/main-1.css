@@ -716,7 +716,9 @@ footer.row {
   .sizes-select select {
     width: 150px; }
   .col-sm-6.print {
-    height: 250px; } }
+    height: 250px; }
+  .overlay h2 {
+    font-size: 13px; } }
 
 @media (max-width: 391px) {
   .thumbnails-row {
