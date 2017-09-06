@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>HOME | LNT LONDON</title>
+    <title>CONTACT | LNT LONDON</title>
     <meta name="description" content="London based luxury fashion brand. Specializing in prints and clothing">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,5 +17,9 @@
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body class="home">
+<div id="loader" class="loader-container active">
+    <img class="icon-key" src="img/icon-key-small.jpg"/>
+    <div class="sp sp-circle"></div>
+</div>
 <div class="slideshow-wrapper">
     <div id="slideshow" class="container-fluid">

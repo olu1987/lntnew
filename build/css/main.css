@@ -221,6 +221,9 @@ html, body {
   width: 100%;
   overflow: hidden; }
 
+h2 {
+  font-size: 21px; }
+
 .home-bg {
   width: 100% !important;
   height: 100%;
@@ -291,7 +294,7 @@ html, body {
     background: #000; }
     .navigation ul li {
       display: inline-block;
-      padding: 10px 0px 10px 70px; }
+      padding: 10px 0px 10px 3%; }
       .navigation ul li a {
         color: #ffffff;
         text-decoration: none;
@@ -299,6 +302,10 @@ html, body {
         .navigation ul li a:hover {
           text-decoration: none;
           color: #cccccc; }
+
+.sub-heading {
+  font-size: 14px;
+  line-height: 1.42857143; }
 
 .overlay {
   position: absolute;
@@ -367,6 +374,10 @@ footer.row {
 .home footer.row, .about footer.row, .prints footer.row, .contact footer.row {
   min-height: 120px;
   padding-top: 40px; }
+
+.about h2 {
+  font-size: 18px;
+  line-height: 1.42857143; }
 
 .place-holder {
   height: 300px;
@@ -559,6 +570,76 @@ footer.row {
 
 .accessories-details {
   margin-top: 42px; }
+
+.home-header {
+  position: absolute;
+  padding-top: 40vh;
+  margin-top: 0;
+  top: 0;
+  left: 0;
+  display: block;
+  text-align: center;
+  z-index: 10;
+  color: #ffffff;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.26); }
+  .home-header a {
+    color: gold; }
+
+.sp {
+  width: 132px;
+  height: 132px;
+  clear: both;
+  margin: 0px auto;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: calc(46vh - 16px); }
+
+.icon-key {
+  width: 100px;
+  border-radius: 10px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 46vh; }
+
+/* Spinner Circle Rotation */
+.sp-circle {
+  border: 4px rgba(0, 0, 0, 0.25) solid;
+  border-top: 4px black solid;
+  border-radius: 50%;
+  -webkit-animation: spCircRot .6s infinite linear;
+  animation: spCircRot .6s infinite linear; }
+
+@-webkit-keyframes spCircRot {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(359deg); } }
+
+@keyframes spCircRot {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+
+.loader-container {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  z-index: 20;
+  position: fixed;
+  top: 0;
+  transition: all ease-in-out 800ms;
+  opacity: 0; }
+  .loader-container.active {
+    opacity: 1; }
 
 #myCarousel {
   width: 100%;

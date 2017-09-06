@@ -40,6 +40,10 @@ $(document).ready(function(){
         var nav = document.querySelector(".sticky-nav-page .navigation"),
             promo = document.querySelector(".sticky-nav-page .promo");
 
+        if(! promo){
+            return;
+        }
+
             window.addEventListener('scroll', function () {
                 var distance = promo.getBoundingClientRect().top;
                 if(distance < 50){
@@ -89,4 +93,18 @@ $(document).ready(function(){
     })();
 
     clothingModule.changePicture();
+
+    window.addEventListener('load',function(){
+
+        var loader = document.getElementById('loader');
+
+        setTimeout(function(){
+            removeClass(loader,'active');
+        },500);
+
+        setTimeout(function(){
+            addClass(loader,'hidden');
+        },1300)
+
+    });
 });
