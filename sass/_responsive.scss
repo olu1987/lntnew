@@ -31,8 +31,11 @@
 
   .overlay{
     padding: 30px 10px;
-    font-size: 15px;
+
     top: 75px;
+    h2{
+      font-size: 15px;
+    }
   }
 
   #slideshow .home-bg{

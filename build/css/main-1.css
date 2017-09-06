@@ -686,8 +686,9 @@ footer.row {
     padding-right: 20px; }
   .overlay {
     padding: 30px 10px;
-    font-size: 15px;
     top: 75px; }
+    .overlay h2 {
+      font-size: 15px; }
   #slideshow .home-bg {
     background-position: center;
     width: 100%; }
