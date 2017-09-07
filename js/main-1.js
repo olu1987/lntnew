@@ -104,7 +104,7 @@ $(document).ready(function(){
 
         setTimeout(function(){
             addClass(loader,'hidden');
-        },1300)
+        },1300);
 
     });
 });
