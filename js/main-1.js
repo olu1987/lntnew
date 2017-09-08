@@ -13,6 +13,16 @@ $(document).ready(function(){
             el.className = el.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
     }
 
+    function hasClass(el, cls){
+        if (!el.className) {
+            return false;
+        } else {
+            var newElementClass = ' ' + el.className + ' ';
+            var newClassName = ' ' + cls + ' ';
+            return newElementClass.indexOf(newClassName) !== -1;
+        }
+    }
+
 
 
     $("#slideshow > div:gt(0)").hide();
@@ -30,7 +40,6 @@ $(document).ready(function(){
         var button = $(event.relatedTarget) // Button that triggered the modal
         var image = button.attr('src'),
             title = button.data('item');
-        console.log(title);
         var modal = $(this)
         modal.find('.print-image').attr( "src", image);
         modal.find('.modal-title').html(title);
@@ -94,19 +103,48 @@ $(document).ready(function(){
 
     clothingModule.changePicture();
 
-    (function removeMask() {
-        if (document.getElementById('slideshow')) {
-            var loader = document.getElementById('loader');
+    window.addEventListener('load',function(){
 
-            setTimeout(function(){
-                removeClass(loader,'active');
-            },500);
-
-            setTimeout(function(){
-                addClass(loader,'hidden');
-            },1300);
-        } else {
-            setTimeout(removeMask, 15);
+        if(hasClass(document.body,'prints'))
+        {
+            return;
         }
+
+        var loader = document.getElementById('loader');
+
+        setTimeout(function(){
+            removeClass(loader,'active');
+        },500);
+
+        setTimeout(function(){
+            addClass(loader,'hidden');
+        },1300);
+
+    });
+
+    (function printsLoaded(){
+        if(! hasClass(document.body,'prints')){
+            return;
+        }
+
+        function removeMask() {
+            var prints = document.querySelectorAll('.prints .col-sm-6.print .img-responsive');
+            if (prints.length > 60) {
+                var loader = document.getElementById('loader');
+
+                setTimeout(function(){
+                    removeClass(loader,'active');
+                },500);
+
+                setTimeout(function(){
+                    addClass(loader,'hidden');
+                },1300);
+            } else {
+                setTimeout(removeMask, 15);
+            }
+        }
+
+        removeMask();
+
     }())
 });

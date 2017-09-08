@@ -4,6 +4,7 @@
     <list default="true" id="2e81e76d-29a7-44ca-98b8-42ba4e083cb8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/js/main-1.min.js" afterPath="$PROJECT_DIR$/build/js/main-1.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main-1.js" afterPath="$PROJECT_DIR$/js/main-1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/prints/PrintsController.js" afterPath="$PROJECT_DIR$/js/prints/PrintsController.js" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,10 +58,10 @@
       <file leaf-file-name="main-1.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main-1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-62">
-              <caret line="94" column="35" lean-forward="false" selection-start-line="94" selection-start-column="35" selection-end-line="94" selection-end-column="35" />
+            <state relative-caret-position="215">
+              <caret line="146" column="18" lean-forward="false" selection-start-line="146" selection-start-column="18" selection-end-line="146" selection-end-column="18" />
               <folding>
-                <marker date="1504860011451" expanded="true" signature="28:30" ph="{...}" />
+                <marker date="1504862189733" expanded="true" signature="28:30" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -129,7 +130,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>slides</find>
       <find>home-b</find>
       <find>.overlay</find>
       <find>991</find>
@@ -158,6 +158,7 @@
       <find>.nav</find>
       <find>.about</find>
       <find>sub</find>
+      <find>console.lo</find>
       <find>over</find>
     </findStrings>
     <replaceStrings>
@@ -202,7 +203,6 @@
         <option value="$PROJECT_DIR$/getdata.php" />
         <option value="$PROJECT_DIR$/js/prints/PrintsService.js" />
         <option value="$PROJECT_DIR$/js/prints/PrintsFilter.js" />
-        <option value="$PROJECT_DIR$/js/prints/PrintsController.js" />
         <option value="$PROJECT_DIR$/build/css/main.css" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/sitemap.xml" />
@@ -218,6 +218,7 @@
         <option value="$PROJECT_DIR$/sass/_styles.scss" />
         <option value="$PROJECT_DIR$/sass/_responsive.scss" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
+        <option value="$PROJECT_DIR$/js/prints/PrintsController.js" />
         <option value="$PROJECT_DIR$/js/main-1.js" />
       </list>
     </option>
@@ -291,6 +292,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lntnew" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lntnew" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prints" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -455,12 +474,12 @@
       <workItem from="1502478823506" duration="45279000" />
       <workItem from="1502685080599" duration="8153000" />
       <workItem from="1504369060581" duration="152000" />
-      <workItem from="1504652625843" duration="13620000" />
+      <workItem from="1504652625843" duration="15817000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="326532000" />
+    <option name="totallyTimeSpent" value="328729000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1378" height="735" extended-state="0" />
@@ -714,20 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/prints/PrintsFilter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/prints/PrintsController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="91" lean-forward="false" selection-start-line="0" selection-start-column="91" selection-end-line="0" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/contact.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -903,12 +908,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/prints/PrintsFilter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/prints/PrintsController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/main-1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-62">
-          <caret line="94" column="35" lean-forward="false" selection-start-line="94" selection-start-column="35" selection-end-line="94" selection-end-column="35" />
+        <state relative-caret-position="215">
+          <caret line="146" column="18" lean-forward="false" selection-start-line="146" selection-start-column="18" selection-end-line="146" selection-end-column="18" />
           <folding>
-            <marker date="1504860011451" expanded="true" signature="28:30" ph="{...}" />
+            <marker date="1504862189733" expanded="true" signature="28:30" ph="{...}" />
           </folding>
         </state>
       </provider>
