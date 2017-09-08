@@ -94,17 +94,19 @@ $(document).ready(function(){
 
     clothingModule.changePicture();
 
-    window.addEventListener('load',function(){
+    (function removeMask() {
+        if (document.getElementById('slideshow')) {
+            var loader = document.getElementById('loader');
 
-        var loader = document.getElementById('loader');
+            setTimeout(function(){
+                removeClass(loader,'active');
+            },500);
 
-        setTimeout(function(){
-            removeClass(loader,'active');
-        },500);
-
-        setTimeout(function(){
-            addClass(loader,'hidden');
-        },1300);
-
-    });
+            setTimeout(function(){
+                addClass(loader,'hidden');
+            },1300);
+        } else {
+            setTimeout(removeMask, 15);
+        }
+    }())
 });
