@@ -1,0 +1,217 @@
+<html>
+<title>. LNT . LONDON .</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="description" content="London based luxury fashion brand. Specializing in prints and clothing">
+<meta name="author" content="">
+
+<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<link rel="icon"
+      type="image/png"
+      href="http://www.lntlondon.co.uk/key.png">
+</head>
+<style>
+    html,body
+    {
+        width:100%;
+        height:100%;
+        margin:0px;
+        padding:0px;
+        overflow-x:hidden;
+        font-family: 'Cinzel', serif;
+    }
+
+
+    #slideshow {
+
+
+    }
+
+    #slideshow > div {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+
+
+    }
+
+    #slideshow img.background{
+        margin:0;
+        padding:0;
+        width:100%;
+        height:100%;
+
+
+
+    }
+
+    .lander-slideshow{
+        width:100%;
+        padding:0;
+    }
+
+    .logo-right{
+        left: 945px;
+        margin-top:30%;
+        margin-top: 44.7vh;
+        width:250px;
+        position:absolute;
+        z-index:10;
+        top:0px;
+    }
+
+    .logo-left{
+        left:220px;
+        margin-top:30%;
+        margin-top:44.7vh;
+        width:250px;
+        position:absolute;
+        z-index:10;
+        top:0px;
+    }
+
+    .email-link{
+        position: absolute;
+        bottom: 20px;
+        margin: 0 auto;
+        left: 42%;
+        color: #9d9d9d;
+        font-size: 16px;
+
+    }
+
+    .email-link:hover{
+        opacity:0.8;
+        text-decoration:none;
+        color: #9d9d9d;
+    }
+
+    h1.logo-left, h1.logo-right{
+        top: 85px;
+        width: auto;
+        font-weight: 700;
+    }
+
+    h1.logo-right{
+        left: 934px;
+    }
+
+    h1.logo-left{
+        left: 200px;
+    }
+
+    .mobile-promo{
+        margin-top: 124px;
+        text-align: center;
+    }
+
+    @media(max-width:991px){
+        #slideshow {
+            margin: 0px auto;
+            position: relative;
+            width: 100%;
+            height: 600px;
+            padding:0;
+
+        }
+
+        #slideshow > div {
+            padding:0;
+        }
+
+
+        .logo-right{
+            left:400px;
+
+        }
+
+        .logo-left{
+            left:150px;
+
+        }
+        h1.logo-left{
+            left:130px;
+        }
+
+        h1.logo-right {
+            left: 385px;
+        }
+
+    }
+
+
+
+    @media(max-width:767px){
+        .email-link{
+            position: relative;
+            margin: 0 auto;
+            display: block;
+            bottom: -100px;
+            text-align: center;
+            left: 0;
+
+        }
+    }
+</style>
+<body>
+<div class=" container-fluid">
+
+    <div class="visible-sm visible-md visible-lg"id="slideshow">
+        <div>
+            <img class="background" style="max-width:100%" src="images-old/black-skirt.jpg">
+            <img class="logo-left" src="images-old/lnt-logo.png">
+            <h1 class="logo-left">COMING SOON</h1>
+        </div>
+        <div>
+            <img class="background" style="max-width:100%" src="images-old/tim-gold-skirt.jpg">
+            <img class="logo-right" src="images-old/lnt-logo.png">
+            <h1 class="logo-right">COMING SOON</h1>
+        </div>
+        <div>
+            <img class="background" style="max-width:100%" src="images-old/beetle-top.jpg">
+            <img class="logo-left" src="images-old/lnt-logo.png">
+            <h1 class="logo-left">COMING SOON</h1>
+
+        </div>
+
+
+
+
+    </div>
+    <div class="visible-xs" style="width:100%;background:url('images-old/beetle-top.jpg');height:400px;background-position:90%;background-size:cover">
+
+        <img style="top:420px;margin:0 auto;width:180px;position:relative;display:block" src="images-old/lnt-logo.png">
+    </div>
+    <a class="email-link" href="mailto:info@LNTLondon.com">info@LNTLondon.com</a>
+    <h1 class="mobile-promo">COMING SOON</h1>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+
+        $("#slideshow > div:gt(0)").hide();
+
+        setInterval(function() {
+            $('#slideshow > div:first')
+                .fadeOut(1000)
+                .next()
+                .fadeIn(1000)
+                .end()
+                .appendTo('#slideshow');
+        },  5000);
+
+
+    });
+</script>
+</body>
+</html>

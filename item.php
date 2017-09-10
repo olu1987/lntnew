@@ -96,10 +96,7 @@ if($result === false) {
                     </ul>
                     <p data-toggle="collapse" data-target="#delivery" class="text-left info">DELIVERY & RETURNS</p>
                     <ul id="delivery" class="text-left collapse">
-                        <li>Standard UK delivery: Free</li>
-                        <li>Standard Ireland delivery charge: £5</li>
-                        <li>European delivery charge: £10</li>
-                        <li>Rest of World delivery charge: £15</li>
+                        <li>Free worldwide delivery</li>
                         <li>Your order will be dispatched within 1-14 days depending on your order</li>
                         <li>Returns and exchanges are accepted within 14 days - see our full policy <a href="delivery"><strong>here</strong></a>.</li>
                     </ul>
@@ -175,10 +172,7 @@ if($result === false) {
                         <?php endif ?>
                         <p data-toggle="collapse" data-target="#delivery" class="text-left info">DELIVERY & RETURNS</p>
                         <ul id="delivery" class="text-left collapse">
-                            <li>Standard UK delivery: Free</li>
-                            <li>Standard Ireland delivery charge: £5</li>
-                            <li>European delivery charge: £10</li>
-                            <li>Rest of World delivery charge: £15</li>
+                            <li>Free worldwide delivery</li>
                             <li>Your order will be dispatched within 1-14 days depending on your order</li>
                             <li>Returns and exchanges are accepted within 14 days - see our full policy <a href="delivery"><strong>here</strong></a>.</li>
                         </ul>
