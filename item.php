@@ -40,6 +40,7 @@ if($result === false) {
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body class="item">
+<?php include_once("analytics.php") ?>
 <div id="loader" class="loader-container active">
     <img class="icon-key" src="img/icon-key-small.jpg"/>
     <div class="sp sp-circle"></div>
