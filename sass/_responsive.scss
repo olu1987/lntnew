@@ -95,9 +95,14 @@
 
   .col-sm-6.print {
     height: 250px;
+    img{
+      height: 135px;
+      margin: 0 auto;
+    }
   }
 
   .overlay h2{
+    font-size: 13px;
     font-size: 13px;
   }
 
@@ -118,7 +123,7 @@
 
 }
 
-@media (min-width:767px) {
+@media (min-width:1200px) {
 
   .pic-one{
     background-attachment: fixed !important;

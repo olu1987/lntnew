@@ -723,6 +723,9 @@ footer.row {
     width: 150px; }
   .col-sm-6.print {
     height: 250px; }
+    .col-sm-6.print img {
+      height: 135px;
+      margin: 0 auto; }
   .overlay h2 {
     font-size: 13px;
     font-size: 13px; } }
