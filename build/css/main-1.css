@@ -644,6 +644,9 @@ footer.row {
   .loader-container.active {
     opacity: 1; }
 
+.contact-friendly-text {
+  padding-top: 24vh; }
+
 #myCarousel {
   width: 100%;
   z-index: 11;
