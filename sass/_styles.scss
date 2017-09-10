@@ -37,7 +37,7 @@ h2{
 .pic-three{
   background: url('../../img/doorway-blackskirt.jpg') top no-repeat;
   background-size: cover;
-  background-position: 0 -50px;
+  background-position: 0;
 
 }
 
@@ -501,7 +501,11 @@ footer.row{
   width:100%;
   background: rgba(0, 0, 0, 0.26);
   a{
-    color:gold;
+    color:#fff;
+    transition: all ease-in-out 300ms;
+    &:hover{
+      color: gold;
+    }
   }
 }
 
