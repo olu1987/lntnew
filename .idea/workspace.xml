@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e81e76d-29a7-44ca-98b8-42ba4e083cb8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/item.php" afterPath="$PROJECT_DIR$/item.php" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
@@ -75,11 +74,21 @@
       <file leaf-file-name="item.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/item.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="124" column="111" lean-forward="false" selection-start-line="124" selection-start-column="111" selection-end-line="124" selection-end-column="111" />
+            <state relative-caret-position="170">
+              <caret line="141" column="53" lean-forward="false" selection-start-line="141" selection-start-column="53" selection-end-line="141" selection-end-column="53" />
               <folding>
-                <marker date="1512910228395" expanded="true" signature="167:203" ph="SELECT * FRO... ${$table}" />
+                <marker date="1512913166464" expanded="true" signature="167:203" ph="SELECT * FRO... ${$table}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="accessories.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accessories.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="89" column="21" lean-forward="true" selection-start-line="89" selection-start-column="21" selection-end-line="89" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -147,7 +156,6 @@
       <find>767</find>
       <find>.nav</find>
       <find>.about</find>
-      <find>sub</find>
       <find>console.lo</find>
       <find>over</find>
       <find>g</find>
@@ -155,6 +163,7 @@
       <find>v1.2</find>
       <find>fixed</find>
       <find>&quot;/&quot;</find>
+      <find>sub</find>
     </findStrings>
     <replaceStrings>
       <replace>sm</replace>
@@ -479,15 +488,15 @@
       <workItem from="1505450494868" duration="1411000" />
       <workItem from="1505947080251" duration="32000" />
       <workItem from="1510565660531" duration="182000" />
-      <workItem from="1512907827560" duration="2251000" />
+      <workItem from="1512907827560" duration="3836000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="344058000" />
+    <option name="totallyTimeSpent" value="345643000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28517398" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -789,13 +798,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accessories.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="15" column="48" lean-forward="false" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -882,12 +884,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/accessories.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="89" column="21" lean-forward="true" selection-start-line="89" selection-start-column="21" selection-end-line="89" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/item.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="124" column="111" lean-forward="false" selection-start-line="124" selection-start-column="111" selection-end-line="124" selection-end-column="111" />
+        <state relative-caret-position="170">
+          <caret line="141" column="53" lean-forward="false" selection-start-line="141" selection-start-column="53" selection-end-line="141" selection-end-column="53" />
           <folding>
-            <marker date="1512910228395" expanded="true" signature="167:203" ph="SELECT * FRO... ${$table}" />
+            <marker date="1512913166464" expanded="true" signature="167:203" ph="SELECT * FRO... ${$table}" />
           </folding>
         </state>
       </provider>

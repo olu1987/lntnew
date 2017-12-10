@@ -137,6 +137,11 @@ if($result === false) {
                                         <option value="Samsung 7">Samsung 7</option>
                                         <option value="Samsung 6 Edge">Samsung 6 Edge </option>
                                         <option value="Samsung 6">Samsung 6</option>
+                                    </select>
+                                </td><tr><td class="text-left" colspan="2"><input  type="hidden" name="on1" value="Material">Case Material Type</td></tr><tr><td>
+                                    <select name="os1">
+                                        <option value="Hard">Hard </option>
+                                        <option value="Silicone">Silicone </option>
                                     </select> </td>
                           <?php if($_GET['table'] != 'accessories'): ?>
                                 <td class="size-link-wrap">
