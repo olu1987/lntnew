@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e81e76d-29a7-44ca-98b8-42ba4e083cb8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/item.php" afterPath="$PROJECT_DIR$/item.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accessories.html" afterPath="$PROJECT_DIR$/accessories.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/js/main-1.min.js" afterPath="$PROJECT_DIR$/build/js/main-1.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/accessories/AccessoriesFilter.js" afterPath="$PROJECT_DIR$/js/accessories/AccessoriesFilter.js" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -71,7 +73,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="item.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="item.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/item.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
@@ -83,11 +85,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="accessories.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="accessories.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/accessories.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="89" column="21" lean-forward="true" selection-start-line="89" selection-start-column="21" selection-end-line="89" selection-end-column="21" />
+            <state relative-caret-position="119">
+              <caret line="91" column="140" lean-forward="false" selection-start-line="91" selection-start-column="140" selection-end-line="91" selection-end-column="140" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AccessoriesFilter.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/accessories/AccessoriesFilter.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -95,16 +107,6 @@
       </file>
       <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contact.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="48" lean-forward="false" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="delivery.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/delivery.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
               <caret line="15" column="48" lean-forward="false" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
@@ -187,7 +189,6 @@
         <option value="$PROJECT_DIR$/sass/_carousel.scss" />
         <option value="$PROJECT_DIR$/js/accessories/AccesoriesController.js" />
         <option value="$PROJECT_DIR$/build/js/main.min.js" />
-        <option value="$PROJECT_DIR$/js/accessories/AccessoriesFilter.js" />
         <option value="$PROJECT_DIR$/watch.js" />
         <option value="$PROJECT_DIR$/configs/config.ini" />
         <option value="$PROJECT_DIR$/js/clothing/ClothingService.js" />
@@ -216,7 +217,6 @@
         <option value="$PROJECT_DIR$/sass/_styles.scss" />
         <option value="$PROJECT_DIR$/analytics.php" />
         <option value="$PROJECT_DIR$/about.html" />
-        <option value="$PROJECT_DIR$/accessories.html" />
         <option value="$PROJECT_DIR$/blog.html" />
         <option value="$PROJECT_DIR$/clothing.html" />
         <option value="$PROJECT_DIR$/contact.html" />
@@ -229,6 +229,8 @@
         <option value="$PROJECT_DIR$/sass/_responsive.scss" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/item.php" />
+        <option value="$PROJECT_DIR$/js/accessories/AccessoriesFilter.js" />
+        <option value="$PROJECT_DIR$/accessories.html" />
       </list>
     </option>
   </component>
@@ -320,6 +322,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="prints" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lntnew" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lntnew" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="accessories" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -488,12 +508,12 @@
       <workItem from="1505450494868" duration="1411000" />
       <workItem from="1505947080251" duration="32000" />
       <workItem from="1510565660531" duration="182000" />
-      <workItem from="1512907827560" duration="3836000" />
+      <workItem from="1512907827560" duration="4833000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="345643000" />
+    <option name="totallyTimeSpent" value="346640000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -503,9 +523,9 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1685761" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39934534" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38372093" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38297874" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -574,13 +594,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/accessories/AccessoriesFilter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="3" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -884,14 +897,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accessories.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="89" column="21" lean-forward="true" selection-start-line="89" selection-start-column="21" selection-end-line="89" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/item.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -899,6 +904,22 @@
           <folding>
             <marker date="1512913166464" expanded="true" signature="167:203" ph="SELECT * FRO... ${$table}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/accessories/AccessoriesFilter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="91" column="140" lean-forward="false" selection-start-line="91" selection-start-column="140" selection-end-line="91" selection-end-column="140" />
+          <folding />
         </state>
       </provider>
     </entry>

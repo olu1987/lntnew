@@ -87,14 +87,15 @@
                 <div class="col-md-12">
                     <ul class="list-group sidebar">
                         <h3><strong>ITEM</strong></h3>
-                        <li ng-class="{active: character == undefined}" class="list-group-item"><a>ALL</a></li>
-                        <li class="list-group-item"><a >POCKET SQUARES</a></li>
+                        <li ng-class="{active: item == undefined}" class="list-group-item"><a ng-click="item = undefined">ALL</a></li>
+                        <li ng-class="{active: item == 'pocket_square'}" class="list-group-item"><a ng-click="item = 'pocket_square'" >POCKET SQUARES</a></li>
+                        <li ng-class="{active: item == 'phone_case'}" class="list-group-item"><a ng-click="item = 'phone_case'" >PHONE CASES</a></li>
                     </ul>
                 </div>
             </div>
        </div>
         <div class="col-md-9 col-sm-12 col-xs-12">
-            <a ng-repeat="item in items   | chooseCharacter: character.toLowerCase() | filter: searchText track by item.id" href="item.php?table=accessories&id={{item.id}}">
+            <a ng-repeat="item in items   | chooseCharacter: character.toLowerCase() | filter: searchText | chooseItem: item.toLowerCase() track by item.id" href="item.php?table=accessories&id={{item.id}}">
             <div class="col-md-4 col-sm-6 col-xs-6 print">
 
 
