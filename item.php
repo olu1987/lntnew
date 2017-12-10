@@ -174,8 +174,8 @@ if($result === false) {
                                 </td>
                           <?php endif; ?>
                             </tr>
-                        </table>
                         <?php endif; ?>
+                        </table>
                         <?php if(isset($table) && $table == 'clothing' || isset($table) && $table == 'accessories'|| isset($table) && $table == 'prints' ):?>
                             <p data-toggle="collapse" data-target="#details" class="info text-left <?php if($table == 'accessories'):?>accessories-details <?php endif; ?>">DETAILS</p>
                             <?php if($table == 'clothing' && $rows[0]['clothing_type'] == 'top'):?>
