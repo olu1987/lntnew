@@ -120,6 +120,24 @@ if($result === false) {
                                         <option value="Medium">Medium </option>
                                         <option value="Large">Large </option>
                                     </select> </td>
+                        <?php elseif($_GET['table'] == 'accessories' && $rows[0]['item_type'] == 'phone_case'): ?>
+                        <table class="sizes-select">
+                            <tr><td class="text-left" colspan="2"><input  type="hidden" name="on0" value="Sizes">Phones</td></tr><tr><td>
+                                    <select name="os0">
+                                        <option value="iPhone X">iPhone X </option>
+                                        <option value="iPhone 8 Plus">iPhone 8 Plus </option>
+                                        <option value="iPhone 8">iPhone 8 </option>
+                                        <option value="iPhone 7 Plus">iPhone 7 Plus </option>
+                                        <option value="iPhone 7">iPhone 7 </option>
+                                        <option value="iPhone 6">iPhone 6 </option>
+                                        <option value="iPhone 5">iPhone 5 </option>
+                                        <option value="Samsung 8 Plus">Samsung 8 Plus </option>
+                                        <option value="Samsung 8">Samsung 8 </option>
+                                        <option value="Samsung 7 Edge">Samsung 7 Edge </option>
+                                        <option value="Samsung 7">Samsung 7</option>
+                                        <option value="Samsung 6 Edge">Samsung 6 Edge </option>
+                                        <option value="Samsung 6">Samsung 6</option>
+                                    </select> </td>
                           <?php if($_GET['table'] != 'accessories'): ?>
                                 <td class="size-link-wrap">
                                     <a class="size-link" data-toggle="modal" data-target="#myModal">SIZE GUIDE</a>
@@ -136,11 +154,16 @@ if($result === false) {
                                     <li>made in England</li>
                                     <li>dry clean only</li>
                                 </ul>
-                            <?php elseif(isset($table) && $table == 'accessories'): ?>
+                            <?php elseif(isset($table) && $table == 'accessories' && $rows[0]['item_type'] == 'pocket_square'): ?>
                                 <ul class="collapse text-left" id="details">
                                     <li>100% silk</li>
                                     <li>made in England</li>
                                     <li>dry clean only</li>
+                                </ul>
+                                <?php elseif(isset($table) && $table == 'accessories' && $rows[0]['item_type'] == 'phone_case'): ?>
+                                <ul class="collapse text-left" id="details">
+                                    <li>Selected phones only (see drop down)</li>
+                                    <li>Silicone or hard</li>
                                 </ul>
                             <?php else: ?>
                                 <ul class="collapse text-left" id="details">
@@ -149,7 +172,7 @@ if($result === false) {
                                     <li>hand wash only</li>
                                 </ul>
                             <?php endif ?>
-                            <p data-toggle="collapse" data-target="#size" class="text-left info">SIZE & FIT</p>
+                        <?php if($rows[0]['item_type'] != 'phone_case'):?><p data-toggle="collapse" data-target="#size" class="text-left info">SIZE & FIT</p><?php endif; ?>
                             <?php if(($table == 'clothing') && $rows[0]['clothing_type'] == 'top'):?>
                                 <ul class="collapse text-left" id="size">
                                     <li> Loose fit</li>
@@ -157,7 +180,7 @@ if($result === false) {
                                         174cm/5’7” and wears a
                                         size small</li>
                                 </ul>
-                                <?php elseif($table == 'accessories'):?>
+                                <?php elseif($table == 'accessories' && $rows[0]['item_type'] == 'pocket_square'):?>
                                 <ul class="collapse text-left" id="size">
                                     <li>33cm x 33cm</li>
                                 </ul>
