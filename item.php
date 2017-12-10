@@ -122,7 +122,7 @@ if($result === false) {
                                     </select> </td>
                         <?php elseif($_GET['table'] == 'accessories' && $rows[0]['item_type'] == 'phone_case'): ?>
                         <table class="sizes-select">
-                            <tr><td class="text-left" colspan="2"><input  type="hidden" name="on0" value="Sizes">Phones</td></tr><tr><td>
+                            <tr><td class="text-left" colspan="2"><input  type="hidden" name="on0" value="Phone">Phones</td></tr><tr><td>
                                     <select name="os0">
                                         <option value="iPhone X">iPhone X </option>
                                         <option value="iPhone 8 Plus">iPhone 8 Plus </option>

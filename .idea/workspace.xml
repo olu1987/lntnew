@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e81e76d-29a7-44ca-98b8-42ba4e083cb8" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/send_form_email.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/item.php" afterPath="$PROJECT_DIR$/item.php" />
     </list>
@@ -76,10 +75,10 @@
       <file leaf-file-name="item.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/item.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="138" column="75" lean-forward="false" selection-start-line="138" selection-start-column="75" selection-end-line="138" selection-end-column="75" />
+            <state relative-caret-position="272">
+              <caret line="124" column="111" lean-forward="false" selection-start-line="124" selection-start-column="111" selection-end-line="124" selection-end-column="111" />
               <folding>
-                <marker date="1512909236030" expanded="true" signature="167:203" ph="SELECT * FRO... ${$table}" />
+                <marker date="1512910228395" expanded="true" signature="167:203" ph="SELECT * FRO... ${$table}" />
               </folding>
             </state>
           </provider>
@@ -480,15 +479,15 @@
       <workItem from="1505450494868" duration="1411000" />
       <workItem from="1505947080251" duration="32000" />
       <workItem from="1510565660531" duration="182000" />
-      <workItem from="1512907827560" duration="1429000" />
+      <workItem from="1512907827560" duration="2251000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="343236000" />
+    <option name="totallyTimeSpent" value="344058000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28517398" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -885,10 +884,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/item.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="138" column="75" lean-forward="false" selection-start-line="138" selection-start-column="75" selection-end-line="138" selection-end-column="75" />
+        <state relative-caret-position="272">
+          <caret line="124" column="111" lean-forward="false" selection-start-line="124" selection-start-column="111" selection-end-line="124" selection-end-column="111" />
           <folding>
-            <marker date="1512909236030" expanded="true" signature="167:203" ph="SELECT * FRO... ${$table}" />
+            <marker date="1512910228395" expanded="true" signature="167:203" ph="SELECT * FRO... ${$table}" />
           </folding>
         </state>
       </provider>
