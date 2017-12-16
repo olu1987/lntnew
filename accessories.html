@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="build/css/main-v1.3.css">
+    <link rel="stylesheet" href="build/css/main-v1.4.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body class="accessories sticky-nav-page">
@@ -82,13 +82,13 @@
                         <li ng-class="{active: character == 'Bert'}" class="list-group-item"><a ng-click="character = 'Bert'">BERT</a></li>
                         <li ng-class="{active: character == 'Timothy'}" class="list-group-item"><a ng-click = "character = 'Timothy'">TIMOTHY</a></li>
                         <li ng-class="{active: character == 'zinnia'}" class="list-group-item"><a ng-click = "character = 'zinnia'">ZINNIA</a></li>
-                        <li class="list-group-item"><input class="form-control" ng-model="searchText"></li>
+                        <li class="list-group-item"><input class="search-input form-control" ng-model="searchText"></li>
                     </ul>
                 </div>
                 <div class="col-md-12">
                     <ul class="list-group sidebar">
                         <h3><strong>ITEM</strong></h3>
-                        <li ng-class="{active: item == undefined}" class="list-group-item"><a ng-click="item = undefined">ALL</a></li>
+                        <li  ng-class="{active: item == undefined}" class="list-group-item"><a ng-click="item = undefined">ALL</a></li>
                         <li ng-class="{active: item == 'pocket_square'}" class="list-group-item"><a ng-click="item = 'pocket_square'" >POCKET SQUARES</a></li>
                         <li ng-class="{active: item == 'phone_case'}" class="list-group-item"><a ng-click="item = 'phone_case'" >PHONE CASES</a></li>
                     </ul>
@@ -96,11 +96,11 @@
             </div>
        </div>
         <div class="col-md-9 col-sm-12 col-xs-12">
-            <a ng-repeat="item in items   | chooseCharacter: character.toLowerCase() | filter: searchText | chooseItem: item.toLowerCase() track by item.id" href="item.php?table=accessories&id={{item.id}}">
+            <a  ng-repeat="item in items   | chooseCharacter: character.toLowerCase() | filter: searchText | chooseItem: item.toLowerCase() track by item.id" href="item.php?table=accessories&id={{item.id}}">
             <div class="col-md-4 col-sm-6 col-xs-6 print">
 
 
-                <img class="img-responsive" src="{{item.item_image_url}}" alt="lnt london | {{item.item_name}}"/>
+                <img class="item-img img-responsive" src="{{item.item_image_url}}" alt="lnt london | {{item.item_name}}"/>
             <div class="title-wrap">
                 <h4 class="text-center"><strong>. {{item.item_name}} .</strong></h4>
                 <p class="text-center">&pound;{{item.item_price}}</p>
@@ -148,7 +148,7 @@
 <script src="node_modules/angular/angular.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/plugins.js"></script>
-<script src="build/js/main-2.min.js"></script>
+<script src="build/js/main-3.min.js"></script>
 
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

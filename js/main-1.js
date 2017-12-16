@@ -68,50 +68,28 @@ $(document).ready(function(){
     navScroll();
 
     var clothingModule = (function () {
-
         var bigPicture = document.getElementById('big-picture');
-
         var thumbnails = document.querySelectorAll('.item .thumbnails');
-
         return {
             changePicture: function () {
-
                 for(var i = 0, x = thumbnails.length; i < x; i++){
-
                     thumbnails[i].addEventListener('click', function () {
-
                         for(var i = 0, x = thumbnails.length; i < x; i++){
-
                             removeClass(thumbnails[i],'active');
-
                         }
-
                         addClass(this,'active');
-
                         var img = this.getAttribute('src');
-
                         bigPicture.setAttribute('src',img);
-
                     })
-
                 }
-
             }
         };
 
     })();
 
     clothingModule.changePicture();
-
     window.addEventListener('load',function(){
-
-        if(hasClass(document.body,'prints'))
-        {
-            return;
-        }
-
         var loader = document.getElementById('loader');
-
         setTimeout(function(){
             removeClass(loader,'active');
         },500);
@@ -119,32 +97,49 @@ $(document).ready(function(){
         setTimeout(function(){
             addClass(loader,'hidden');
         },1300);
-
     });
 
-    (function printsLoaded(){
-        if(! hasClass(document.body,'prints')){
-            return;
+    var lazyLoadImageModule = {
+        init:function(){
+            this.window = $(document);
+            this.searchInput = $('.search-input');
+            this.filterButtons = $('.sidebar li a');
+            this.unbinding();
+            this.binding();
+        },
+        binding:function(){
+            $.fn.isInViewport = this.isInViewportOrHigherInPage;
+            this.window.on('resize scroll', lazyLoadImageModule.loadImage);
+            this.searchInput.on('input', lazyLoadImageModule.loadImage);
+            this.filterButtons.on('click', lazyLoadImageModule.loadImage);
+        },
+        unbinding:function(){
+            this.window.off('resize scroll', lazyLoadImageModule.loadImage);
+            this.searchInput.off('input', lazyLoadImageModule.loadImage);
+            this.filterButtons.off('click', lazyLoadImageModule.loadImage);
+        },
+        loadImage:function(){
+            var images = $('.item-img');
+            images.each(function( index ){
+                    var element = $(this);
+                    if(element.isInViewport() && ! element.hasClass('active')){
+                        element.attr('src', element.data('src'));
+                        setTimeout(function(){
+                            element.addClass('active');
+                        },200);
+                    }
+                }
+            );
+        },
+        isInViewportOrHigherInPage:function () {
+            var elementTop = $(this).offset().top,
+                viewportTop = $(window).scrollTop(),
+                viewportBottom = viewportTop + $(window).height();
+            return elementTop < viewportBottom;
         }
+    };
 
-        function removeMask() {
-            var prints = document.querySelectorAll('.prints .col-sm-6.print .img-responsive');
-            if (prints.length > 60) {
-                var loader = document.getElementById('loader');
+    lazyLoadImageModule.init();
+    lazyLoadImageModule.loadImage();
 
-                setTimeout(function(){
-                    removeClass(loader,'active');
-                },500);
-
-                setTimeout(function(){
-                    addClass(loader,'hidden');
-                },1300);
-            } else {
-                setTimeout(removeMask, 15);
-            }
-        }
-
-        removeMask();
-
-    }())
 });

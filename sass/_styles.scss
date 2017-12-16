@@ -573,6 +573,14 @@ $spCol: #000;
   padding-top: 24vh;
 }
 
+.item-img{
+  opacity: 0;
+  transition: 1000ms ease-in-out all;
+  &.active{
+    opacity: 1;
+  }
+}
+
 
 
 

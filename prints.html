@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="build/css/main-v1.3.css">
+    <link rel="stylesheet" href="build/css/main-v1.4.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body class="accessories sticky-nav-page prints">
@@ -85,7 +85,7 @@
                         <li ng-class="{active: character == 'Lacie'}" class="list-group-item"><a ng-click="character = 'Lacie'">LACIE</a></li>
                         <li ng-class="{active: character == 'Bert'}" class="list-group-item"><a ng-click="character = 'Bert'">BERT</a></li>
                         <li ng-class="{active: character == 'Timothy'}" class="list-group-item"><a ng-click="character = 'Timothy'">TIMOTHY</a></li>
-                        <li class="list-group-item"><input class="form-control" ng-model="searchText"></li>
+                        <li class="list-group-item"><input class="search-input form-control" ng-model="searchText"></li>
                     </ul>
                 </div>
             </div>
@@ -94,7 +94,7 @@
             <a ng-repeat="item in items   | chooseCharacter: character.toLowerCase() | filter: searchText track by item.id" class="col-md-4 col-sm-6 col-xs-6 print" href="item.php?table=prints&id={{item.id}}"><div>
 
 
-                <img class="img-responsive" src="{{item.item_image_url}}" alt="lnt london | {{item.item_name}}" />
+                <img class="img-responsive item-img" data-src="{{item.item_image_url}}" alt="lnt london | {{item.item_name}}" />
                 <div class="title-wrap">
                     <h4 class="text-center"><strong>. {{item.item_name}} .</strong></h4>
                     <h4 class="text-center"><small>{{item.sub_text}}</small></h4>
@@ -137,7 +137,7 @@
 <script src="node_modules/angular/angular.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/plugins.js"></script>
-<script src="build/js/main-2.min.js"></script>
+<script src="build/js/main-3.min.js"></script>
 
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

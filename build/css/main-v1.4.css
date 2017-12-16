@@ -647,6 +647,12 @@ footer.row {
 .contact-friendly-text {
   padding-top: 24vh; }
 
+.item-img {
+  opacity: 0;
+  transition: 1000ms ease-in-out all; }
+  .item-img.active {
+    opacity: 1; }
+
 #myCarousel {
   width: 100%;
   z-index: 11;
@@ -723,7 +729,11 @@ footer.row {
     width: 150px; }
   .col-sm-6.print {
     height: 250px; }
+    .col-sm-6.print img {
+      height: 135px;
+      margin: 0 auto; }
   .overlay h2 {
+    font-size: 13px;
     font-size: 13px; } }
 
 @media (max-width: 391px) {
@@ -732,7 +742,7 @@ footer.row {
   .clothing-item-wrap {
     height: 312px; } }
 
-@media (min-width: 767px) {
+@media (min-width: 1200px) {
   .pic-one {
     background-attachment: fixed !important; }
   .pic-two {

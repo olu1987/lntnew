@@ -9,7 +9,7 @@ var sass = require('gulp-sass');
 // Concatenate JS Files
 gulp.task('scripts', function() {
     return gulp.src(['js/*.js','js/accessories/*.js','js/prints/*.js','js/clothing/*.js'])
-        .pipe(concat('main-2.js'))
+        .pipe(concat('main-3.js'))
         .pipe(rename({suffix: '.min'}))
         //.pipe(uglify())
         .pipe(gulp.dest('build/js'));
