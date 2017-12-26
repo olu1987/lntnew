@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e81e76d-29a7-44ca-98b8-42ba4e083cb8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/css/main-v1.4.css" afterPath="$PROJECT_DIR$/build/css/main-v1.4.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/item.php" afterPath="$PROJECT_DIR$/item.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_styles.scss" afterPath="$PROJECT_DIR$/sass/_styles.scss" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,23 +53,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_styles.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_styles.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/_styles.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9809">
-              <caret line="577" column="37" lean-forward="false" selection-start-line="577" selection-start-column="37" selection-end-line="577" selection-end-column="37" />
+            <state relative-caret-position="107">
+              <caret line="583" column="12" lean-forward="true" selection-start-line="583" selection-start-column="12" selection-end-line="583" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="item.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="item.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/item.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="98">
-              <caret line="124" column="73" lean-forward="false" selection-start-line="124" selection-start-column="73" selection-end-line="124" selection-end-column="73" />
+              <caret line="194" column="157" lean-forward="false" selection-start-line="194" selection-start-column="147" selection-end-line="194" selection-end-column="157" />
               <folding>
-                <marker date="1514315363095" expanded="true" signature="167:203" ph="SELECT * FRO... ${$table}" />
+                <marker date="1514316396619" expanded="true" signature="167:203" ph="SELECT * FRO... ${$table}" />
               </folding>
             </state>
           </provider>
@@ -135,7 +136,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>html</find>
       <find>url</find>
       <find>sizes</find>
       <find>first_</find>
@@ -158,13 +158,14 @@
       <find>console.lo</find>
       <find>over</find>
       <find>g</find>
-      <find>gold</find>
       <find>v1.2</find>
       <find>fixed</find>
       <find>&quot;/&quot;</find>
       <find>sub</find>
       <find>input</find>
       <find>free</find>
+      <find>info@</find>
+      <find>gold</find>
     </findStrings>
     <replaceStrings>
       <replace>sm</replace>
@@ -223,13 +224,13 @@
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/js/accessories/AccessoriesFilter.js" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
-        <option value="$PROJECT_DIR$/sass/_styles.scss" />
         <option value="$PROJECT_DIR$/js/accessories/AccessoriesController.js" />
         <option value="$PROJECT_DIR$/clothing.html" />
         <option value="$PROJECT_DIR$/js/main-1.js" />
         <option value="$PROJECT_DIR$/prints.html" />
         <option value="$PROJECT_DIR$/accessories.html" />
         <option value="$PROJECT_DIR$/item.php" />
+        <option value="$PROJECT_DIR$/sass/_styles.scss" />
       </list>
     </option>
   </component>
@@ -488,12 +489,12 @@
       <workItem from="1512907827560" duration="5824000" />
       <workItem from="1512917643648" duration="464000" />
       <workItem from="1513381497360" duration="9300000" />
-      <workItem from="1514315222909" duration="178000" />
+      <workItem from="1514315222909" duration="1534000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="357573000" />
+    <option name="totallyTimeSpent" value="358929000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -815,14 +816,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/_styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9809">
-          <caret line="577" column="37" lean-forward="false" selection-start-line="577" selection-start-column="37" selection-end-line="577" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -890,10 +883,18 @@
     <entry file="file://$PROJECT_DIR$/item.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
-          <caret line="124" column="73" lean-forward="false" selection-start-line="124" selection-start-column="73" selection-end-line="124" selection-end-column="73" />
+          <caret line="194" column="157" lean-forward="false" selection-start-line="194" selection-start-column="147" selection-end-line="194" selection-end-column="157" />
           <folding>
-            <marker date="1514315363095" expanded="true" signature="167:203" ph="SELECT * FRO... ${$table}" />
+            <marker date="1514316396619" expanded="true" signature="167:203" ph="SELECT * FRO... ${$table}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/_styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="583" column="12" lean-forward="true" selection-start-line="583" selection-start-column="12" selection-end-line="583" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>

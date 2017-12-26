@@ -653,6 +653,9 @@ footer.row {
   .item-img.active {
     opacity: 1; }
 
+.color-gold {
+  color: gold !important; }
+
 #myCarousel {
   width: 100%;
   z-index: 11;

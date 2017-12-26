@@ -192,7 +192,7 @@ if($result === false) {
                                 </ul>
                                 <?php elseif(isset($table) && $table == 'accessories' && $rows[0]['item_type'] == 'phone_case'): ?>
                                 <ul class="collapse text-left" id="details">
-                                    <li>If your phone is not stated in the list above please email info@lntlondon to discuss further options.</li>
+                                    <li>If your phone is not stated in the list above please email info@lntlondon.com or message via the <a class="color-gold" href="/contact.html">contact</a> page to discuss further options.</li>
                                     <li>Silicone or hard</li>
                                 </ul>
                             <?php else: ?>
