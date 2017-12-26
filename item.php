@@ -122,7 +122,7 @@ if($result === false) {
                     </ul>
                     <p data-toggle="collapse" data-target="#delivery" class="text-left info">DELIVERY & RETURNS</p>
                     <ul id="delivery" class="text-left collapse">
-                        <li>Free worldwide delivery</li>
+                        <li>free worldwide shipping on orders over £50.00</li>
                         <li>Your order will be dispatched within 1-14 days depending on your order</li>
                         <li>Returns and exchanges are accepted within 14 days - see our full policy <a href="delivery"><strong>here</strong></a>.</li>
                     </ul>
@@ -192,7 +192,7 @@ if($result === false) {
                                 </ul>
                                 <?php elseif(isset($table) && $table == 'accessories' && $rows[0]['item_type'] == 'phone_case'): ?>
                                 <ul class="collapse text-left" id="details">
-                                    <li>Selected phones only (see drop down)</li>
+                                    <li>If your phone is not stated in the list above please email info@lntlondon to discuss further options.</li>
                                     <li>Silicone or hard</li>
                                 </ul>
                             <?php else: ?>
@@ -226,7 +226,7 @@ if($result === false) {
                         <?php endif ?>
                         <p data-toggle="collapse" data-target="#delivery" class="text-left info">DELIVERY & RETURNS</p>
                         <ul id="delivery" class="text-left collapse">
-                            <li>Free worldwide delivery</li>
+                            <li>free worldwide shipping on orders over £50.00</li>
                             <li>Your order will be dispatched within 1-14 days depending on your order</li>
                             <li>Returns and exchanges are accepted within 14 days - see our full policy <a href="delivery"><strong>here</strong></a>.</li>
                         </ul>
