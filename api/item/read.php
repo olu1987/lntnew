@@ -39,9 +39,11 @@ if($num>0){
             "item_name" => $item_name,
             "item_description" => html_entity_decode($item_description),
             "item_price" => $item_price,
-            "character_name;" => $character_name,
-            "item_image_url;" => $item_image_url,
-            "button_id" => $button_id
+            "character_name" => $character_name,
+            "item_image_url" => $item_image_url,
+            "button_id" => $button_id,
+            "sub_text" => $sub_text,
+            "item_type" => $item_type
         );
 
         array_push($products_arr["records"], $product_item);

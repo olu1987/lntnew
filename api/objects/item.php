@@ -13,6 +13,7 @@ class PrintSingle{
     public $item_image_url;
     public $button_id;
     public $item_price;
+    public $sub_text;
 
     // constructor with $db as database connection
     public function __construct($db){
@@ -24,7 +25,7 @@ class PrintSingle{
 
         // select all query
         $query = "SELECT
-                item_name, id, item_description, item_price, character_name, item_image_url, button_id
+                item_name, id, item_description, item_price, character_name, item_image_url, button_id, sub_text, item_type
             FROM
                 " . htmlspecialchars($_GET["table"]) . " ";
 
