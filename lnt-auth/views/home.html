@@ -1,2 +1,22 @@
-<p>Welcome {{userdata.username}}</p>
+<p ng-click="active = 'prints'">Welcome {{userdata.username}}</p>
 <p>This is the landing page for all logged in users.<br/>To perform different user actions use the menu above.</p>
+<ul class="list-inline">
+    <li ng-click="active = 'prints'">Prints</li>
+    <li ng-click="active = 'accessories'">Accessories</li>
+    <li ng-click="active = 'clothing'">Clothing</li>
+</ul>
+<ul ng-show="active == 'prints'" class="list-group">
+    <li class="list-group-item" ng-repeat="item in items.prints | orderBy: 'id' track by item.id">
+        {{item.item_name}}
+    </li>
+</ul>
+<ul ng-show="active == 'accessories'" class="list-group" class="list-group">
+    <li class="list-group-item" ng-repeat="item in items.accessories | orderBy: 'id' track by item.id">
+        {{item.item_name}}
+    </li>
+</ul>
+<ul ng-show="active == 'clothing'" class="list-group">
+    <li class="list-group-item" ng-repeat="item in items.clothing | orderBy: 'id' track by item.id">
+        {{item.item_name}}
+    </li>
+</ul>
