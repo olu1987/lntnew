@@ -16,8 +16,16 @@
         <th>
             Price
         </th>
+        <th>
+            <a id="edit-item-btn" class="add-item-btn">
+                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                Add New Item
+            </a>
+        </th>
+        <th>
+        </th>
     </tr>
-    <tr ng-repeat="item in items.prints | orderBy: 'id' track by item.id">
+    <tr ng-repeat="item in items.prints | orderBy: '-id' track by item.id">
         <td>
             {{item.id}}
         </td>
@@ -26,6 +34,16 @@
         </td>
         <td>
             {{item.item_price}}
+        </td>
+        <td>
+            <a data-toggle="modal" data-target="#adminModal" ng-click="setFormData(item)" class="edit-item-btn">
+                Edit
+            </a>
+        </td>
+        <td>
+            <a class="delete-item-btn">
+                Delete
+            </a>
         </td>
     </tr>
 </table>
@@ -40,6 +58,14 @@
         <th>
             Price
         </th>
+        <th>
+            <a class="add-item-btn">
+                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                Add New Item
+            </a>
+        </th>
+        <th>
+        </th>
     </tr>
     <tr ng-repeat="item in items.accessories | orderBy: 'id' track by item.id">
         <td>
@@ -51,18 +77,36 @@
         <td>
             {{item.item_price}}
         </td>
+        <td>
+            <a class="edit-item-btn">
+                Edit
+            </a>
+        </td>
+        <td>
+            <a class="delete-item-btn">
+                Delete
+            </a>
+        </td>
     </tr>
 </table>
 <table ng-show="activeTable == 'clothing'" class="table table-striped">
     <tr>
         <th>
-          ID
+            ID
         </th>
         <th>
-          Name
+            Name
         </th>
         <th>
-          Price
+            Price
+        </th>
+        <th>
+            <a class="add-item-btn">
+                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                Add New Item
+            </a>
+        </th>
+        <th>
         </th>
     </tr>
     <tr ng-repeat="item in items.clothing | orderBy: 'id' track by item.id">
@@ -75,5 +119,47 @@
         <td>
             {{item.item_price}}
         </td>
+        <td>
+            <a class="edit-item-btn">
+                Edit
+            </a>
+        </td>
+        <td>
+            <a class="delete-item-btn">
+                Delete
+            </a>
+        </td>
     </tr>
 </table>
+<!-- Modal -->
+<div class="modal fade" id="adminModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form text-left">
+                    <div class="form-group">
+                        <label for="formItemName">Item Name</label>
+                        <input value="{{formItemName}}" type="email" class="form-control" id="formItemName" placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="formItemName">Item Price</label>
+                        <input value="{{formItemPrice}}" type="email" class="form-control" id="formItemPrice" placeholder="name@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Example textarea</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>

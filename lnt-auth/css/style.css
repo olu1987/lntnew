@@ -73,3 +73,29 @@ input.ng-invalid {
 .table-tabs a.active{
 	color: gold;
 }
+
+.add-item-btn, .add-item-btn:hover{
+	color: #444;
+	cursor: pointer;
+}
+
+.edit-item-btn, .edit-item-btn:hover{
+	color: rgba(65, 84, 101, 0.58);
+	cursor: pointer;
+	transition: 300ms ease-in-out all;
+}
+.edit-item-btn:hover{
+  color: rgba(65, 84, 101, 1.0);
+	text-decoration: none;
+}
+
+.delete-item-btn, .delete-item-btn:hover{
+	color: rgba(255, 0, 0, 0.62);
+	cursor: pointer;
+	transition: 300ms ease-in-out all;
+}
+
+.delete-item-btn:hover{
+	color: rgba(255, 0, 0, 1.0);
+	text-decoration: none;
+}

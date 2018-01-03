@@ -100,5 +100,8 @@ angular.module('myApp.controllers', [])
         };
 
         $scope.getItems();
-
-	})
+        $scope.setFormData = function (item) {
+			$scope.formItemName = item.item_name;
+			$scope.formItemPrice = item.item_price;
+        }
+	});
