@@ -94,6 +94,8 @@ angular.module('myApp.controllers', [])
                 $window.location = "auth/";
             });
 
+            $scope.activeTable = 'prints'
+
 
         };
 

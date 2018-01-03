@@ -4,7 +4,7 @@ body {
 }
 .container {
 	width: 90%;
-	max-width: 800px;
+	max-width: 1000px;
 	margin: 0 auto;
 }
 
@@ -57,4 +57,19 @@ form .successmsg {
 
 input.ng-invalid {
 	border-color: #FF0000 !important;
+}
+
+.table-tabs a, .table-tabs a:hover {
+	color: #444444;
+	text-decoration: none;
+	cursor:pointer;
+	transition: 300ms ease-in-out all;
+}
+
+.table-tabs a:hover {
+	color: #797979;
+}
+
+.table-tabs a.active{
+	color: gold;
 }
