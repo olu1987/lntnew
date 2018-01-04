@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e81e76d-29a7-44ca-98b8-42ba4e083cb8" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/item/upload.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lnt-auth/js/controllers.js" afterPath="$PROJECT_DIR$/lnt-auth/js/controllers.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lnt-auth/views/home.html" afterPath="$PROJECT_DIR$/lnt-auth/views/home.html" />
@@ -79,11 +80,22 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lnt-auth/views/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="134" column="53" lean-forward="false" selection-start-line="134" selection-start-column="43" selection-end-line="134" selection-end-column="53" />
+            <state relative-caret-position="170">
+              <caret line="189" column="84" lean-forward="false" selection-start-line="189" selection-start-column="84" selection-end-line="189" selection-end-column="84" />
               <folding>
                 <element signature="e#4297#4304#0" expanded="true" />
+                <element signature="n#style#0;n#img#1;n#div#0;n#div#10;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="upload.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api/item/upload.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="56" lean-forward="false" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -98,11 +110,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controllers.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="controllers.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lnt-auth/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="150" column="25" lean-forward="false" selection-start-line="150" selection-start-column="25" selection-end-line="150" selection-end-column="25" />
+            <state relative-caret-position="64">
+              <caret line="169" column="28" lean-forward="false" selection-start-line="169" selection-start-column="28" selection-end-line="169" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -175,8 +187,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js/clothing/ClothingController.js" />
-        <option value="$PROJECT_DIR$/footer.php" />
         <option value="$PROJECT_DIR$/send_form_email.php" />
         <option value="$PROJECT_DIR$/getdata.php" />
         <option value="$PROJECT_DIR$/build/css/main.css" />
@@ -223,9 +233,11 @@
         <option value="$PROJECT_DIR$/lnt-auth/css/style.css" />
         <option value="$PROJECT_DIR$/api/item/create.php" />
         <option value="$PROJECT_DIR$/api/objects/item.php" />
-        <option value="$PROJECT_DIR$/lnt-auth/views/home.html" />
         <option value="$PROJECT_DIR$/lnt-auth/js/directives.js" />
+        <option value="$PROJECT_DIR$/api/item/upload-image.php" />
+        <option value="$PROJECT_DIR$/lnt-auth/views/home.html" />
         <option value="$PROJECT_DIR$/lnt-auth/js/controllers.js" />
+        <option value="$PROJECT_DIR$/api/item/upload.php" />
       </list>
     </option>
   </component>
@@ -554,12 +566,12 @@
       <workItem from="1513381497360" duration="9300000" />
       <workItem from="1514315222909" duration="2351000" />
       <workItem from="1514635945374" duration="9319000" />
-      <workItem from="1514976845513" duration="58281000" />
+      <workItem from="1514976845513" duration="62294000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="427346000" />
+    <option name="totallyTimeSpent" value="431359000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -622,13 +634,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="48" lean-forward="false" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/privacy.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -985,14 +990,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lnt-auth/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/item/update.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1054,20 +1051,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lnt-auth/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lnt-auth/views/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="134" column="53" lean-forward="false" selection-start-line="134" selection-start-column="43" selection-end-line="134" selection-end-column="53" />
+        <state relative-caret-position="170">
+          <caret line="189" column="84" lean-forward="false" selection-start-line="189" selection-start-column="84" selection-end-line="189" selection-end-column="84" />
           <folding>
             <element signature="e#4297#4304#0" expanded="true" />
+            <element signature="n#style#0;n#img#1;n#div#0;n#div#10;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lnt-auth/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="150" column="25" lean-forward="false" selection-start-line="150" selection-start-column="25" selection-end-line="150" selection-end-column="25" />
+        <state relative-caret-position="64">
+          <caret line="169" column="28" lean-forward="false" selection-start-line="169" selection-start-column="28" selection-end-line="169" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/item/upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="56" lean-forward="false" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
           <folding />
         </state>
       </provider>

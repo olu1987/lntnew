@@ -163,6 +163,36 @@ angular.module('myApp.controllers', [])
                     console.log(xhr, resp, text);
                     console.warn(xhr.responseText)
                 }
-            })
+            });
+
+            $http({
+                method  : 'POST',
+                url     : '../api/item//upload.php',
+                processData: false,
+                transformRequest: function (data) {
+                    var formData = new FormData();
+                    formData.append("image", $scope.formItem.imageFile);
+                    return formData;
+                },
+                data : $scope.formItem,
+                headers: {
+                    'Content-Type': undefined
+                }
+            }).success(function(data){
+                alert(data);
+            });
+        };
+
+        $scope.uploadedFile = function(element) {
+            $scope.formItem.imageFile = element.files[0];
+            var reader = new FileReader();
+
+            reader.onload = function(event) {
+                $scope.image_source = event.target.result
+                $scope.$apply(function($scope) {
+                    $scope.files = element.files;
+                });
+            }
+            reader.readAsDataURL(element.files[0]);
         }
 	});

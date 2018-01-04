@@ -187,7 +187,9 @@
                             <div class="form-group col-sm-6">
                                 <label for="formItemImage">Item Image</label>
                                 <img id="formItemImage" class="img-responsive" src="{{formImageUrl}}"/>
+                                <img ng-src="{{image_source}}" style="width:300px;">
                             </div>
+                            <input ng-model="formItem.imageFile"  onchange="angular.element(this).scope().uploadedFile(this)" name="userImage" type="file" class="inputFile" />
                     </div>
                     <div class="form-group">
                         <imput type="button" class="btn btn-default" data-dismiss="modal">Close</imput>
