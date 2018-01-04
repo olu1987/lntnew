@@ -122,9 +122,9 @@ angular.module('myApp.controllers', [])
 
         };
 
-        $scope.submit = function () {
+        $scope.submit = function (activeTable) {
             var form_data = $scope.formItem;
-            var table = $scope.activeTable;
+            var table = activeTable;
             var action;
 
             if($scope.modalAction == 'Add New'){

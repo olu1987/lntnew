@@ -26,9 +26,10 @@ $product->item_price = $data->item_price;
 $product->item_description = $data->item_description;
 $product->character_name = $data->character_name;
 $product->button_id = $data->button_id;
-$product->item_image_url = $data->button_id;
-$product->item_image_url_2 = $data->button_id;
-$product->sub_text = $data->button_id;
+$product->item_image_url = $data->item_image_url;
+$product->item_image_url_2 = $data->item_image_url_2;
+$product->item_image_url_3 = $data->item_image_url_3;
+$product->sub_text = $data->sub_text;
 
 // create the product
 if($product->create()){

@@ -12,9 +12,11 @@ class Item{
     public $character_name;
     public $item_image_url;
     public $item_image_url_2;
+    public $item_image_url_3;
     public $button_id;
     public $item_price;
     public $sub_text;
+    public $item_type;
 
     // constructor with $db as database connection
     public function __construct($db){
@@ -29,7 +31,7 @@ class Item{
         $query = "SELECT
                 item_name, id, item_description, item_price, character_name, item_image_url, button_id, sub_text, item_type
             FROM
-                " . $this->table . " ";
+                " . $this->table . " ORDER BY id DESC; ";
 
         // prepare query statement
         $stmt = $this->conn->prepare($query);
@@ -47,7 +49,7 @@ class Item{
                 " . $this->table . "
             SET
                 item_name=:item_name, item_price=:item_price, item_description=:item_description,item_image_url=:item_image_url, character_name=:character_name, 
-                item_image_url_2=:item_image_url_2,sub_text = :sub_text, button_id=:button_id";
+                item_type=:item_type,item_image_url_2=:item_image_url_2,item_image_url_3=:item_image_url_3,sub_text = :sub_text, button_id=:button_id";
 
         // prepare query
         $stmt = $this->conn->prepare($query);
@@ -60,7 +62,9 @@ class Item{
         $this->button_id=htmlspecialchars(strip_tags($this->button_id));
         $this->item_image_url=htmlspecialchars(strip_tags($this->item_image_url));
         $this->item_image_url_2=htmlspecialchars(strip_tags($this->item_image_url_2));
+        $this->item_image_url_3=htmlspecialchars(strip_tags($this->item_image_url_3));
         $this->sub_text=htmlspecialchars(strip_tags($this->sub_text));
+        $this->item_type=htmlspecialchars(strip_tags($this->item_type));
 
         // bind values
         $stmt->bindParam(":item_name", $this->item_name);
@@ -70,7 +74,9 @@ class Item{
         $stmt->bindParam(":button_id", $this->button_id);
         $stmt->bindParam(":item_image_url", $this->item_image_url);
         $stmt->bindParam(":item_image_url_2", $this->item_image_url_2);
+        $stmt->bindParam(":item_image_url_3", $this->item_image_url_3);
         $stmt->bindParam(":sub_text", $this->sub_text);
+        $stmt->bindParam(":item_type", $this->item_type);
 
         // execute query
         if($stmt->execute()){

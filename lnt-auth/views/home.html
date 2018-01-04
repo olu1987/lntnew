@@ -25,7 +25,7 @@
         <th>
         </th>
     </tr>
-    <tr ng-repeat="item in items.prints | orderBy: '-id' track by item.id">
+    <tr ng-repeat="item in items.prints  track by item.id">
         <td>
             {{item.id}}
         </td>
@@ -67,7 +67,7 @@
         <th>
         </th>
     </tr>
-    <tr ng-repeat="item in items.accessories | orderBy: 'id' track by item.id">
+    <tr ng-repeat="item in items.accessories track by item.id">
         <td>
             {{item.id}}
         </td>
@@ -83,7 +83,7 @@
             </a>
         </td>
         <td>
-            <a class="delete-item-btn">
+            <a data-toggle="modal" data-target="#adminModal" ng-click="setFormDataDelete(item)" class="delete-item-btn">
                 Delete
             </a>
         </td>
@@ -109,7 +109,7 @@
         <th>
         </th>
     </tr>
-    <tr ng-repeat="item in items.clothing | orderBy: 'id' track by item.id">
+    <tr ng-repeat="item in items.clothing track by item.id">
         <td>
             {{item.id}}
         </td>
@@ -125,7 +125,7 @@
             </a>
         </td>
         <td>
-            <a class="delete-item-btn">
+            <a data-toggle="modal" data-target="#adminModal" ng-click="setFormDataDelete(item)" class="delete-item-btn">
                 Delete
             </a>
         </td>
@@ -140,7 +140,7 @@
                 <h4 class="modal-title" id="myModalLabel">{{modalAction}} Item</h4>
             </div>
             <div class="modal-body">
-                <form ng-submit="submit()" class="form text-left edit-add-view">
+                <form ng-submit="submit(activeTable)" class="form text-left edit-add-view">
                         <div class="form-group">
                             <label for="formItemName">Item Name</label>
                             <input placeholder="e.g cosmic, lilly, zinnia" ng-model="formItem.item_name"  type="text" class="form-control" id="formItemName" required>
@@ -164,6 +164,10 @@
                         <div class="form-group">
                             <label for="formItemName">Image URL 2</label>
                             <input placeholder="e.g bert, timothy" ng-model="formItem.item_image_url_2" type="text" class="form-control" id="formItemImageUrl2" required>
+                        </div>
+                    <div class="form-group">
+                            <label for="formItemName">Image URL 3</label>
+                            <input placeholder="e.g bert, timothy" ng-model="formItem.item_image_url_3" type="text" class="form-control" id="formItemImageUrl3" required>
                         </div>
                         <div class="form-group">
                             <label for="formItemName">Sub text </label>
@@ -190,7 +194,7 @@
                         <input class="btn btn-success" type="submit" id="submit" value="Submit" />
                     </div>
                 </form>
-                <form ng-submit="submit()" class="form text-left delete-view">
+                <form ng-submit="submit(activeTable)" class="form text-left delete-view">
                         <div class="modal-body delete-view">
                             <h1 class="warning-text">WARNING<br>
                                 <small class="warning-small-text">You are about to irreversibly delete a record from your database</small>
