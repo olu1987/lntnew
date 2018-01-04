@@ -17,7 +17,7 @@
             Price
         </th>
         <th>
-            <a id="edit-item-btn" class="add-item-btn">
+            <a data-toggle="modal" data-target="#adminModal" ng-click="setFormDataCreate()" class="add-item-btn">
                 <i class="fa fa-plus-circle" aria-hidden="true"></i>
                 Add New Item
             </a>
@@ -59,7 +59,7 @@
             Price
         </th>
         <th>
-            <a class="add-item-btn">
+            <a data-toggle="modal" data-target="#adminModal" ng-click="setFormDataCreate()" class="add-item-btn">
                 <i class="fa fa-plus-circle" aria-hidden="true"></i>
                 Add New Item
             </a>
@@ -78,7 +78,7 @@
             {{item.item_price}}
         </td>
         <td>
-            <a data-toggle="modal" data-target="#adminModal" ng-click="setFormData(item)" class="edit-item-btn" class="edit-item-btn">
+            <a data-toggle="modal" data-target="#adminModal" ng-click="setFormData(item)"  class="edit-item-btn">
                 Edit
             </a>
         </td>
@@ -101,7 +101,7 @@
             Price
         </th>
         <th>
-            <a class="add-item-btn">
+            <a data-toggle="modal" data-target="#adminModal" ng-click="setFormDataCreate()"  class="add-item-btn">
                 <i class="fa fa-plus-circle" aria-hidden="true"></i>
                 Add New Item
             </a>
@@ -137,34 +137,46 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Edit Item</h4>
+                <h4 class="modal-title" id="myModalLabel">{{modalAction}} Item</h4>
             </div>
             <div class="modal-body">
-                <form class="form text-left">
+                <form ng-submit="submit()" class="form text-left">
                     <div class="form-group">
                         <label for="formItemName">Item Name</label>
-                        <input ng-model="formItem.item_name"  type="text" class="form-control" id="formItemName" placeholder="name@example.com">
+                        <input placeholder="e.g cosmic, lilly, zinnia" ng-model="formItem.item_name"  type="text" class="form-control" id="formItemName" required>
                     </div>
                     <div class="form-group">
                         <label for="formItemName">Item Price</label>
-                        <input ng-model="formItem.item_price" type="text" class="form-control" id="formItemPrice" placeholder="name@example.com">
+                        <input placeholder="In pounds e.g 20.00" ng-model="formItem.item_price" type="text" class="form-control" id="formItemPrice" required>
                     </div>
                     <div class="form-group">
                         <label for="formItemName">Item Type</label>
-                        <input ng-model="formItem.item_type" type="text" class="form-control" id="formItemType" placeholder="name@example.com">
+                        <input placeholder="Convention is string with underscores e.g pocket_square, phone_case" ng-model="formItem.item_type" type="text" class="form-control" id="formItemType" required>
                     </div>
                     <div class="form-group">
                         <label for="formItemName">Character Name</label>
-                        <input ng-model="formItem.character_name" type="text" class="form-control" id="formItemCharacter" placeholder="name@example.com">
+                        <input placeholder="e.g bert, timothy" ng-model="formItem.character_name" type="text" class="form-control" id="formItemCharacter" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="formItemName">Image URL</label>
+                        <input placeholder="e.g bert, timothy" ng-model="formItem.item_image_url" type="text" class="form-control" id="formItemImageUrl" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="formItemName">Image URL 2</label>
+                        <input placeholder="e.g bert, timothy" ng-model="formItem.item_image_url_2" type="text" class="form-control" id="formItemImageUrl2" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="formItemName">Sub text </label>
+                        <input placeholder="e.g bert, timothy" ng-model="formItem.sub_text" type="text" class="form-control" id="subText" required>
                     </div>
                     <div class="form-group">
                         <label for="formItemName">Button ID</label>
-                        <input ng-model="formItem.button_id" type="text" class="form-control" id="formItemButtonId" placeholder="name@example.com">
+                        <input placeholder="Paypal id for button needs to be created and input here for payment" ng-model="formItem.button_id" type="text" class="form-control" id="formItemButtonId" required>
                     </div>
 
                     <div class="form-group">
                         <label for="formItemDescription">Item Description</label>
-                        <textarea ng-model="formItem.item_description" class="form-control" id="formItemDescription" rows="3">
+                        <textarea ng-model="formItem.item_description" class="form-control" id="formItemDescription" rows="3" required>
                         </textarea>
                     </div>
                     <div class="row">
@@ -173,11 +185,14 @@
                             <img id="formItemImage" class="img-responsive" src="{{formImageUrl}}"/>
                         </div>
                     </div>
+                    <div class="form-group">
+                        <imput type="button" class="btn btn-default" data-dismiss="modal">Close</imput>
+                        <input class="btn btn-success" type="submit" id="submit" value="Submit" />
+                    </div>
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+
             </div>
         </div>
     </div>

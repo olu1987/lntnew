@@ -12,7 +12,7 @@ $database = new Database();
 $db = $database->getConnection();
 
 // initialize object
-$product = new PrintSingle($db);
+$product = new Item($db);
 
 // query products
 $stmt = $product->read();

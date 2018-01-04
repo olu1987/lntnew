@@ -103,6 +103,44 @@ angular.module('myApp.controllers', [])
         $scope.setFormData = function (item) {
 			$scope.formItem = item;
 			$scope.formImageUrl = '../' + item.item_image_url;
+			$scope.modalAction = 'Edit';
 
+        };
+        $scope.setFormDataCreate = function (item) {
+			$scope.formItem = {};
+			$scope.formImageUrl = '';
+            $scope.modalAction = 'Add New';
+
+        };
+
+        $scope.submit = function () {
+            var form_data = $scope.formItem;
+            var table = $scope.activeTable;
+            var requestUrl = "../api/item/create.php?table=" + table;
+
+            console.log(form_data, table, requestUrl);
+
+            // submit form data to api
+            $.ajax({
+                url: requestUrl,
+                type : "POST",
+                contentType : 'application/json',
+                data : JSON.stringify(form_data),
+                success : function(response) {
+
+                    // api message
+                    $scope.successMessage = response['message'];
+                    console.log(response.message)
+
+                    // empty form
+                    $scope.formItem = {};
+                    $scope.getItems();
+
+                }.bind(this),
+                error: function(xhr, resp, text){
+                    // show error to console
+                    console.log(xhr, resp, text);
+                }
+			})
         }
 	});
