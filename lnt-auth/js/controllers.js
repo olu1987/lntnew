@@ -123,9 +123,12 @@ angular.module('myApp.controllers', [])
         };
 
         $scope.submit = function (activeTable) {
+
             var form_data = $scope.formItem;
             var table = activeTable;
+            var modal = angular.element('#adminModal');
             var action;
+
 
             if($scope.modalAction == 'Add New'){
                 action = 'create'
@@ -145,7 +148,7 @@ angular.module('myApp.controllers', [])
                 contentType : 'application/json',
                 data : JSON.stringify(form_data),
                 success : function(response) {
-
+                    modal.modal('hide');
                     // api message
                     $scope.successMessage = response['message'];
                     console.log(response.message);
