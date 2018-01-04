@@ -99,3 +99,38 @@ input.ng-invalid {
 	color: rgba(255, 0, 0, 1.0);
 	text-decoration: none;
 }
+
+.modal.delete .edit-add-view{
+	display: none;
+}
+
+.modal.delete .delete-view{
+	display: block;
+}
+
+.modal .edit-add-view{
+	display: block;
+}
+
+.modal .delete-view{
+	display: none;
+}
+
+.warning-text{
+	margin-top: 0;
+	margin-bottom: 50px;
+	background: #d9534f;
+	color:#fff;
+	font-size: 60px;
+}
+.warning-small-text{
+	color: #fff;
+	font-size: 40%;
+	padding: 10px;
+	background: #d9534f;
+	display: block;
+}
+
+.color-danger{
+	color:#d9534f;
+}

@@ -19,6 +19,7 @@ class Item{
     // constructor with $db as database connection
     public function __construct($db){
         $this->conn = $db;
+        $this->table = htmlspecialchars($_GET["table"]);
     }
 
     // read products
@@ -28,7 +29,7 @@ class Item{
         $query = "SELECT
                 item_name, id, item_description, item_price, character_name, item_image_url, button_id, sub_text, item_type
             FROM
-                " . htmlspecialchars($_GET["table"]) . " ";
+                " . $this->table . " ";
 
         // prepare query statement
         $stmt = $this->conn->prepare($query);
@@ -43,7 +44,7 @@ class Item{
 
         // query to insert record
         $query = "INSERT INTO
-                " . htmlspecialchars($_GET["table"]) . "
+                " . $this->table . "
             SET
                 item_name=:item_name, item_price=:item_price, item_description=:item_description,item_image_url=:item_image_url, character_name=:character_name, 
                 item_image_url_2=:item_image_url_2,sub_text = :sub_text, button_id=:button_id";
@@ -70,6 +71,29 @@ class Item{
         $stmt->bindParam(":item_image_url", $this->item_image_url);
         $stmt->bindParam(":item_image_url_2", $this->item_image_url_2);
         $stmt->bindParam(":sub_text", $this->sub_text);
+
+        // execute query
+        if($stmt->execute()){
+            return true;
+        }
+
+        return false;
+
+    }
+    // delete the product
+    function delete(){
+
+        // delete query
+        $query = "DELETE FROM " . $this->table . " WHERE id = ?";
+
+        // prepare query
+        $stmt = $this->conn->prepare($query);
+
+        // sanitize
+        $this->id=htmlspecialchars(strip_tags($this->id));
+
+        // bind id of record to delete
+        $stmt->bindParam(1, $this->id);
 
         // execute query
         if($stmt->execute()){

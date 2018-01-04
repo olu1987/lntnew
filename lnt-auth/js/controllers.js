@@ -101,26 +101,44 @@ angular.module('myApp.controllers', [])
 
         $scope.getItems();
         $scope.setFormData = function (item) {
+            $scope.modalState = '';
 			$scope.formItem = item;
 			$scope.formImageUrl = '../' + item.item_image_url;
 			$scope.modalAction = 'Edit';
 
         };
         $scope.setFormDataCreate = function (item) {
+            $scope.modalState = '';
 			$scope.formItem = {};
 			$scope.formImageUrl = '';
             $scope.modalAction = 'Add New';
+
+        };
+        $scope.setFormDataDelete = function (item) {
+        	$scope.modalState = 'delete';
+            $scope.formItem = item;
+			$scope.formImageUrl = '';
+            $scope.modalAction = 'Delete';
 
         };
 
         $scope.submit = function () {
             var form_data = $scope.formItem;
             var table = $scope.activeTable;
-            var requestUrl = "../api/item/create.php?table=" + table;
+            var action;
+
+            if($scope.modalAction == 'Add New'){
+                action = 'create'
+            }else if($scope.modalAction == 'Delete'){
+                action = 'delete';
+				form_data = {'id' : parseInt($scope.formItem.id)}
+            }
+            var requestUrl = "../api/item/"+ action + ".php?table=" + table;
 
             console.log(form_data, table, requestUrl);
 
             // submit form data to api
+
             $.ajax({
                 url: requestUrl,
                 type : "POST",
@@ -130,7 +148,7 @@ angular.module('myApp.controllers', [])
 
                     // api message
                     $scope.successMessage = response['message'];
-                    console.log(response.message)
+                    console.log(response.message);
 
                     // empty form
                     $scope.formItem = {};
@@ -140,7 +158,8 @@ angular.module('myApp.controllers', [])
                 error: function(xhr, resp, text){
                     // show error to console
                     console.log(xhr, resp, text);
+                    console.warn(xhr.responseText)
                 }
-			})
+            })
         }
 	});

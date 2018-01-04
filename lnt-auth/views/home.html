@@ -41,7 +41,7 @@
             </a>
         </td>
         <td>
-            <a class="delete-item-btn">
+            <a data-toggle="modal" data-target="#adminModal" ng-click="setFormDataDelete(item)" class="delete-item-btn">
                 Delete
             </a>
         </td>
@@ -120,7 +120,7 @@
             {{item.item_price}}
         </td>
         <td>
-            <a data-toggle="modal" data-target="#adminModal" ng-click="setFormData(item)" class="edit-item-btn" class="edit-item-btn">
+            <a data-toggle="modal" data-target="#adminModal" ng-click="setFormData(item)" class="edit-item-btn">
                 Edit
             </a>
         </td>
@@ -132,7 +132,7 @@
     </tr>
 </table>
 <!-- Modal -->
-<div class="modal fade" id="adminModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade {{modalState}}" id="adminModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -140,54 +140,70 @@
                 <h4 class="modal-title" id="myModalLabel">{{modalAction}} Item</h4>
             </div>
             <div class="modal-body">
-                <form ng-submit="submit()" class="form text-left">
-                    <div class="form-group">
-                        <label for="formItemName">Item Name</label>
-                        <input placeholder="e.g cosmic, lilly, zinnia" ng-model="formItem.item_name"  type="text" class="form-control" id="formItemName" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="formItemName">Item Price</label>
-                        <input placeholder="In pounds e.g 20.00" ng-model="formItem.item_price" type="text" class="form-control" id="formItemPrice" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="formItemName">Item Type</label>
-                        <input placeholder="Convention is string with underscores e.g pocket_square, phone_case" ng-model="formItem.item_type" type="text" class="form-control" id="formItemType" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="formItemName">Character Name</label>
-                        <input placeholder="e.g bert, timothy" ng-model="formItem.character_name" type="text" class="form-control" id="formItemCharacter" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="formItemName">Image URL</label>
-                        <input placeholder="e.g bert, timothy" ng-model="formItem.item_image_url" type="text" class="form-control" id="formItemImageUrl" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="formItemName">Image URL 2</label>
-                        <input placeholder="e.g bert, timothy" ng-model="formItem.item_image_url_2" type="text" class="form-control" id="formItemImageUrl2" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="formItemName">Sub text </label>
-                        <input placeholder="e.g bert, timothy" ng-model="formItem.sub_text" type="text" class="form-control" id="subText" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="formItemName">Button ID</label>
-                        <input placeholder="Paypal id for button needs to be created and input here for payment" ng-model="formItem.button_id" type="text" class="form-control" id="formItemButtonId" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="formItemDescription">Item Description</label>
-                        <textarea ng-model="formItem.item_description" class="form-control" id="formItemDescription" rows="3" required>
-                        </textarea>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-sm-6">
-                            <label for="formItemImage">Item Image</label>
-                            <img id="formItemImage" class="img-responsive" src="{{formImageUrl}}"/>
+                <form ng-submit="submit()" class="form text-left edit-add-view">
+                        <div class="form-group">
+                            <label for="formItemName">Item Name</label>
+                            <input placeholder="e.g cosmic, lilly, zinnia" ng-model="formItem.item_name"  type="text" class="form-control" id="formItemName" required>
                         </div>
+                        <div class="form-group">
+                            <label for="formItemName">Item Price</label>
+                            <input placeholder="In pounds e.g 20.00" ng-model="formItem.item_price" type="text" class="form-control" id="formItemPrice" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="formItemName">Item Type</label>
+                            <input placeholder="Convention is string with underscores e.g pocket_square, phone_case" ng-model="formItem.item_type" type="text" class="form-control" id="formItemType" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="formItemName">Character Name</label>
+                            <input placeholder="e.g bert, timothy" ng-model="formItem.character_name" type="text" class="form-control" id="formItemCharacter" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="formItemName">Image URL</label>
+                            <input placeholder="e.g bert, timothy" ng-model="formItem.item_image_url" type="text" class="form-control" id="formItemImageUrl" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="formItemName">Image URL 2</label>
+                            <input placeholder="e.g bert, timothy" ng-model="formItem.item_image_url_2" type="text" class="form-control" id="formItemImageUrl2" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="formItemName">Sub text </label>
+                            <input placeholder="e.g bert, timothy" ng-model="formItem.sub_text" type="text" class="form-control" id="subText" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="formItemName">Button ID</label>
+                            <input placeholder="Paypal id for button needs to be created and input here for payment" ng-model="formItem.button_id" type="text" class="form-control" id="formItemButtonId" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="formItemDescription">Item Description</label>
+                            <textarea ng-model="formItem.item_description" class="form-control" id="formItemDescription" rows="3" required>
+                            </textarea>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-sm-6">
+                                <label for="formItemImage">Item Image</label>
+                                <img id="formItemImage" class="img-responsive" src="{{formImageUrl}}"/>
+                            </div>
                     </div>
                     <div class="form-group">
                         <imput type="button" class="btn btn-default" data-dismiss="modal">Close</imput>
                         <input class="btn btn-success" type="submit" id="submit" value="Submit" />
+                    </div>
+                </form>
+                <form ng-submit="submit()" class="form text-left delete-view">
+                        <div class="modal-body delete-view">
+                            <h1 class="warning-text">WARNING<br>
+                                <small class="warning-small-text">You are about to irreversibly delete a record from your database</small>
+                            </h1> Are you sure you want to delete <span class="color-danger">{{formItem.item_name}}</span>?
+                        </div>
+                        <div class="form-group hidden">
+                            <label for="itemId">Item Name</label>
+                            <input placeholder="e.g cosmic, lilly, zinnia" ng-model="formItem.id"  type="text" class="form-control" id="itemId" required>
+                        </div>
+
+                    <div class="form-group">
+                        <imput type="button" class="btn btn-default" data-dismiss="modal">Close</imput>
+                        <input class="btn btn-success" type="submit" id="submitDelete" value="Submit" />
                     </div>
                 </form>
             </div>
