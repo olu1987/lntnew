@@ -171,28 +171,34 @@
                             </textarea>
                         </div>
                         <div class="row">
-                            <div class="form-group col-sm-6">
-                                <div class="row">
-                                    <div class="col-xs-12">
-                                        <label for="formItemImage">Item Image 1</label>
+                            <div class="form-group col-sm-12">
+                                <div class="row image-section">
+                                    <div class="col-sm-6">
                                         <img ng-show="modalState == 'edit' && !image_source" id="formItemImage" class="img-responsive" src="{{formImageUrl}}"/>
                                         <img class="img-responsive preview-image" ng-src="{{image_source}}">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="formItemImage">Item Image 1</label>
                                         <input id="uploadFileInput" ng-model="formItem.imageFile"  onchange="angular.element(this).scope().uploadedFile(this)" name="userImage" type="file" class="inputFile" />
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-xs-12">
-                                        <label for="formItemImage2">Item Image 2</label>
+                                <div class="row image-section">
+                                    <div class="col-sm-6">
                                         <img ng-show="activeTable == 'clothing' && !image_source_2 && modalState == 'edit'" id="formItemImage2" class="img-responsive" src="{{formImageUrl2}}"/>
                                         <img class="img-responsive preview-image" ng-src="{{image_source_2}}">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label  ng-show="activeTable == 'clothing'" for="formItemImage2">Item Image 2</label>
                                         <input id="uploadFileInput2" ng-show="activeTable == 'clothing'" ng-model="formItem.imageFile"  onchange="angular.element(this).scope().uploadedFile(this)" name="userImage2" type="file" class="inputFile" />
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-xs-12">
-                                        <label for="formItemImage3">Item Image 3</label>
+                                <div class="row image-section">
+                                    <div class="col-sm-6">
                                         <img ng-show="activeTable == 'clothing' && !image_source_3 && modalState == 'edit'" id="formItemImage3" class="img-responsive" src="{{formImageUrl3}}"/>
                                         <img class="img-responsive preview-image" ng-src="{{image_source_3}}">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label ng-show="activeTable == 'clothing'" for="formItemImage3">Item Image 3</label>
                                         <input id="uploadFileInput3" ng-show="activeTable == 'clothing'" ng-model="formItem.imageFile"  onchange="angular.element(this).scope().uploadedFile(this)" name="userImage3" type="file" class="inputFile" />
                                     </div>
                                 </div>
