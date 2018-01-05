@@ -41,6 +41,8 @@ if($num>0){
             "item_price" => $item_price,
             "character_name" => $character_name,
             "item_image_url" => $item_image_url,
+            "item_image_url_2" => $item_image_url_2,
+            "item_image_url_3" => $item_image_url_3,
             "button_id" => $button_id,
             "sub_text" => $sub_text,
             "item_type" => $item_type

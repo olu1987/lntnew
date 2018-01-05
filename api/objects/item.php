@@ -29,7 +29,7 @@ class Item{
 
         // select all query
         $query = "SELECT
-                item_name, id, item_description, item_price, character_name, item_image_url, button_id, sub_text, item_type
+                item_name, id, item_description, item_price, character_name, item_image_url,item_image_url_2,item_image_url_3, button_id, sub_text, item_type
             FROM
                 " . $this->table . " ORDER BY id DESC; ";
 

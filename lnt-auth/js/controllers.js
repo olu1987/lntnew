@@ -19,7 +19,7 @@ angular.module('myApp.controllers', [])
 				error(function(data) {
 					$window.location = "auth/";
 				});
-		}
+		};
 
 		$scope.getClass = function(path) {
 			if ($location.path().substr(0, path.length) == path) {
@@ -105,7 +105,12 @@ angular.module('myApp.controllers', [])
             $scope.modalState = 'edit';
 			$scope.formItem = item;
             $scope.clearFileInput();
+            $scope.formItem.item_image_url_2 = item.item_image_url_2;
+            $scope.formItem.item_image_url_3 = item.item_image_url_3;
 			$scope.formImageUrl = '../' + item.item_image_url;
+			$scope.formImageUrl2 = '../' + item.item_image_url_2;
+			$scope.formImageUrl3 = '../' + item.item_image_url_3;
+			console.log($scope.formImageUrl2);
 			$scope.modalAction = 'Edit';
 
         };
@@ -144,7 +149,7 @@ angular.module('myApp.controllers', [])
 			}
             var requestUrl = "../api/item/"+ action + ".php?table=" + table;
 
-            console.log(form_data, table, requestUrl);
+            //console.log(form_data, table, requestUrl);
 
             // submit form data to api
 
@@ -193,10 +198,17 @@ angular.module('myApp.controllers', [])
         };
 
         $scope.uploadedFile = function(element) {
+        	if(element.id == 'uploadFileInput2'){
+                $scope.formItem.item_image_url_2 = 'img/' + element.files[0].name;
+			}else if(element.id == 'uploadFileInput3'){
+                $scope.formItem.item_image_url_3 = 'img/' + element.files[0].name;
+			}else{
+                $scope.formItem.item_image_url = 'img/' + element.files[0].name;
+                $scope.formItem.item_image_url_2 = 'img/' + element.files[0].name;
+                $scope.formItem.item_image_url_3 = 'img/' + element.files[0].name;
+			};
+
             $scope.formItem.imageFile = element.files[0];
-            $scope.formItem.item_image_url = 'img/' + element.files[0].name;
-            $scope.formItem.item_image_url_2 = 'img/' + element.files[0].name;
-            $scope.formItem.item_image_url_3 = 'img/' + element.files[0].name;
             var reader = new FileReader();
 
             reader.onload = function(event) {

@@ -30,6 +30,7 @@ $product->item_image_url = $data->item_image_url;
 $product->item_image_url_2 = $data->item_image_url_2;
 $product->item_image_url_3 = $data->item_image_url_3;
 $product->sub_text = $data->sub_text;
+$product->item_type = $data->item_type;
 
 // create the product
 if($product->create()){

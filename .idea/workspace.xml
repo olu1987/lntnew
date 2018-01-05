@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e81e76d-29a7-44ca-98b8-42ba4e083cb8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/item/update.php" afterPath="$PROJECT_DIR$/api/item/update.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/item/upload.php" afterPath="$PROJECT_DIR$/api/item/upload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/item/create.php" afterPath="$PROJECT_DIR$/api/item/create.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/item/read.php" afterPath="$PROJECT_DIR$/api/item/read.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/objects/item.php" afterPath="$PROJECT_DIR$/api/objects/item.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/item.php" afterPath="$PROJECT_DIR$/item.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lnt-auth/js/controllers.js" afterPath="$PROJECT_DIR$/lnt-auth/js/controllers.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lnt-auth/views/home.html" afterPath="$PROJECT_DIR$/lnt-auth/views/home.html" />
     </list>
@@ -25,21 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="read.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/item/read.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-548">
-              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="create.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/item/create.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="6" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="46" selection-end-column="2" />
+            <state relative-caret-position="349">
+              <caret line="32" column="38" lean-forward="false" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -55,25 +47,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="item.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="read.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/item/read.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="46" column="36" lean-forward="true" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="item.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/objects/item.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="148" column="55" lean-forward="true" selection-start-line="148" selection-start-column="55" selection-end-line="148" selection-end-column="55" />
+            <state relative-caret-position="170">
+              <caret line="31" column="125" lean-forward="false" selection-start-line="31" selection-start-column="125" selection-end-line="31" selection-end-column="125" />
               <folding>
-                <marker date="1515111667235" expanded="true" signature="654:801" ph="SELECT item_... " />
-                <marker date="1515111667235" expanded="true" signature="654:818" ph="SELECT item_... ${$this-&gt;table_name}" />
-                <marker date="1515111667235" expanded="true" signature="654:838" ph="SELECT c.nam... ${$this-&gt;table_name}" />
-                <marker date="1515111667235" expanded="true" signature="654:855" ph="SELECT item_... ${$this-&gt;table}" />
-                <marker date="1515111667235" expanded="true" signature="654:857" ph="SELECT c.nam... ${$this-&gt;table_name}" />
-                <marker date="1515111667235" expanded="true" signature="1121:1185" ph="INSERT INTO ${$this-&gt;table_name}" />
-                <marker date="1515111667235" expanded="true" signature="1121:1222" ph="INSERT INTO ${htmlspecialchars($_GET[&quot;table&quot;])}" />
-                <marker date="1515111667235" expanded="true" signature="1121:1497" ph="INSERT INTO ${$this-&gt;table}" />
-                <marker date="1515111667235" expanded="true" signature="1121:1525" ph="INSERT INTO ${htmlspecialchars($_GET[&quot;table&quot;])}" />
-                <marker date="1515111667235" expanded="true" signature="3264:3307" ph="DELETE FROM " />
-                <marker date="1515111667235" expanded="true" signature="3264:3309" ph="DELETE FROM " />
-                <marker date="1515111667235" expanded="true" signature="3264:3310" ph="DELETE FROM " />
-                <marker date="1515111667235" expanded="true" signature="3748:4113" ph="INSERT INTO ${$this-&gt;table}" />
+                <marker date="1515160949667" expanded="true" signature="654:835" ph="SELECT item_... " />
+                <marker date="1515160949667" expanded="true" signature="654:852" ph="SELECT item_... ${$this-&gt;table_name}" />
+                <marker date="1515160949667" expanded="true" signature="654:872" ph="SELECT c.nam... ${$this-&gt;table_name}" />
+                <marker date="1515160949667" expanded="true" signature="654:889" ph="SELECT item_... ${$this-&gt;table}" />
+                <marker date="1515160949667" expanded="true" signature="654:891" ph="SELECT c.nam... ${$this-&gt;table_name}" />
+                <marker date="1515160949667" expanded="true" signature="1155:1219" ph="INSERT INTO ${$this-&gt;table_name}" />
+                <marker date="1515160949667" expanded="true" signature="1155:1256" ph="INSERT INTO ${htmlspecialchars($_GET[&quot;table&quot;])}" />
+                <marker date="1515160949667" expanded="true" signature="1155:1531" ph="INSERT INTO ${$this-&gt;table}" />
+                <marker date="1515160949667" expanded="true" signature="1155:1559" ph="INSERT INTO ${htmlspecialchars($_GET[&quot;table&quot;])}" />
+                <marker date="1515160949667" expanded="true" signature="3298:3341" ph="DELETE FROM " />
+                <marker date="1515160949667" expanded="true" signature="3298:3343" ph="DELETE FROM " />
+                <marker date="1515160949667" expanded="true" signature="3298:3344" ph="DELETE FROM " />
+                <marker date="1515160949667" expanded="true" signature="3782:4147" ph="INSERT INTO ${$this-&gt;table}" />
               </folding>
             </state>
           </provider>
@@ -85,18 +87,6 @@
             <state relative-caret-position="459">
               <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lnt-auth/views/home.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="177" column="36" lean-forward="false" selection-start-line="177" selection-start-column="36" selection-end-line="177" selection-end-column="36" />
-              <folding>
-                <element signature="e#4297#4304#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -124,8 +114,8 @@
       <file leaf-file-name="controllers.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lnt-auth/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-183">
-              <caret line="142" column="32" lean-forward="false" selection-start-line="142" selection-start-column="32" selection-end-line="142" selection-end-column="32" />
+            <state relative-caret-position="142">
+              <caret line="210" column="57" lean-forward="false" selection-start-line="210" selection-start-column="57" selection-end-line="210" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -141,6 +131,18 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lnt-auth/views/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="182" column="59" lean-forward="false" selection-start-line="182" selection-start-column="59" selection-end-line="182" selection-end-column="59" />
+              <folding>
+                <element signature="e#4297#4304#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -152,10 +154,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>800px</find>
-      <find>800p</find>
-      <find>wrap</find>
-      <find>cart</find>
       <find>clothing-</find>
       <find>contact</find>
       <find>width</find>
@@ -182,6 +180,10 @@
       <find>unable</find>
       <find>vers</find>
       <find>alert</find>
+      <find>clothing_</find>
+      <find>modal</find>
+      <find>formimag</find>
+      <find>formImageUrl</find>
     </findStrings>
     <replaceStrings>
       <replace>sm</replace>
@@ -219,7 +221,6 @@
         <option value="$PROJECT_DIR$/js/accessories/AccessoriesController.js" />
         <option value="$PROJECT_DIR$/clothing.html" />
         <option value="$PROJECT_DIR$/js/main-1.js" />
-        <option value="$PROJECT_DIR$/item.php" />
         <option value="$PROJECT_DIR$/sass/_styles.scss" />
         <option value="$PROJECT_DIR$/accessories.html" />
         <option value="$PROJECT_DIR$/api/config/database.php" />
@@ -233,7 +234,6 @@
         <option value="$PROJECT_DIR$/prints.html" />
         <option value="$PROJECT_DIR$/js/prints/PrintsController.js" />
         <option value="$PROJECT_DIR$/js/accessories/AccessoriesService.js" />
-        <option value="$PROJECT_DIR$/api/item/read.php" />
         <option value="$PROJECT_DIR$/js/clothing/ClothingService.js" />
         <option value="$PROJECT_DIR$/lnt-auth/api/database.php" />
         <option value="$PROJECT_DIR$/lnt-auth/api/classes/auth.class.php" />
@@ -241,14 +241,16 @@
         <option value="$PROJECT_DIR$/lnt-auth/js/app.js" />
         <option value="$PROJECT_DIR$/api/item/delete.php" />
         <option value="$PROJECT_DIR$/lnt-auth/css/style.css" />
-        <option value="$PROJECT_DIR$/api/item/create.php" />
         <option value="$PROJECT_DIR$/lnt-auth/js/directives.js" />
         <option value="$PROJECT_DIR$/api/item/upload-image.php" />
         <option value="$PROJECT_DIR$/api/item/upload.php" />
+        <option value="$PROJECT_DIR$/api/item/update.php" />
+        <option value="$PROJECT_DIR$/api/item/create.php" />
+        <option value="$PROJECT_DIR$/item.php" />
+        <option value="$PROJECT_DIR$/api/item/read.php" />
         <option value="$PROJECT_DIR$/api/objects/item.php" />
         <option value="$PROJECT_DIR$/lnt-auth/js/controllers.js" />
         <option value="$PROJECT_DIR$/lnt-auth/views/home.html" />
-        <option value="$PROJECT_DIR$/api/item/update.php" />
       </list>
     </option>
   </component>
@@ -577,15 +579,15 @@
       <workItem from="1513381497360" duration="9300000" />
       <workItem from="1514315222909" duration="2351000" />
       <workItem from="1514635945374" duration="9319000" />
-      <workItem from="1514976845513" duration="73144000" />
+      <workItem from="1514976845513" duration="81756000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="442209000" />
+    <option name="totallyTimeSpent" value="450821000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30862328" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -595,7 +597,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32724252" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39934534" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34042552" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35188216" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -803,16 +805,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/item.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3298">
-          <caret line="194" column="157" lean-forward="false" selection-start-line="194" selection-start-column="147" selection-end-line="194" selection-end-column="157" />
-          <folding>
-            <marker date="1514316396619" expanded="true" signature="167:203" ph="SELECT * FRO... ${$table}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1001,26 +993,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/item/read.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-548">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/item/delete.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lnt-auth/js/directives.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1043,27 +1019,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/item/create.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="6" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="46" selection-end-column="2" />
+        <state relative-caret-position="349">
+          <caret line="32" column="38" lean-forward="false" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lnt-auth/js/controllers.js">
+    <entry file="file://$PROJECT_DIR$/item.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-183">
-          <caret line="142" column="32" lean-forward="false" selection-start-line="142" selection-start-column="32" selection-end-line="142" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lnt-auth/views/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="177" column="36" lean-forward="false" selection-start-line="177" selection-start-column="36" selection-end-line="177" selection-end-column="36" />
+        <state relative-caret-position="106">
+          <caret line="180" column="75" lean-forward="false" selection-start-line="180" selection-start-column="75" selection-end-line="180" selection-end-column="75" />
           <folding>
-            <element signature="e#4297#4304#0" expanded="true" />
+            <marker date="1515159876701" expanded="true" signature="167:203" ph="SELECT * FRO... ${$table}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/item/read.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="46" column="36" lean-forward="true" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1075,24 +1051,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lnt-auth/js/directives.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/api/objects/item.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="148" column="55" lean-forward="true" selection-start-line="148" selection-start-column="55" selection-end-line="148" selection-end-column="55" />
+        <state relative-caret-position="170">
+          <caret line="31" column="125" lean-forward="false" selection-start-line="31" selection-start-column="125" selection-end-line="31" selection-end-column="125" />
           <folding>
-            <marker date="1515111667235" expanded="true" signature="654:801" ph="SELECT item_... " />
-            <marker date="1515111667235" expanded="true" signature="654:818" ph="SELECT item_... ${$this-&gt;table_name}" />
-            <marker date="1515111667235" expanded="true" signature="654:838" ph="SELECT c.nam... ${$this-&gt;table_name}" />
-            <marker date="1515111667235" expanded="true" signature="654:855" ph="SELECT item_... ${$this-&gt;table}" />
-            <marker date="1515111667235" expanded="true" signature="654:857" ph="SELECT c.nam... ${$this-&gt;table_name}" />
-            <marker date="1515111667235" expanded="true" signature="1121:1185" ph="INSERT INTO ${$this-&gt;table_name}" />
-            <marker date="1515111667235" expanded="true" signature="1121:1222" ph="INSERT INTO ${htmlspecialchars($_GET[&quot;table&quot;])}" />
-            <marker date="1515111667235" expanded="true" signature="1121:1497" ph="INSERT INTO ${$this-&gt;table}" />
-            <marker date="1515111667235" expanded="true" signature="1121:1525" ph="INSERT INTO ${htmlspecialchars($_GET[&quot;table&quot;])}" />
-            <marker date="1515111667235" expanded="true" signature="3264:3307" ph="DELETE FROM " />
-            <marker date="1515111667235" expanded="true" signature="3264:3309" ph="DELETE FROM " />
-            <marker date="1515111667235" expanded="true" signature="3264:3310" ph="DELETE FROM " />
-            <marker date="1515111667235" expanded="true" signature="3748:4113" ph="INSERT INTO ${$this-&gt;table}" />
+            <marker date="1515160949667" expanded="true" signature="654:835" ph="SELECT item_... " />
+            <marker date="1515160949667" expanded="true" signature="654:852" ph="SELECT item_... ${$this-&gt;table_name}" />
+            <marker date="1515160949667" expanded="true" signature="654:872" ph="SELECT c.nam... ${$this-&gt;table_name}" />
+            <marker date="1515160949667" expanded="true" signature="654:889" ph="SELECT item_... ${$this-&gt;table}" />
+            <marker date="1515160949667" expanded="true" signature="654:891" ph="SELECT c.nam... ${$this-&gt;table_name}" />
+            <marker date="1515160949667" expanded="true" signature="1155:1219" ph="INSERT INTO ${$this-&gt;table_name}" />
+            <marker date="1515160949667" expanded="true" signature="1155:1256" ph="INSERT INTO ${htmlspecialchars($_GET[&quot;table&quot;])}" />
+            <marker date="1515160949667" expanded="true" signature="1155:1531" ph="INSERT INTO ${$this-&gt;table}" />
+            <marker date="1515160949667" expanded="true" signature="1155:1559" ph="INSERT INTO ${htmlspecialchars($_GET[&quot;table&quot;])}" />
+            <marker date="1515160949667" expanded="true" signature="3298:3341" ph="DELETE FROM " />
+            <marker date="1515160949667" expanded="true" signature="3298:3343" ph="DELETE FROM " />
+            <marker date="1515160949667" expanded="true" signature="3298:3344" ph="DELETE FROM " />
+            <marker date="1515160949667" expanded="true" signature="3782:4147" ph="INSERT INTO ${$this-&gt;table}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lnt-auth/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="210" column="57" lean-forward="false" selection-start-line="210" selection-start-column="57" selection-end-line="210" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lnt-auth/views/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="182" column="59" lean-forward="false" selection-start-line="182" selection-start-column="59" selection-end-line="182" selection-end-column="59" />
+          <folding>
+            <element signature="e#4297#4304#0" expanded="true" />
           </folding>
         </state>
       </provider>
