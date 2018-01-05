@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e81e76d-29a7-44ca-98b8-42ba4e083cb8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lnt-auth/css/style.css" afterPath="$PROJECT_DIR$/lnt-auth/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lnt-auth/views/home.html" afterPath="$PROJECT_DIR$/lnt-auth/views/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lnt-auth/js/controllers.js" afterPath="$PROJECT_DIR$/lnt-auth/js/controllers.js" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -106,11 +105,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controllers.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="controllers.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lnt-auth/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-45">
-              <caret line="205" column="51" lean-forward="false" selection-start-line="205" selection-start-column="51" selection-end-line="205" selection-end-column="51" />
+            <state relative-caret-position="-2323">
+              <caret line="101" column="26" lean-forward="false" selection-start-line="101" selection-start-column="26" selection-end-line="101" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -126,7 +125,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lnt-auth/views/home.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
@@ -149,7 +148,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>clothing-</find>
       <find>contact</find>
       <find>width</find>
       <find>pic</find>
@@ -179,6 +177,7 @@
       <find>modal</find>
       <find>formimag</find>
       <find>formImageUrl</find>
+      <find>clearfileInput</find>
     </findStrings>
     <replaceStrings>
       <replace>sm</replace>
@@ -243,9 +242,9 @@
         <option value="$PROJECT_DIR$/item.php" />
         <option value="$PROJECT_DIR$/api/item/read.php" />
         <option value="$PROJECT_DIR$/api/objects/item.php" />
-        <option value="$PROJECT_DIR$/lnt-auth/js/controllers.js" />
         <option value="$PROJECT_DIR$/lnt-auth/css/style.css" />
         <option value="$PROJECT_DIR$/lnt-auth/views/home.html" />
+        <option value="$PROJECT_DIR$/lnt-auth/js/controllers.js" />
       </list>
     </option>
   </component>
@@ -574,15 +573,15 @@
       <workItem from="1513381497360" duration="9300000" />
       <workItem from="1514315222909" duration="2351000" />
       <workItem from="1514635945374" duration="9319000" />
-      <workItem from="1514976845513" duration="85593000" />
+      <workItem from="1514976845513" duration="86686000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="454658000" />
+    <option name="totallyTimeSpent" value="455751000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30862328" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1068,14 +1067,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lnt-auth/js/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-45">
-          <caret line="205" column="51" lean-forward="false" selection-start-line="205" selection-start-column="51" selection-end-line="205" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lnt-auth/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -1091,6 +1082,14 @@
           <folding>
             <element signature="e#4297#4304#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lnt-auth/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2323">
+          <caret line="101" column="26" lean-forward="false" selection-start-line="101" selection-start-column="26" selection-end-line="101" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -100,11 +100,11 @@ angular.module('myApp.controllers', [])
         };
 
         $scope.getItems();
-        $scope.image_source;
         $scope.setFormData = function (item) {
             $scope.modalState = 'edit';
 			$scope.formItem = item;
             $scope.clearFileInput();
+            $scope.clearFileInputImages();
             $scope.formItem.item_image_url_2 = item.item_image_url_2;
             $scope.formItem.item_image_url_3 = item.item_image_url_3;
 			$scope.formImageUrl = '../' + item.item_image_url;
@@ -117,6 +117,7 @@ angular.module('myApp.controllers', [])
             $scope.modalState = 'create';
 			$scope.formItem = {};
             $scope.clearFileInput();
+            $scope.clearFileInputImages();
 			$scope.formImageUrl = '';
             $scope.modalAction = 'Add New';
 
@@ -125,6 +126,7 @@ angular.module('myApp.controllers', [])
         	$scope.modalState = 'delete';
             $scope.formItem = item;
             $scope.clearFileInput();
+            $scope.clearFileInputImages();
 			$scope.formImageUrl = '';
             $scope.modalAction = 'Delete';
 
@@ -225,7 +227,7 @@ angular.module('myApp.controllers', [])
                 });
             };
             reader.readAsDataURL(element.files[0]);
-        }
+        };
 
         $scope.clearFileInput = function(){
             angular.forEach(
@@ -233,6 +235,9 @@ angular.module('myApp.controllers', [])
                 function(inputElem) {
                     angular.element(inputElem).val(null);
                 });
+		};
+
+        $scope.clearFileInputImages = function(){
             angular.forEach(
                 angular.element(".preview-image"),
                 function(inputElem) {
