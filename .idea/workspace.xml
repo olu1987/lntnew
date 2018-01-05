@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e81e76d-29a7-44ca-98b8-42ba4e083cb8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/item/upload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/item/update.php" afterPath="$PROJECT_DIR$/api/item/update.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/item/upload.php" afterPath="$PROJECT_DIR$/api/item/upload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/objects/item.php" afterPath="$PROJECT_DIR$/api/objects/item.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lnt-auth/js/controllers.js" afterPath="$PROJECT_DIR$/lnt-auth/js/controllers.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lnt-auth/views/home.html" afterPath="$PROJECT_DIR$/lnt-auth/views/home.html" />
     </list>
@@ -37,31 +38,42 @@
       <file leaf-file-name="create.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/item/create.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="43">
-              <caret line="34" column="16" lean-forward="true" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+            <state relative-caret-position="68">
+              <caret line="4" column="6" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="46" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="item.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="update.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/item/update.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="111">
+              <caret line="27" column="38" lean-forward="false" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="item.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/objects/item.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="54" column="11" lean-forward="true" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="11" />
+            <state relative-caret-position="748">
+              <caret line="148" column="55" lean-forward="true" selection-start-line="148" selection-start-column="55" selection-end-line="148" selection-end-column="55" />
               <folding>
-                <marker date="1515086576837" expanded="true" signature="654:801" ph="SELECT item_... " />
-                <marker date="1515086576837" expanded="true" signature="654:818" ph="SELECT item_... ${$this-&gt;table_name}" />
-                <marker date="1515086576837" expanded="true" signature="654:838" ph="SELECT c.nam... ${$this-&gt;table_name}" />
-                <marker date="1515086576837" expanded="true" signature="654:855" ph="SELECT item_... ${$this-&gt;table}" />
-                <marker date="1515086576837" expanded="true" signature="654:857" ph="SELECT c.nam... ${$this-&gt;table_name}" />
-                <marker date="1515086576837" expanded="true" signature="1121:1185" ph="INSERT INTO ${$this-&gt;table_name}" />
-                <marker date="1515086576837" expanded="true" signature="1121:1222" ph="INSERT INTO ${htmlspecialchars($_GET[&quot;table&quot;])}" />
-                <marker date="1515086576837" expanded="true" signature="1121:1497" ph="INSERT INTO ${$this-&gt;table}" />
-                <marker date="1515086576837" expanded="true" signature="1121:1525" ph="INSERT INTO ${htmlspecialchars($_GET[&quot;table&quot;])}" />
-                <marker date="1515086576837" expanded="true" signature="3264:3307" ph="DELETE FROM " />
-                <marker date="1515086576837" expanded="true" signature="3264:3309" ph="DELETE FROM " />
-                <marker date="1515086576837" expanded="true" signature="3264:3310" ph="DELETE FROM " />
+                <marker date="1515111667235" expanded="true" signature="654:801" ph="SELECT item_... " />
+                <marker date="1515111667235" expanded="true" signature="654:818" ph="SELECT item_... ${$this-&gt;table_name}" />
+                <marker date="1515111667235" expanded="true" signature="654:838" ph="SELECT c.nam... ${$this-&gt;table_name}" />
+                <marker date="1515111667235" expanded="true" signature="654:855" ph="SELECT item_... ${$this-&gt;table}" />
+                <marker date="1515111667235" expanded="true" signature="654:857" ph="SELECT c.nam... ${$this-&gt;table_name}" />
+                <marker date="1515111667235" expanded="true" signature="1121:1185" ph="INSERT INTO ${$this-&gt;table_name}" />
+                <marker date="1515111667235" expanded="true" signature="1121:1222" ph="INSERT INTO ${htmlspecialchars($_GET[&quot;table&quot;])}" />
+                <marker date="1515111667235" expanded="true" signature="1121:1497" ph="INSERT INTO ${$this-&gt;table}" />
+                <marker date="1515111667235" expanded="true" signature="1121:1525" ph="INSERT INTO ${htmlspecialchars($_GET[&quot;table&quot;])}" />
+                <marker date="1515111667235" expanded="true" signature="3264:3307" ph="DELETE FROM " />
+                <marker date="1515111667235" expanded="true" signature="3264:3309" ph="DELETE FROM " />
+                <marker date="1515111667235" expanded="true" signature="3264:3310" ph="DELETE FROM " />
+                <marker date="1515111667235" expanded="true" signature="3748:4113" ph="INSERT INTO ${$this-&gt;table}" />
               </folding>
             </state>
           </provider>
@@ -80,21 +92,20 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lnt-auth/views/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="189" column="84" lean-forward="false" selection-start-line="189" selection-start-column="84" selection-end-line="189" selection-end-column="84" />
+            <state relative-caret-position="136">
+              <caret line="177" column="36" lean-forward="false" selection-start-line="177" selection-start-column="36" selection-end-line="177" selection-end-column="36" />
               <folding>
                 <element signature="e#4297#4304#0" expanded="true" />
-                <element signature="n#style#0;n#img#1;n#div#0;n#div#10;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="upload.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="upload.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/item/upload.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="56" lean-forward="false" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
+            <state relative-caret-position="51">
+              <caret line="3" column="37" lean-forward="false" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -113,8 +124,8 @@
       <file leaf-file-name="controllers.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lnt-auth/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="169" column="28" lean-forward="false" selection-start-line="169" selection-start-column="28" selection-end-line="169" selection-end-column="28" />
+            <state relative-caret-position="-183">
+              <caret line="142" column="32" lean-forward="false" selection-start-line="142" selection-start-column="32" selection-end-line="142" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -141,7 +152,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>promo</find>
       <find>800px</find>
       <find>800p</find>
       <find>wrap</find>
@@ -171,6 +181,7 @@
       <find>isacti</find>
       <find>unable</find>
       <find>vers</find>
+      <find>alert</find>
     </findStrings>
     <replaceStrings>
       <replace>sm</replace>
@@ -187,7 +198,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/send_form_email.php" />
         <option value="$PROJECT_DIR$/getdata.php" />
         <option value="$PROJECT_DIR$/build/css/main.css" />
         <option value="$PROJECT_DIR$/sitemap.xml" />
@@ -232,12 +242,13 @@
         <option value="$PROJECT_DIR$/api/item/delete.php" />
         <option value="$PROJECT_DIR$/lnt-auth/css/style.css" />
         <option value="$PROJECT_DIR$/api/item/create.php" />
-        <option value="$PROJECT_DIR$/api/objects/item.php" />
         <option value="$PROJECT_DIR$/lnt-auth/js/directives.js" />
         <option value="$PROJECT_DIR$/api/item/upload-image.php" />
-        <option value="$PROJECT_DIR$/lnt-auth/views/home.html" />
-        <option value="$PROJECT_DIR$/lnt-auth/js/controllers.js" />
         <option value="$PROJECT_DIR$/api/item/upload.php" />
+        <option value="$PROJECT_DIR$/api/objects/item.php" />
+        <option value="$PROJECT_DIR$/lnt-auth/js/controllers.js" />
+        <option value="$PROJECT_DIR$/lnt-auth/views/home.html" />
+        <option value="$PROJECT_DIR$/api/item/update.php" />
       </list>
     </option>
   </component>
@@ -566,15 +577,15 @@
       <workItem from="1513381497360" duration="9300000" />
       <workItem from="1514315222909" duration="2351000" />
       <workItem from="1514635945374" duration="9319000" />
-      <workItem from="1514976845513" duration="62294000" />
+      <workItem from="1514976845513" duration="73144000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="431359000" />
+    <option name="totallyTimeSpent" value="442209000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30862328" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -990,48 +1001,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/item/update.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/item/read.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-548">
           <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/item/create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="34" column="16" lean-forward="true" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/objects/item.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="54" column="11" lean-forward="true" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="11" />
-          <folding>
-            <marker date="1515086576837" expanded="true" signature="654:801" ph="SELECT item_... " />
-            <marker date="1515086576837" expanded="true" signature="654:818" ph="SELECT item_... ${$this-&gt;table_name}" />
-            <marker date="1515086576837" expanded="true" signature="654:838" ph="SELECT c.nam... ${$this-&gt;table_name}" />
-            <marker date="1515086576837" expanded="true" signature="654:855" ph="SELECT item_... ${$this-&gt;table}" />
-            <marker date="1515086576837" expanded="true" signature="654:857" ph="SELECT c.nam... ${$this-&gt;table_name}" />
-            <marker date="1515086576837" expanded="true" signature="1121:1185" ph="INSERT INTO ${$this-&gt;table_name}" />
-            <marker date="1515086576837" expanded="true" signature="1121:1222" ph="INSERT INTO ${htmlspecialchars($_GET[&quot;table&quot;])}" />
-            <marker date="1515086576837" expanded="true" signature="1121:1497" ph="INSERT INTO ${$this-&gt;table}" />
-            <marker date="1515086576837" expanded="true" signature="1121:1525" ph="INSERT INTO ${htmlspecialchars($_GET[&quot;table&quot;])}" />
-            <marker date="1515086576837" expanded="true" signature="3264:3307" ph="DELETE FROM " />
-            <marker date="1515086576837" expanded="true" signature="3264:3309" ph="DELETE FROM " />
-            <marker date="1515086576837" expanded="true" signature="3264:3310" ph="DELETE FROM " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1059,30 +1033,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lnt-auth/views/home.html">
+    <entry file="file://$PROJECT_DIR$/api/item/upload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="189" column="84" lean-forward="false" selection-start-line="189" selection-start-column="84" selection-end-line="189" selection-end-column="84" />
-          <folding>
-            <element signature="e#4297#4304#0" expanded="true" />
-            <element signature="n#style#0;n#img#1;n#div#0;n#div#10;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="51">
+          <caret line="3" column="37" lean-forward="false" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/item/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="6" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="46" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lnt-auth/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="169" column="28" lean-forward="false" selection-start-line="169" selection-start-column="28" selection-end-line="169" selection-end-column="28" />
+        <state relative-caret-position="-183">
+          <caret line="142" column="32" lean-forward="false" selection-start-line="142" selection-start-column="32" selection-end-line="142" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/item/upload.php">
+    <entry file="file://$PROJECT_DIR$/lnt-auth/views/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="56" lean-forward="false" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
+        <state relative-caret-position="136">
+          <caret line="177" column="36" lean-forward="false" selection-start-line="177" selection-start-column="36" selection-end-line="177" selection-end-column="36" />
+          <folding>
+            <element signature="e#4297#4304#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/item/update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="27" column="38" lean-forward="false" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/objects/item.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="148" column="55" lean-forward="true" selection-start-line="148" selection-start-column="55" selection-end-line="148" selection-end-column="55" />
+          <folding>
+            <marker date="1515111667235" expanded="true" signature="654:801" ph="SELECT item_... " />
+            <marker date="1515111667235" expanded="true" signature="654:818" ph="SELECT item_... ${$this-&gt;table_name}" />
+            <marker date="1515111667235" expanded="true" signature="654:838" ph="SELECT c.nam... ${$this-&gt;table_name}" />
+            <marker date="1515111667235" expanded="true" signature="654:855" ph="SELECT item_... ${$this-&gt;table}" />
+            <marker date="1515111667235" expanded="true" signature="654:857" ph="SELECT c.nam... ${$this-&gt;table_name}" />
+            <marker date="1515111667235" expanded="true" signature="1121:1185" ph="INSERT INTO ${$this-&gt;table_name}" />
+            <marker date="1515111667235" expanded="true" signature="1121:1222" ph="INSERT INTO ${htmlspecialchars($_GET[&quot;table&quot;])}" />
+            <marker date="1515111667235" expanded="true" signature="1121:1497" ph="INSERT INTO ${$this-&gt;table}" />
+            <marker date="1515111667235" expanded="true" signature="1121:1525" ph="INSERT INTO ${htmlspecialchars($_GET[&quot;table&quot;])}" />
+            <marker date="1515111667235" expanded="true" signature="3264:3307" ph="DELETE FROM " />
+            <marker date="1515111667235" expanded="true" signature="3264:3309" ph="DELETE FROM " />
+            <marker date="1515111667235" expanded="true" signature="3264:3310" ph="DELETE FROM " />
+            <marker date="1515111667235" expanded="true" signature="3748:4113" ph="INSERT INTO ${$this-&gt;table}" />
+          </folding>
         </state>
       </provider>
     </entry>

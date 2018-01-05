@@ -158,18 +158,6 @@
                             <input placeholder="e.g bert, timothy" ng-model="formItem.character_name" type="text" class="form-control" id="formItemCharacter" required>
                         </div>
                         <div class="form-group">
-                            <label for="formItemName">Image URL</label>
-                            <input placeholder="e.g bert, timothy" ng-model="formItem.item_image_url" type="text" class="form-control" id="formItemImageUrl" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="formItemName">Image URL 2</label>
-                            <input placeholder="e.g bert, timothy" ng-model="formItem.item_image_url_2" type="text" class="form-control" id="formItemImageUrl2" required>
-                        </div>
-                    <div class="form-group">
-                            <label for="formItemName">Image URL 3</label>
-                            <input placeholder="e.g bert, timothy" ng-model="formItem.item_image_url_3" type="text" class="form-control" id="formItemImageUrl3" required>
-                        </div>
-                        <div class="form-group">
                             <label for="formItemName">Sub text </label>
                             <input placeholder="e.g bert, timothy" ng-model="formItem.sub_text" type="text" class="form-control" id="subText" required>
                         </div>
@@ -186,8 +174,8 @@
                         <div class="row">
                             <div class="form-group col-sm-6">
                                 <label for="formItemImage">Item Image</label>
-                                <img id="formItemImage" class="img-responsive" src="{{formImageUrl}}"/>
-                                <img ng-src="{{image_source}}" style="width:300px;">
+                                <img ng-show="modalState == 'edit'" id="formItemImage" class="img-responsive" src="{{formImageUrl}}"/>
+                                <img class="img-responsive preview-image" ng-src="{{image_source}}">
                             </div>
                             <input ng-model="formItem.imageFile"  onchange="angular.element(this).scope().uploadedFile(this)" name="userImage" type="file" class="inputFile" />
                     </div>

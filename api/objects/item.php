@@ -109,4 +109,53 @@ class Item{
         return false;
 
     }
+
+    function update(){
+
+        // query to insert record
+        $query = "UPDATE
+                " . $this->table . "
+            SET
+                item_name=:item_name, item_price=:item_price, item_description=:item_description,item_image_url=:item_image_url, character_name=:character_name, 
+                item_type=:item_type,item_image_url_2=:item_image_url_2,item_image_url_3=:item_image_url_3,sub_text = :sub_text, button_id=:button_id
+        WHERE id = :id"
+        ;
+
+        // prepare query
+        $stmt = $this->conn->prepare($query);
+
+        // sanitize
+        $this->item_name=htmlspecialchars(strip_tags($this->item_name));
+        $this->item_price=htmlspecialchars(strip_tags($this->item_price));
+        $this->item_description=htmlspecialchars(strip_tags($this->item_description));
+        $this->character_name=htmlspecialchars(strip_tags($this->character_name));
+        $this->button_id=htmlspecialchars(strip_tags($this->button_id));
+        $this->item_image_url=htmlspecialchars(strip_tags($this->item_image_url));
+        $this->item_image_url_2=htmlspecialchars(strip_tags($this->item_image_url_2));
+        $this->item_image_url_3=htmlspecialchars(strip_tags($this->item_image_url_3));
+        $this->sub_text=htmlspecialchars(strip_tags($this->sub_text));
+        $this->item_type=htmlspecialchars(strip_tags($this->item_type));
+        $this->id=htmlspecialchars(strip_tags($this->id));
+
+        // bind values
+        $stmt->bindParam(":item_name", $this->item_name);
+        $stmt->bindParam(":item_price", $this->item_price);
+        $stmt->bindParam(":item_description", $this->item_description);
+        $stmt->bindParam(":character_name", $this->character_name);
+        $stmt->bindParam(":button_id", $this->button_id);
+        $stmt->bindParam(":item_image_url", $this->item_image_url);
+        $stmt->bindParam(":item_image_url_2", $this->item_image_url_2);
+        $stmt->bindParam(":item_image_url_3", $this->item_image_url_3);
+        $stmt->bindParam(":sub_text", $this->sub_text);
+        $stmt->bindParam(":item_type", $this->item_type);
+        $stmt->bindParam(":id", $this->id);
+
+        // execute query
+        if($stmt->execute()){
+            return true;
+        }
+
+        return false;
+
+    }
 }

@@ -100,16 +100,19 @@ angular.module('myApp.controllers', [])
         };
 
         $scope.getItems();
+        $scope.image_source;
         $scope.setFormData = function (item) {
-            $scope.modalState = '';
+            $scope.modalState = 'edit';
 			$scope.formItem = item;
+            $scope.clearFileInput();
 			$scope.formImageUrl = '../' + item.item_image_url;
 			$scope.modalAction = 'Edit';
 
         };
         $scope.setFormDataCreate = function (item) {
-            $scope.modalState = '';
+            $scope.modalState = 'create';
 			$scope.formItem = {};
+            $scope.clearFileInput();
 			$scope.formImageUrl = '';
             $scope.modalAction = 'Add New';
 
@@ -117,6 +120,7 @@ angular.module('myApp.controllers', [])
         $scope.setFormDataDelete = function (item) {
         	$scope.modalState = 'delete';
             $scope.formItem = item;
+            $scope.clearFileInput();
 			$scope.formImageUrl = '';
             $scope.modalAction = 'Delete';
 
@@ -135,7 +139,9 @@ angular.module('myApp.controllers', [])
             }else if($scope.modalAction == 'Delete'){
                 action = 'delete';
 				form_data = {'id' : parseInt($scope.formItem.id)}
-            }
+            }else if($scope.modalAction == 'Edit'){
+                action = 'update';
+			}
             var requestUrl = "../api/item/"+ action + ".php?table=" + table;
 
             console.log(form_data, table, requestUrl);
@@ -161,7 +167,8 @@ angular.module('myApp.controllers', [])
                 error: function(xhr, resp, text){
                     // show error to console
                     console.log(xhr, resp, text);
-                    console.warn(xhr.responseText)
+                    console.warn(xhr.responseText);
+                    $scope.userMessage = text;
                 }
             });
 
@@ -178,21 +185,39 @@ angular.module('myApp.controllers', [])
                 headers: {
                     'Content-Type': undefined
                 }
-            }).success(function(data){
-                alert(data);
+            }).then(function(response){
+                console.log(response.data);
+            },function(response){
+                console.log(response.data);
             });
         };
 
         $scope.uploadedFile = function(element) {
             $scope.formItem.imageFile = element.files[0];
+            $scope.formItem.item_image_url = 'img/' + element.files[0].name;
+            $scope.formItem.item_image_url_2 = 'img/' + element.files[0].name;
+            $scope.formItem.item_image_url_3 = 'img/' + element.files[0].name;
             var reader = new FileReader();
 
             reader.onload = function(event) {
-                $scope.image_source = event.target.result
+                $scope.image_source = event.target.result;
                 $scope.$apply(function($scope) {
                     $scope.files = element.files;
                 });
-            }
+            };
             reader.readAsDataURL(element.files[0]);
         }
+
+        $scope.clearFileInput = function(){
+            angular.forEach(
+                angular.element("input[type='file']"),
+                function(inputElem) {
+                    angular.element(inputElem).val(null);
+                });
+            angular.forEach(
+                angular.element(".preview-image"),
+                function(inputElem) {
+                    angular.element(inputElem).attr('src','');
+                });
+		}
 	});
