@@ -1,0 +1,235 @@
+<p ng-click="active = 'prints'">Welcome {{userdata.username}}</p>
+<p class="text-uppercase bg-danger">please note this page contains items in the live database. changes to these will be irreversible and
+potentially destructive. please ensure you take care editing, creating or deleting data </p>
+<ul class="list-inline table-tabs">
+    <li ng-class="{active: activeTable == 'prints'}" ng-click="activeTable = 'prints'" class="col-xs-4"><a>Prints </a></li>
+    <li ng-class="{active: activeTable == 'accessories'}" ng-click="activeTable = 'accessories'" class="col-xs-4"><a>Accessories</a></li>
+    <li ng-class="{active: activeTable == 'clothing'}" ng-click="activeTable = 'clothing'" class="col-xs-4"><a>Clothing</a></li>
+</ul>
+<table class="table table-striped" ng-show="activeTable == 'prints'">
+    <tr>
+        <th>
+            ID
+        </th>
+        <th>
+            Name
+        </th>
+        <th>
+            Price
+        </th>
+        <th>
+            <a data-toggle="modal" data-target="#adminModal" ng-click="setFormDataCreate()" class="add-item-btn">
+                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                Add New Item
+            </a>
+        </th>
+        <th>
+        </th>
+    </tr>
+    <tr ng-repeat="item in items.prints  track by item.id">
+        <td>
+            {{item.id}}
+        </td>
+        <td>
+            {{item.item_name}}
+        </td>
+        <td>
+            {{item.item_price}}
+        </td>
+        <td>
+            <a data-toggle="modal" data-target="#adminModal" ng-click="setFormData(item)" class="edit-item-btn">
+                Edit
+            </a>
+        </td>
+        <td>
+            <a data-toggle="modal" data-target="#adminModal" ng-click="setFormDataDelete(item)" class="delete-item-btn">
+                Delete
+            </a>
+        </td>
+    </tr>
+</table>
+<table ng-show="activeTable == 'accessories'" class="table table-striped">
+    <tr>
+        <th>
+            ID
+        </th>
+        <th>
+            Name
+        </th>
+        <th>
+            Price
+        </th>
+        <th>
+            <a data-toggle="modal" data-target="#adminModal" ng-click="setFormDataCreate()" class="add-item-btn">
+                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                Add New Item
+            </a>
+        </th>
+        <th>
+        </th>
+    </tr>
+    <tr ng-repeat="item in items.accessories track by item.id">
+        <td>
+            {{item.id}}
+        </td>
+        <td>
+            {{item.item_name}}
+        </td>
+        <td>
+            {{item.item_price}}
+        </td>
+        <td>
+            <a data-toggle="modal" data-target="#adminModal" ng-click="setFormData(item)"  class="edit-item-btn">
+                Edit
+            </a>
+        </td>
+        <td>
+            <a data-toggle="modal" data-target="#adminModal" ng-click="setFormDataDelete(item)" class="delete-item-btn">
+                Delete
+            </a>
+        </td>
+    </tr>
+</table>
+<table ng-show="activeTable == 'clothing'" class="table table-striped">
+    <tr>
+        <th>
+            ID
+        </th>
+        <th>
+            Name
+        </th>
+        <th>
+            Price
+        </th>
+        <th>
+            <a data-toggle="modal" data-target="#adminModal" ng-click="setFormDataCreate()"  class="add-item-btn">
+                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                Add New Item
+            </a>
+        </th>
+        <th>
+        </th>
+    </tr>
+    <tr ng-repeat="item in items.clothing track by item.id">
+        <td>
+            {{item.id}}
+        </td>
+        <td>
+            {{item.item_name}}
+        </td>
+        <td>
+            {{item.item_price}}
+        </td>
+        <td>
+            <a data-toggle="modal" data-target="#adminModal" ng-click="setFormData(item)" class="edit-item-btn">
+                Edit
+            </a>
+        </td>
+        <td>
+            <a data-toggle="modal" data-target="#adminModal" ng-click="setFormDataDelete(item)" class="delete-item-btn">
+                Delete
+            </a>
+        </td>
+    </tr>
+</table>
+<!-- Modal -->
+<div class="modal fade {{modalState}}" id="adminModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">{{modalAction}} Item</h4>
+            </div>
+            <div class="modal-body">
+                <form ng-submit="submit(activeTable)" class="form text-left edit-add-view">
+                        <div class="form-group">
+                            <label for="formItemName">Item Name</label>
+                            <input placeholder="e.g cosmic, lilly, zinnia" ng-model="formItem.item_name"  type="text" class="form-control" id="formItemName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="formItemName">Item Price</label>
+                            <input placeholder="In pounds e.g 20.00" ng-model="formItem.item_price" type="text" class="form-control" id="formItemPrice" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="formItemName">Item Type</label>
+                            <input placeholder="Convention is string with underscores e.g pocket_square, phone_case" ng-model="formItem.item_type" type="text" class="form-control" id="formItemType" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="formItemName">Character Name</label>
+                            <input placeholder="e.g bert, timothy" ng-model="formItem.character_name" type="text" class="form-control" id="formItemCharacter" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="formItemName">Sub text </label>
+                            <input placeholder="e.g bert, timothy" ng-model="formItem.sub_text" type="text" class="form-control" id="subText" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="formItemName">Button ID</label>
+                            <input placeholder="Paypal id for button needs to be created and input here for payment" ng-model="formItem.button_id" type="text" class="form-control" id="formItemButtonId" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="formItemDescription">Item Description</label>
+                            <textarea ng-model="formItem.item_description" class="form-control" id="formItemDescription" rows="3" required>
+                            </textarea>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-sm-12">
+                                <div class="row image-section">
+                                    <div class="col-sm-6">
+                                        <img ng-show="modalState == 'edit' && !image_source" id="formItemImage" class="img-responsive" src="{{formImageUrl}}"/>
+                                        <img class="img-responsive preview-image" ng-src="{{image_source}}">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="formItemImage">Item Image 1</label>
+                                        <input id="uploadFileInput" ng-model="formItem.imageFile"  onchange="angular.element(this).scope().uploadedFile(this)" name="userImage" type="file" class="inputFile" />
+                                    </div>
+                                </div>
+                                <div class="row image-section">
+                                    <div class="col-sm-6">
+                                        <img ng-show="activeTable == 'clothing' && !image_source_2 && modalState == 'edit'" id="formItemImage2" class="img-responsive" src="{{formImageUrl2}}"/>
+                                        <img class="img-responsive preview-image" ng-src="{{image_source_2}}">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label  ng-show="activeTable == 'clothing'" for="formItemImage2">Item Image 2</label>
+                                        <input id="uploadFileInput2" ng-show="activeTable == 'clothing'" ng-model="formItem.imageFile"  onchange="angular.element(this).scope().uploadedFile(this)" name="userImage2" type="file" class="inputFile" />
+                                    </div>
+                                </div>
+                                <div class="row image-section">
+                                    <div class="col-sm-6">
+                                        <img ng-show="activeTable == 'clothing' && !image_source_3 && modalState == 'edit'" id="formItemImage3" class="img-responsive" src="{{formImageUrl3}}"/>
+                                        <img class="img-responsive preview-image" ng-src="{{image_source_3}}">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label ng-show="activeTable == 'clothing'" for="formItemImage3">Item Image 3</label>
+                                        <input id="uploadFileInput3" ng-show="activeTable == 'clothing'" ng-model="formItem.imageFile"  onchange="angular.element(this).scope().uploadedFile(this)" name="userImage3" type="file" class="inputFile" />
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="form-group">
+                        <imput type="button" class="btn btn-default" data-dismiss="modal">Close</imput>
+                        <input my-modal class="btn btn-success" type="submit" id="submit" value="Submit" />
+                    </div>
+                </form>
+                <form ng-submit="submit(activeTable)" class="form text-left delete-view">
+                        <div class="modal-body delete-view">
+                            <h1 class="warning-text">WARNING<br>
+                                <small class="warning-small-text">You are about to irreversibly delete a record from your database</small>
+                            </h1> Are you sure you want to delete <span class="color-danger">{{formItem.item_name}}</span>?
+                        </div>
+                        <div class="form-group hidden">
+                            <label for="itemId">Item Name</label>
+                            <input placeholder="e.g cosmic, lilly, zinnia" ng-model="formItem.id"  type="text" class="form-control" id="itemId" required>
+                        </div>
+
+                    <div class="form-group">
+                        <imput type="button" class="btn btn-default" data-dismiss="modal">Close</imput>
+                        <input my-modal class="btn btn-success" type="submit" id="submitDelete" value="Submit" />
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+
+            </div>
+        </div>
+    </div>
+</div>

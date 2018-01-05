@@ -178,7 +178,7 @@ if($result === false) {
                         </table>
                         <?php if(isset($table) && $table == 'clothing' || isset($table) && $table == 'accessories'|| isset($table) && $table == 'prints' ):?>
                             <p data-toggle="collapse" data-target="#details" class="info text-left <?php if($table == 'accessories'):?>accessories-details <?php endif; ?>">DETAILS</p>
-                            <?php if($table == 'clothing' && $rows[0]['clothing_type'] == 'top'):?>
+                            <?php if($table == 'clothing' && $rows[0]['item_type'] == 'top'):?>
                                 <ul class="collapse text-left" id="details">
                                     <li>100% silk</li>
                                     <li>made in England</li>
@@ -203,7 +203,7 @@ if($result === false) {
                                 </ul>
                             <?php endif ?>
                         <?php if($rows[0]['item_type'] != 'phone_case'):?><p data-toggle="collapse" data-target="#size" class="text-left info">SIZE & FIT</p><?php endif; ?>
-                            <?php if(($table == 'clothing') && $rows[0]['clothing_type'] == 'top'):?>
+                            <?php if(($table == 'clothing') && $rows[0]['item_type'] == 'top'):?>
                                 <ul class="collapse text-left" id="size">
                                     <li> Loose fit</li>
                                     <li>Model is UK size 8. height
