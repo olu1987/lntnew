@@ -1,9 +1,10 @@
 <p ng-click="active = 'prints'">Welcome {{userdata.username}}</p>
-<p>This is the landing page for all logged in users.<br/>To perform different user actions use the menu above.</p>
+<p class="text-uppercase bg-danger">please note this page contains items in the live database. changes to these will be irreversible and
+potentially destructive. please ensure you take care editing, creating or deleting data </p>
 <ul class="list-inline table-tabs">
-    <li><a  ng-class="{active: activeTable == 'prints'}" ng-click="activeTable = 'prints'">Prints </a></li>
-    <li><a  ng-class="{active: activeTable == 'accessories'}" ng-click="activeTable = 'accessories'">Accessories</a></li>
-    <li><a  ng-class="{active: activeTable == 'clothing'}" ng-click="activeTable = 'clothing'">Clothing</a></li>
+    <li ng-class="{active: activeTable == 'prints'}" ng-click="activeTable = 'prints'" class="col-xs-4"><a>Prints </a></li>
+    <li ng-class="{active: activeTable == 'accessories'}" ng-click="activeTable = 'accessories'" class="col-xs-4"><a>Accessories</a></li>
+    <li ng-class="{active: activeTable == 'clothing'}" ng-click="activeTable = 'clothing'" class="col-xs-4"><a>Clothing</a></li>
 </ul>
 <table class="table table-striped" ng-show="activeTable == 'prints'">
     <tr>

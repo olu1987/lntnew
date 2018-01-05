@@ -70,10 +70,21 @@ input.ng-invalid {
 	color: #797979;
 }
 
-.table-tabs a.active{
-	color: gold;
+.table-tabs li{
+	padding: 5px;
+	background: #eeeeee;
+	border-left:1px solid rgba(162, 162, 162, 0.52);
+	cursor: pointer;
 }
 
+.table-tabs li:nth-child(1){
+	border-left:none;
+}
+
+.table-tabs li.active, .table-tabs li.active a{
+	background: #393939;
+	color:#fff;
+}
 .add-item-btn, .add-item-btn:hover{
 	color: #444;
 	cursor: pointer;
@@ -138,4 +149,8 @@ input.ng-invalid {
 
 .image-section{
 	margin-top: 10px;
+}
+
+.admin-message{
+	text-transform: uppercase;
 }
