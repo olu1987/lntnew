@@ -110,7 +110,6 @@ angular.module('myApp.controllers', [])
 			$scope.formImageUrl = '../' + item.item_image_url;
 			$scope.formImageUrl2 = '../' + item.item_image_url_2;
 			$scope.formImageUrl3 = '../' + item.item_image_url_3;
-			console.log($scope.formImageUrl2);
 			$scope.modalAction = 'Edit';
 
         };
@@ -204,15 +203,23 @@ angular.module('myApp.controllers', [])
                 $scope.formItem.item_image_url_3 = 'img/' + element.files[0].name;
 			}else{
                 $scope.formItem.item_image_url = 'img/' + element.files[0].name;
-                $scope.formItem.item_image_url_2 = 'img/' + element.files[0].name;
-                $scope.formItem.item_image_url_3 = 'img/' + element.files[0].name;
+                if($scope.activeTable != 'clothing'){
+                    $scope.formItem.item_image_url_2 = 'img/' + element.files[0].name;
+                    $scope.formItem.item_image_url_3 = 'img/' + element.files[0].name;
+                }
 			};
 
             $scope.formItem.imageFile = element.files[0];
             var reader = new FileReader();
 
             reader.onload = function(event) {
-                $scope.image_source = event.target.result;
+                if(element.id == 'uploadFileInput2'){
+                    $scope.image_source_2 = event.target.result;
+                }else if(element.id == 'uploadFileInput3'){
+                    $scope.image_source_3 = event.target.result;
+                }else{
+                    $scope.image_source = event.target.result;
+                }
                 $scope.$apply(function($scope) {
                     $scope.files = element.files;
                 });
@@ -231,5 +238,8 @@ angular.module('myApp.controllers', [])
                 function(inputElem) {
                     angular.element(inputElem).attr('src','');
                 });
+            $scope.image_source = null;
+            $scope.image_source_2 = null;
+            $scope.image_source_3 = null;
 		}
 	});
