@@ -9,7 +9,6 @@ require 'classes/config.class.php';
 require 'languages/en.php';
 require 'database.php';
 
-$this->config = parse_ini_file(realpath('../../configs/config.ini'));
 
 // Settings 
 
@@ -21,7 +20,7 @@ Flight::set('flight.views.path', 'views/');
 
 // Register classes
 
-Flight::register('db', 'PDO', array("mysql:host={$db_host};dbname={$this->config['dbname']}", $this->config['username'], $this->config['password']));
+Flight::register('db', 'PDO', array("mysql:host={$db_host};dbname={$db_name}", $db_user, $db_pass));
 Flight::register('config', 'Config', array(Flight::db()));
 Flight::register('auth', 'Auth', array(Flight::db(), Flight::config()));
 
