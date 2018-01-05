@@ -172,18 +172,31 @@
                         </div>
                         <div class="row">
                             <div class="form-group col-sm-6">
-                                <label for="formItemImage">Item Image</label>
-                                <img ng-show="modalState == 'edit' && !image_source" id="formItemImage" class="img-responsive" src="{{formImageUrl}}"/>
-                                <img class="img-responsive preview-image" ng-src="{{image_source}}">
-                                <img ng-show="activeTable == 'clothing' && !image_source_2 && modalState == 'edit'" id="formItemImage2" class="img-responsive" src="{{formImageUrl2}}"/>
-                                <img class="img-responsive preview-image" ng-src="{{image_source_2}}">
-                                <img ng-show="activeTable == 'clothing' && !image_source_3 && modalState == 'edit'" id="formItemImage3" class="img-responsive" src="{{formImageUrl3}}"/>
-                                <img class="img-responsive preview-image" ng-src="{{image_source_3}}">
-
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <label for="formItemImage">Item Image 1</label>
+                                        <img ng-show="modalState == 'edit' && !image_source" id="formItemImage" class="img-responsive" src="{{formImageUrl}}"/>
+                                        <img class="img-responsive preview-image" ng-src="{{image_source}}">
+                                        <input id="uploadFileInput" ng-model="formItem.imageFile"  onchange="angular.element(this).scope().uploadedFile(this)" name="userImage" type="file" class="inputFile" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <label for="formItemImage2">Item Image 2</label>
+                                        <img ng-show="activeTable == 'clothing' && !image_source_2 && modalState == 'edit'" id="formItemImage2" class="img-responsive" src="{{formImageUrl2}}"/>
+                                        <img class="img-responsive preview-image" ng-src="{{image_source_2}}">
+                                        <input id="uploadFileInput2" ng-show="activeTable == 'clothing'" ng-model="formItem.imageFile"  onchange="angular.element(this).scope().uploadedFile(this)" name="userImage2" type="file" class="inputFile" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <label for="formItemImage3">Item Image 3</label>
+                                        <img ng-show="activeTable == 'clothing' && !image_source_3 && modalState == 'edit'" id="formItemImage3" class="img-responsive" src="{{formImageUrl3}}"/>
+                                        <img class="img-responsive preview-image" ng-src="{{image_source_3}}">
+                                        <input id="uploadFileInput3" ng-show="activeTable == 'clothing'" ng-model="formItem.imageFile"  onchange="angular.element(this).scope().uploadedFile(this)" name="userImage3" type="file" class="inputFile" />
+                                    </div>
+                                </div>
                             </div>
-                            <input id="uploadFileInput" ng-model="formItem.imageFile"  onchange="angular.element(this).scope().uploadedFile(this)" name="userImage" type="file" class="inputFile" />
-                            <input id="uploadFileInput2" ng-show="activeTable == 'clothing'" ng-model="formItem.imageFile"  onchange="angular.element(this).scope().uploadedFile(this)" name="userImage2" type="file" class="inputFile" />
-                            <input id="uploadFileInput3" ng-show="activeTable == 'clothing'" ng-model="formItem.imageFile"  onchange="angular.element(this).scope().uploadedFile(this)" name="userImage3" type="file" class="inputFile" />
                     </div>
                     <div class="form-group">
                         <imput type="button" class="btn btn-default" data-dismiss="modal">Close</imput>
