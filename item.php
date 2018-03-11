@@ -1,26 +1,4 @@
-<?php include 'configs/connect.php'; ?>
-<?php
-
-$table = $_GET['table'];
-
-// A select query. $result will be a `mysqli_result` object if successful
-$result = db_query("SELECT * FROM ".$table." WHERE id = ".$_GET['id']);
-
-if($result === false) {
-    // Handle failure - log the error, notify administrator, etc.
-} else {
-    // Fetch all the rows in an array
-    $rows = array();
-    while ($row = mysqli_fetch_assoc($result)) {
-        $rows[] = $row;
-    }
-}
-
-
-
-
-
-?>
+<?php include './factory/item-factory.php'; ?>
 <!doctype html>
 <html class="no-js" lang="">
 <head>
@@ -75,20 +53,9 @@ if($result === false) {
     <div class="row">
         <div class="col-md-6">
             <?php if($_GET['table']== 'clothing'):?>
-                <img id="big-picture" class="img-responsive item-image" src="<?= $rows[0]['item_image_url']; ?>"/>
-                <div class="row thumbnails-row">
-                    <div class="col-md-4 col-sm-4 col-xs-4">
-                        <img class="thumbnails img-responsive item-image active" src="<?= $rows[0]['item_image_url']; ?>"/>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-4">
-                        <img class="thumbnails img-responsive item-image" src="<?= $rows[0]['item_image_url_2']; ?>"/>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-4">
-                        <img class="thumbnails img-responsive item-image" src="<?= $rows[0]['item_image_url_3']; ?>"/>
-                    </div>
-                </div>
+              <?php include './layouts/components/clothing-item-images.php'; ?>
             <?php else: ?>
-                <img class="img-responsive item-image" src="<?= $rows[0]['item_image_url']; ?>"/>
+               <?php include './layouts/components/single-item-image.php'; ?>
             <?php endif; ?>
         </div>
         <div class="col-md-6 text-center item-details">
@@ -99,26 +66,49 @@ if($result === false) {
             <p class="text-left description"><?= $rows[0]['item_description']; ?></p>
             <hr>
             <?php if($_GET['table'] == 'prints'): ?>
-                <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                    <input type="hidden" name="cmd" value="_s-xclick">
-                    <input type="hidden" name="hosted_button_id" value="<?= $rows[0]['button_id']; ?>">
-                        <table class="sizes-select">
-                            <tr><td class="text-left"><input type="hidden" name="on0" value="Sizes">Sizes</td></tr><tr><td><select name="os0">
-                                        <option value="Small">Small £50.00 GBP</option>
-                                        <option value="Medium">Medium £70.00 GBP</option>
-                                        <option value="Large">Large £130.00 GBP</option>
-                                    </select>
-                                </td>
-                                <td class="size-link-wrap">
-                                    <a class="size-link" data-toggle="modal" data-target="#myModal">SIZE GUIDE</a>
-                                </td>
+                 <?php include './layouts/components/print-item-details.php'; ?>
+            <?php else: ?>
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="<?= $rows[0]['button_id']; ?>">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+
+                    <!-- size/item select -->
+                    <table class="sizes-select">
+                        <?php if($_GET['table'] != 'accessories'): ?>
+                           <?php include './layouts/components/size-select.php'; ?>
+                        <?php elseif($_GET['table'] == 'accessories' && $rows[0]['item_type'] == 'phone_case'): ?>
+                          <?php include './layouts/components/phone-select.php'; ?>
+                                <?php if($_GET['table'] != 'accessories'): ?>
+                                    <td class="size-link-wrap">
+                                        <a class="size-link" data-toggle="modal" data-target="#myModal">SIZE GUIDE</a>
+                                    </td>
+                                <?php endif; ?>
                             </tr>
-                        </table>
-                <p data-toggle="collapse" data-target="#details" class="info text-left">DETAILS</p>
-                    <ul class="collapse text-left" id="details">
-                        <li>limited edition of 50</li>
-                        <li>unframed</li>
-                        <li>printed in London England</li>
+                        <?php endif; ?>
+                    </table>
+
+                    <!-- Item details --> 
+                    <p data-toggle="collapse" data-target="#details" class="info text-left <?php if($table == 'accessories'):?>accessories-details <?php endif; ?>">DETAILS</p>
+                    <?php if($table == 'clothing' && $rows[0]['item_type'] == 'top' || isset($table) && $table == 'accessories' && $rows[0]['item_type'] == 'pocket_square'):?>
+                        <?php include './layouts/components/silk-details.php'; ?>
+                    <?php elseif(isset($table) && $table == 'accessories' && $rows[0]['item_type'] == 'phone_case'): ?>
+                        <?php include './layouts/components/phone-details.php'; ?>
+                    <?php else: ?>
+                        <?php include './layouts/components/pvc-skirt-details.php'; ?>
+                    <?php endif ?>
+
+                    <!-- size guidance -->
+                    <?php if($rows[0]['item_type'] != 'phone_case'):?><p data-toggle="collapse" data-target="#size" class="text-left info">SIZE & FIT</p><?php endif; ?>
+                    <ul class="collapse text-left" id="size">
+                    <?php if(($table == 'clothing') && $rows[0]['item_type'] == 'top'):?>
+                        <?php include './layouts/components/size-guidance-top.php'; ?>
+                    <?php elseif($table == 'accessories' && $rows[0]['item_type'] == 'pocket_square'):?>
+                        <?php include './layouts/components/size-guidance-pocket-square.php'; ?>
+                    <?php else: ?>
+                        <?php include './layouts/components/size-guidance-skirt.php'; ?>
+                    <?php endif ?>
                     </ul>
                     <p data-toggle="collapse" data-target="#delivery" class="text-left info">DELIVERY & RETURNS</p>
                     <ul id="delivery" class="text-left collapse">
@@ -126,111 +116,6 @@ if($result === false) {
                         <li>Your order will be dispatched within 1-14 days depending on your order</li>
                         <li>Returns and exchanges are accepted within 14 days - see our full policy <a href="delivery"><strong>here</strong></a>.</li>
                     </ul>
-                    <input type="hidden" name="currency_code" value="GBP">
-                    <input type="image" src="http://lntlondon.com/img/add-to-cart.jpg" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
-                    <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-                </form>
-
-            <?php else: ?>
-            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="<?= $rows[0]['button_id']; ?>">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12">
-                        <?php if($_GET['table'] != 'accessories'): ?>
-                        <table class="sizes-select">
-                            <tr><td class="text-left" colspan="2"><input  type="hidden" name="on0" value="Sizes">Sizes</td></tr><tr><td>
-                                    <select name="os0">
-                                        <option value="Small">Small </option>
-                                        <option value="Medium">Medium </option>
-                                        <option value="Large">Large </option>
-                                    </select> </td>
-                        <?php elseif($_GET['table'] == 'accessories' && $rows[0]['item_type'] == 'phone_case'): ?>
-                        <table class="sizes-select">
-                            <tr><td class="text-left" colspan="2"><input  type="hidden" name="on0" value="Phone">Phones</td></tr><tr><td>
-                                    <select name="os0">
-                                        <option value="iPhone X">iPhone X </option>
-                                        <option value="iPhone 8 Plus">iPhone 8 Plus </option>
-                                        <option value="iPhone 8">iPhone 8 </option>
-                                        <option value="iPhone 7 Plus">iPhone 7 Plus </option>
-                                        <option value="iPhone 7">iPhone 7 </option>
-                                        <option value="iPhone 6">iPhone 6 </option>
-                                        <option value="iPhone 5">iPhone 5 </option>
-                                        <option value="Samsung 8 Plus">Samsung 8 Plus </option>
-                                        <option value="Samsung 8">Samsung 8 </option>
-                                        <option value="Samsung 7 Edge">Samsung 7 Edge </option>
-                                        <option value="Samsung 7">Samsung 7</option>
-                                        <option value="Samsung 6 Edge">Samsung 6 Edge </option>
-                                        <option value="Samsung 6">Samsung 6</option>
-                                    </select>
-                                </td><tr><td class="text-left" colspan="2"><input  type="hidden" name="on1" value="Material">Case Material Type</td></tr><tr><td>
-                                    <select name="os1">
-                                        <option value="Hard">Hard </option>
-                                        <option value="Silicone">Silicone </option>
-                                    </select> </td>
-                          <?php if($_GET['table'] != 'accessories'): ?>
-                                <td class="size-link-wrap">
-                                    <a class="size-link" data-toggle="modal" data-target="#myModal">SIZE GUIDE</a>
-                                </td>
-                          <?php endif; ?>
-                            </tr>
-                        <?php endif; ?>
-                        </table>
-                        <?php if(isset($table) && $table == 'clothing' || isset($table) && $table == 'accessories'|| isset($table) && $table == 'prints' ):?>
-                            <p data-toggle="collapse" data-target="#details" class="info text-left <?php if($table == 'accessories'):?>accessories-details <?php endif; ?>">DETAILS</p>
-                            <?php if($table == 'clothing' && $rows[0]['item_type'] == 'top'):?>
-                                <ul class="collapse text-left" id="details">
-                                    <li>100% silk</li>
-                                    <li>made in England</li>
-                                    <li>dry clean only</li>
-                                </ul>
-                            <?php elseif(isset($table) && $table == 'accessories' && $rows[0]['item_type'] == 'pocket_square'): ?>
-                                <ul class="collapse text-left" id="details">
-                                    <li>100% silk</li>
-                                    <li>made in England</li>
-                                    <li>dry clean only</li>
-                                </ul>
-                                <?php elseif(isset($table) && $table == 'accessories' && $rows[0]['item_type'] == 'phone_case'): ?>
-                                <ul class="collapse text-left" id="details">
-                                    <li>If your phone is not stated in the list above please email info@lntlondon.com or message via the <a class="color-gold" href="/contact.html">contact</a> page to discuss further options.</li>
-                                    <li>Silicone or hard</li>
-                                </ul>
-                            <?php else: ?>
-                                <ul class="collapse text-left" id="details">
-                                    <li> 70% polyvinyl chloride, 20% polyurethane and 10% cotton</li>
-                                    <li>made in England</li>
-                                    <li>hand wash only</li>
-                                </ul>
-                            <?php endif ?>
-                        <?php if($rows[0]['item_type'] != 'phone_case'):?><p data-toggle="collapse" data-target="#size" class="text-left info">SIZE & FIT</p><?php endif; ?>
-                            <?php if(($table == 'clothing') && $rows[0]['item_type'] == 'top'):?>
-                                <ul class="collapse text-left" id="size">
-                                    <li> Loose fit</li>
-                                    <li>Model is UK size 8. height
-                                        174cm/5’7” and wears a
-                                        size small</li>
-                                </ul>
-                                <?php elseif($table == 'accessories' && $rows[0]['item_type'] == 'pocket_square'):?>
-                                <ul class="collapse text-left" id="size">
-                                    <li>33cm x 33cm</li>
-                                </ul>
-
-                            <?php else: ?>
-                                <ul class="collapse text-left" id="size">
-                                    <li>Model is UK size 8. height
-                                        174cm/5’7” and wears a
-                                        size small
-                                    </li>
-                                </ul>
-                            <?php endif ?>
-                        <?php endif ?>
-                        <p data-toggle="collapse" data-target="#delivery" class="text-left info">DELIVERY & RETURNS</p>
-                        <ul id="delivery" class="text-left collapse">
-                            <li>free worldwide shipping on orders over £50.00</li>
-                            <li>Your order will be dispatched within 1-14 days depending on your order</li>
-                            <li>Returns and exchanges are accepted within 14 days - see our full policy <a href="delivery"><strong>here</strong></a>.</li>
-                        </ul>
-
                     </div>
                 </div>
                 <input class="add-to-cart-btn" type="image" src="http://lntlondon.com/img/add-to-cart.jpg" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
