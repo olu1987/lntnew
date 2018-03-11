@@ -9,12 +9,14 @@ require 'classes/config.class.php';
 require 'languages/en.php';
 require 'database.php';
 
+
 // Settings 
 
 Flight::set('lang', $lang);
 
 Flight::set('flight.log_errors', true);
 Flight::set('flight.views.path', 'views/');
+
 
 // Register classes
 

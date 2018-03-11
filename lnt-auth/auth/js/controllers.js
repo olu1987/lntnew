@@ -4,6 +4,47 @@
 
 angular.module('myApp.controllers', [])
 	.controller('mainController', function($scope, $location, $http, $window, $route) {
+
+        $scope.getItems = function() {
+            $scope.items = {};
+            $http.get("../api/item/read.php?table=prints").
+            success(function(data) {
+                $scope.items.prints = data.records;
+                if(data.loggedin == false) {
+                    $window.location = "auth/";
+                }
+            }).
+            error(function(data) {
+                $window.location = "auth/";
+            });
+
+            $http.get("../api/item/read.php?table=accessories").
+            success(function(data) {
+                $scope.items.accessories = data.records;
+                if(data.loggedin == false) {
+                    $window.location = "auth/";
+                }
+            }).
+            error(function(data) {
+                $window.location = "auth/";
+            });
+
+            $http.get("../api/item/read.php?table=clothing").
+            success(function(data) {
+                $scope.items.clothing = data.records;
+                console.log($scope.items);
+                if(data.loggedin == false) {
+                    $window.location = "auth/";
+                }
+            }).
+            error(function(data) {
+                $window.location = "auth/";
+            });
+
+            $scope.activeTable = 'prints'
+
+
+        };
 		
 		$http.get("../api/auth").
 			success(function(data) {

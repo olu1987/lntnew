@@ -1,20 +1,19 @@
+
 <?php
 class Database{
 
     // specify your own database credentials
     private $host = "localhost";
-    private $db_name = "lnt_new_db";
-    private $username = "root";
-    private $password = "";
     public $conn;
 
     // get the database connection
     public function getConnection(){
 
+        $this->config = parse_ini_file(realpath('../../configs/config.ini'));
         $this->conn = null;
 
         try{
-            $this->conn = new PDO("mysql:host=" . $this->host . ";dbname=" . $this->db_name, $this->username, $this->password);
+            $this->conn = new PDO("mysql:host=" . $this->host . ";dbname=" . $this->config['dbname'], $this->config['username'], $this->config['password']);
             $this->conn->exec("set names utf8");
         }catch(PDOException $exception){
             echo "Connection error: " . $exception->getMessage();
