@@ -75,28 +75,12 @@
                     <?php isset($config->sizeItemPartial) ? include $config->sizeItemPartial:false; ?>
                     <?php isset($config->sizeGuideLink) ? include $config->sizeGuideLink:false; ?>
                     </table>
-
                     <!-- Item details --> 
-                    <p data-toggle="collapse" data-target="#details" class="info text-left <?php if($table == 'accessories'):?>accessories-details <?php endif; ?>">DETAILS</p>
-                    <?php if($table == 'clothing' && $rows[0]['item_type'] == 'top' || isset($table) && $table == 'accessories' && $rows[0]['item_type'] == 'pocket_square'):?>
-                        <?php include './layouts/partials/silk-details.php'; ?>
-                    <?php elseif(isset($table) && $table == 'accessories' && $rows[0]['item_type'] == 'phone_case'): ?>
-                        <?php include './layouts/partials/phone-details.php'; ?>
-                    <?php else: ?>
-                        <?php include './layouts/partials/pvc-skirt-details.php'; ?>
-                    <?php endif ?>
+                    <?php include $config->detailsPartial ?>
 
                     <!-- size guidance -->
-                    <?php if($rows[0]['item_type'] != 'phone_case'):?><p data-toggle="collapse" data-target="#size" class="text-left info">SIZE & FIT</p><?php endif; ?>
-                    <ul class="collapse text-left" id="size">
-                    <?php if(($table == 'clothing') && $rows[0]['item_type'] == 'top'):?>
-                        <?php include './layouts/partials/size-guidance-top.php'; ?>
-                    <?php elseif($table == 'accessories' && $rows[0]['item_type'] == 'pocket_square'):?>
-                        <?php include './layouts/partials/size-guidance-pocket-square.php'; ?>
-                    <?php else: ?>
-                        <?php include './layouts/partials/size-guidance-skirt.php'; ?>
-                    <?php endif ?>
-                    </ul>
+                    <?php isset($config->sizeGuidance) ? include $config->sizeGuidance: false; ?>
+                   
                     <p data-toggle="collapse" data-target="#delivery" class="text-left info">DELIVERY & RETURNS</p>
                     <ul id="delivery" class="text-left collapse">
                         <li>free worldwide shipping on orders over £50.00</li>

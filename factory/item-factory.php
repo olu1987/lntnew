@@ -3,6 +3,8 @@
 <?php include './classes/PrintConfig.php'; ?>
 <?php include './classes/PhoneCaseConfig.php'; ?>
 <?php include './classes/PocketSquareConfig.php'; ?>
+<?php include './classes/SilkTopConfig.php'; ?>
+<?php include './classes/PvcSkirtConfig.php'; ?>
 
 <?php
 
@@ -21,14 +23,16 @@ if($result === false) {
 }
 
 function itemFactory($table, $item){
-    if($table === 'clothing'){
-        $config = new ClothingConfig();
-    } elseif($table === 'prints'){
+    if($table === 'prints'){
         $config = new PrintConfig();
     } elseif($item['item_type'] === 'phone_case'){
         $config = new PhoneCaseConfig();
     } elseif($item['item_type'] === 'pocket_square'){
         $config = new PocketSquareConfig();
+    } elseif($item['item_type'] === 'top'){
+        $config = new SilkTopConfig();
+    } elseif($item['item_type'] === 'skirt'){
+        $config = new PvcSkirtConfig();
     }
     return $config;
 }
