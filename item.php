@@ -52,11 +52,7 @@
 
     <div class="row">
         <div class="col-md-6">
-            <?php if($_GET['table']== 'clothing'):?>
-              <?php include './layouts/components/clothing-item-images.php'; ?>
-            <?php else: ?>
-               <?php include './layouts/components/single-item-image.php'; ?>
-            <?php endif; ?>
+              <?php include $config->imageUrl ?>
         </div>
         <div class="col-md-6 text-center item-details">
             <h1><strong><span class="left-dot">.</span><?= $rows[0]['item_name']; ?><span class="right-dot">.</span></strong></h1>
@@ -65,8 +61,8 @@
             <p class="price">£<?= $rows[0]['item_price']; ?></p>
             <p class="text-left description"><?= $rows[0]['item_description']; ?></p>
             <hr>
-            <?php if($_GET['table'] == 'prints'): ?>
-                 <?php include './layouts/components/print-item-details.php'; ?>
+            <?php if(isset($config->printItemDetails)): ?>
+                 <?php include $config->printItemDetails; ?>
             <?php else: ?>
             <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
                 <input type="hidden" name="cmd" value="_s-xclick">
@@ -76,38 +72,29 @@
 
                     <!-- size/item select -->
                     <table class="sizes-select">
-                        <?php if($_GET['table'] != 'accessories'): ?>
-                           <?php include './layouts/components/size-select.php'; ?>
-                        <?php elseif($_GET['table'] == 'accessories' && $rows[0]['item_type'] == 'phone_case'): ?>
-                          <?php include './layouts/components/phone-select.php'; ?>
-                                <?php if($_GET['table'] != 'accessories'): ?>
-                                    <td class="size-link-wrap">
-                                        <a class="size-link" data-toggle="modal" data-target="#myModal">SIZE GUIDE</a>
-                                    </td>
-                                <?php endif; ?>
-                            </tr>
-                        <?php endif; ?>
+                    <?php isset($config->sizeItemPartial) ? include $config->sizeItemPartial:false; ?>
+                    <?php isset($config->sizeGuideLink) ? include $config->sizeGuideLink:false; ?>
                     </table>
 
                     <!-- Item details --> 
                     <p data-toggle="collapse" data-target="#details" class="info text-left <?php if($table == 'accessories'):?>accessories-details <?php endif; ?>">DETAILS</p>
                     <?php if($table == 'clothing' && $rows[0]['item_type'] == 'top' || isset($table) && $table == 'accessories' && $rows[0]['item_type'] == 'pocket_square'):?>
-                        <?php include './layouts/components/silk-details.php'; ?>
+                        <?php include './layouts/partials/silk-details.php'; ?>
                     <?php elseif(isset($table) && $table == 'accessories' && $rows[0]['item_type'] == 'phone_case'): ?>
-                        <?php include './layouts/components/phone-details.php'; ?>
+                        <?php include './layouts/partials/phone-details.php'; ?>
                     <?php else: ?>
-                        <?php include './layouts/components/pvc-skirt-details.php'; ?>
+                        <?php include './layouts/partials/pvc-skirt-details.php'; ?>
                     <?php endif ?>
 
                     <!-- size guidance -->
                     <?php if($rows[0]['item_type'] != 'phone_case'):?><p data-toggle="collapse" data-target="#size" class="text-left info">SIZE & FIT</p><?php endif; ?>
                     <ul class="collapse text-left" id="size">
                     <?php if(($table == 'clothing') && $rows[0]['item_type'] == 'top'):?>
-                        <?php include './layouts/components/size-guidance-top.php'; ?>
+                        <?php include './layouts/partials/size-guidance-top.php'; ?>
                     <?php elseif($table == 'accessories' && $rows[0]['item_type'] == 'pocket_square'):?>
-                        <?php include './layouts/components/size-guidance-pocket-square.php'; ?>
+                        <?php include './layouts/partials/size-guidance-pocket-square.php'; ?>
                     <?php else: ?>
-                        <?php include './layouts/components/size-guidance-skirt.php'; ?>
+                        <?php include './layouts/partials/size-guidance-skirt.php'; ?>
                     <?php endif ?>
                     </ul>
                     <p data-toggle="collapse" data-target="#delivery" class="text-left info">DELIVERY & RETURNS</p>
