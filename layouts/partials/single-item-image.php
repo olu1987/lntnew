@@ -1,0 +1,1 @@
+<img class="img-responsive item-image" src="<?= $rows[0]['item_image_url']; ?>"/>
